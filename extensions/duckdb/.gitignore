@@ -1,0 +1,8 @@
+build/
+__pycache__/
+*.pyc
+*.duckdb
+*.duckdb.wal
+*.db
+*.db.wal
+.DS_Store

@@ -30,6 +30,16 @@ Code to produce these results is found in the [whereabouts_testing repo](https:/
 
 ## Requirements
 
+### Experimental DuckDB SQL interface
+
+An independently buildable [DuckDB extension](extensions/duckdb/README.md) provides
+batch forward geocoding with the standard matcher directly in SQL, using your own
+reference address tables. It also ships as a plain SQL macro script. Neither path
+requires Python at runtime. See its documentation for the current scope, build
+instructions, and differences from the Python API.
+
+### Python package
+
 - Python 3.12+
 
 ## Installation

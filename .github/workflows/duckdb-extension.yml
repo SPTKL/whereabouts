@@ -1,0 +1,35 @@
+name: DuckDB extension
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'extensions/duckdb/**'
+      - '.github/workflows/duckdb-extension.yml'
+  pull_request:
+    paths:
+      - 'extensions/duckdb/**'
+      - '.github/workflows/duckdb-extension.yml'
+permissions:
+  contents: read
+jobs:
+  native:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-22.04, macos-14]
+        duckdb: ['1.4.4', '1.5.0', '1.5.6']
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        working-directory: extensions/duckdb
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch checksum-pinned DuckDB
+        run: uv run --no-project make fetch DUCKDB_VERSION=${{ matrix.duckdb }}
+      - name: Build and test native extension
+        run: uv run --no-project make -j2 test DUCKDB_VERSION=${{ matrix.duckdb }}
+      - name: Test SQL-only distribution
+        run: uv run --no-project make test-sql DUCKDB_VERSION=${{ matrix.duckdb }}

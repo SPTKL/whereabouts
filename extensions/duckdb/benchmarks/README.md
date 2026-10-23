@@ -5,6 +5,9 @@ on the same machine, DuckDB version, thread count, reference source, and input b
 It measures accuracy separately from performance. No geocoder implementation is
 changed by this benchmark branch.
 
+The first [macOS ARM64 baseline](results/macos-arm64-2026-10-23.md) records measured
+speed, memory failures, accuracy, and diagnostics explaining compatibility differences.
+
 ## Run
 
 From the repository root:

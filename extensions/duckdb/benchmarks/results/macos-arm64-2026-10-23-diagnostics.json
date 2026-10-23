@@ -1,0 +1,46 @@
+{
+  "au": {
+    "numeric_ties": {
+      "rows": 901,
+      "label_agreement": 1.0,
+      "label_or_score_disagreement_rows": 0,
+      "max_score_difference_when_both_returned": 0.0,
+      "max_coordinate_difference_m_when_both_returned": 0.0
+    },
+    "numeric_ties_python_input": {
+      "rows": 901,
+      "label_agreement": 1.0,
+      "label_or_score_disagreement_rows": 0,
+      "max_score_difference_when_both_returned": 0.0,
+      "max_coordinate_difference_m_when_both_returned": 0.0
+    },
+    "reference_numeric_token_differences": 372,
+    "normalization_example": [
+      "BOLESLAWIEC",
+      "BOLESLAWIEC",
+      "BOLES\u0141AWIEC"
+    ]
+  },
+  "pl": {
+    "numeric_ties": {
+      "rows": 428,
+      "label_agreement": 0.677570093457944,
+      "label_or_score_disagreement_rows": 138,
+      "max_score_difference_when_both_returned": 0.0,
+      "max_coordinate_difference_m_when_both_returned": 1442.913985590809
+    },
+    "numeric_ties_python_input": {
+      "rows": 428,
+      "label_agreement": 1.0,
+      "label_or_score_disagreement_rows": 0,
+      "max_score_difference_when_both_returned": 0.0,
+      "max_coordinate_difference_m_when_both_returned": 0.0
+    },
+    "reference_numeric_token_differences": 0,
+    "normalization_example": [
+      "BOLESLAWIEC",
+      "BOLESLAWIEC",
+      "BOLES\u0141AWIEC"
+    ]
+  }
+}

@@ -162,6 +162,9 @@ remain to be established before recommending production deployment.
 
 ## Validation
 
+For reproducible speed, memory, and accuracy comparisons with the Python standard
+matcher, see the [benchmark harness](benchmarks/README.md).
+
 ```sh
 make test                       # 16 CLI tests; Python stdlib only for test driver
 make test-sql                   # Same tests against the SQL-only distribution

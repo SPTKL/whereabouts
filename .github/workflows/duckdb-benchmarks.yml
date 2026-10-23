@@ -1,0 +1,56 @@
+name: DuckDB benchmarks (manual)
+on:
+  workflow_dispatch:
+    inputs:
+      dataset:
+        description: Reference dataset
+        type: choice
+        options: [all, au, pl]
+        default: all
+      threads:
+        description: DuckDB threads per worker
+        default: '1'
+      memory_limit:
+        description: DuckDB memory cap per worker
+        default: '1GB'
+permissions:
+  contents: read
+jobs:
+  benchmark:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-22.04, macos-14]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    env:
+      BENCH_DATASET: ${{ inputs.dataset }}
+      BENCH_THREADS: ${{ inputs.threads }}
+      BENCH_MEMORY: ${{ inputs.memory_limit }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: '3.12'
+      - run: uv sync --locked
+      - name: Install original Python matcher dependency
+        run: uv run python -c "import duckdb; duckdb.connect().execute('INSTALL splink_udfs FROM community')"
+      - name: Build native extension
+        run: |
+          uv run make -C extensions/duckdb fetch
+          uv run make -C extensions/duckdb
+      - name: Run matched-version comparison
+        run: |
+          uv run python extensions/duckdb/benchmarks/compare.py \
+            --extension extensions/duckdb/build/whereabouts.duckdb_extension \
+            --dataset "$BENCH_DATASET" --threads "$BENCH_THREADS" \
+            --memory-limit "$BENCH_MEMORY" --repeats 5 --warmups 1 \
+            --out extensions/duckdb/build/benchmark-ci
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: benchmark-${{ matrix.os }}
+          path: |
+            extensions/duckdb/build/benchmark-ci/summary.json
+            extensions/duckdb/build/benchmark-ci/**/*-disagreements.csv
+            extensions/duckdb/build/benchmark-ci/**/*.log

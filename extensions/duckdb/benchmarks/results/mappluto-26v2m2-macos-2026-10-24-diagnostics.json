@@ -1,0 +1,103 @@
+{
+  "unmatched_reasons": {
+    "blank_address": 527,
+    "no_numeric_tokens": 358,
+    "all_phrases_excluded_by_frequency": 3257,
+    "unexplained": 0
+  },
+  "boroughs": [
+    {
+      "borough": "BK",
+      "total": 275628,
+      "matched": 274658,
+      "same_bbl": 270457,
+      "same_normalized_address": 273616
+    },
+    {
+      "borough": "BX",
+      "total": 89177,
+      "matched": 88936,
+      "same_bbl": 86746,
+      "same_normalized_address": 88901
+    },
+    {
+      "borough": "MN",
+      "total": 42023,
+      "matched": 41926,
+      "same_bbl": 41440,
+      "same_normalized_address": 41838
+    },
+    {
+      "borough": "QN",
+      "total": 324150,
+      "matched": 321962,
+      "same_bbl": 313159,
+      "same_normalized_address": 318316
+    },
+    {
+      "borough": "SI",
+      "total": 125709,
+      "matched": 125063,
+      "same_bbl": 118561,
+      "same_normalized_address": 124959
+    }
+  ],
+  "different_label_examples": [
+    {
+      "input_bbl": "1000290046",
+      "input_address": "15 SOUTH WILLIAM STREET, MANHATTAN, NY 10004",
+      "matched_bbl": "1000257501",
+      "matched_address": "15 WILLIAM STREET, MANHATTAN, NY 10004",
+      "similarity": 1.0
+    },
+    {
+      "input_bbl": "1002410013",
+      "input_address": "MARGINAL STREET WHARF, MANHATTAN, NY 10002",
+      "matched_bbl": "1000730028",
+      "matched_address": "MARGINAL STREET, MANHATTAN, NY 10002",
+      "similarity": 1.0
+    },
+    {
+      "input_bbl": "1002410018",
+      "input_address": "MARGINAL STREET WHARF, MANHATTAN, NY 10002",
+      "matched_bbl": "1000730028",
+      "matched_address": "MARGINAL STREET, MANHATTAN, NY 10002",
+      "similarity": 1.0
+    },
+    {
+      "input_bbl": "1004407501",
+      "input_address": "206 1 AVENUE, MANHATTAN, NY 10009",
+      "matched_bbl": "1004400004",
+      "matched_address": "206 GARAGE 1 AVENUE, MANHATTAN, NY 10009",
+      "similarity": 1.0
+    },
+    {
+      "input_bbl": "1004750004",
+      "input_address": "343 WEST BROADWAY, MANHATTAN, NY 10013",
+      "matched_bbl": "1001730027",
+      "matched_address": "343 BROADWAY, MANHATTAN, NY 10013",
+      "similarity": 1.0
+    },
+    {
+      "input_bbl": "1004750007",
+      "input_address": "349 WEST BROADWAY, MANHATTAN, NY 10013",
+      "matched_bbl": "1001740037",
+      "matched_address": "349 BROADWAY, MANHATTAN, NY 10013",
+      "similarity": 1.0
+    },
+    {
+      "input_bbl": "1004760073",
+      "input_address": "356 WEST BROADWAY, MANHATTAN, NY 10013",
+      "matched_bbl": "1001717501",
+      "matched_address": "356 BROADWAY, MANHATTAN, NY 10013",
+      "similarity": 1.0
+    },
+    {
+      "input_bbl": "1004767502",
+      "input_address": "350 WEST BROADWAY, MANHATTAN, NY 10013",
+      "matched_bbl": "1001717503",
+      "matched_address": "350 BROADWAY, MANHATTAN, NY 10013",
+      "similarity": 1.0
+    }
+  ]
+}

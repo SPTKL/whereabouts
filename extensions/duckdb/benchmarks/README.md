@@ -7,6 +7,8 @@ changed by this benchmark branch.
 
 The first [macOS ARM64 baseline](results/macos-arm64-2026-10-23.md) records measured
 speed, memory failures, accuracy, and diagnostics explaining compatibility differences.
+The [complete MapPLUTO run](results/mappluto-26v2m2-macos-2026-10-24.md) measures
+all 856,687 rows against the full citywide reference with bounded input batches.
 
 ## Run
 
@@ -144,6 +146,45 @@ on Linux and macOS and uploads summaries, logs, and disagreement CSVs even if a
 worker fails. Hosted-runner timings are useful for reproducibility, not precise
 cross-machine performance rankings. The workflow must be available on the fork's
 default branch before GitHub exposes its manual dispatch button.
+
+## Complete MapPLUTO throughput run
+
+`mappluto.py` runs every row of a local MapPLUTO Parquet through the standard
+extension, using the nonblank addresses in that same file as its reference:
+
+```sh
+uv run python extensions/duckdb/benchmarks/mappluto.py \
+  --source /path/to/mappluto.parquet \
+  --extension extensions/duckdb/build/whereabouts.duckdb_extension \
+  --batch-size 1000 --threads 1 --memory-limit 1GB \
+  --out extensions/duckdb/build/mappluto/run-1
+```
+
+Required source columns: `BBL`, `Address`, `Borough`, `ZipCode`, `Latitude`,
+`Longitude`, `Version`. BBLs must be unique and non-NULL. Coordinates must satisfy
+the extension's WGS84 validation. The input string combines the street address,
+expanded borough name, `NY`, and ZIP. Blank street addresses become NULL inputs,
+remain in the output, and are excluded from the reference. All other addresses
+are passed through the matcher, without an exact-match shortcut, deduplication,
+borough partitioning, or embeddings. Default matcher thresholds are unchanged.
+
+This is a **self-retrieval throughput test**, not independent geocoding accuracy.
+Coordinates are retrieved from the reference. Duplicate addresses and tied scores
+can legitimately select another BBL; the summary reports BBL and normalized-address
+agreement separately. The complete reference remains available to every batch.
+
+The run records source and code hashes, source versions, reference/index build
+time, per-batch input preparation and query-plus-insert time, total matching wall
+time, and whole-process peak RSS. It is one sequential pass, with no warmup or
+repetitions; OS caches are uncontrolled. Matching wall time includes input table
+creation and periodic progress writes. Result export and validation are timed
+separately. Query timings include inserting results into a disk-backed DuckDB
+table and are not identical to `compare.py`'s `fetchall()` timing boundary.
+
+`results.parquet` retains one output per input BBL, `different_bbl.parquet` retains
+all different-BBL/unmatched cases, and `run.duckdb` retains the prepared reference,
+index, source, and results. These large outputs remain ignored under `build/`.
+The output directory must be new; partial runs are recorded but not resumable.
 
 ## Remaining evaluation
 

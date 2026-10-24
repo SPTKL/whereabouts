@@ -1,0 +1,6048 @@
+{
+  "started_at_utc": "2026-10-24T14:03:56.325424+00:00",
+  "source": "/Users/sptkl/Documents/ChatGPT/NYCPlanning/moses/.moses/pluto-build/26v2m2/mappluto.parquet",
+  "source_sha256": "60a3e4c1b123a81937c1a8a02cb6e091f69c3cd519f191893c1c1a1737ce6262",
+  "runner_sha256": "f341c50128960190746251753c27745aa1001a70d152ce4d098c0dc2aa14eea9",
+  "extension_sha256": "643986f88afdb6ebe30968db44ee8328a78334c665db446a5177f293853cde37",
+  "git_commit": "f1d41a88148489328990e3585062cd382c33794f",
+  "git_dirty": true,
+  "duckdb": "1.4.2",
+  "python": "3.12.15",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "threads": 1,
+  "memory_limit": "1GB",
+  "batch_size": 1000,
+  "kind": "self-retrieval; inputs and reference use the same source",
+  "stages_seconds": {
+    "load_extension": 0.008204542042221874,
+    "read_prepare_source": 1.0283011249848641,
+    "prepare_reference": 2.563400292012375,
+    "build_index": 4.360181374999229,
+    "matching": 1006.6413574579637,
+    "validate_and_export": 1.6521927500143647
+  },
+  "batches": [
+    {
+      "first": 1,
+      "last": 1000,
+      "rows": 1000,
+      "input_seconds": 0.4208886669948697,
+      "query_and_insert_seconds": 0.922559667029418
+    },
+    {
+      "first": 1001,
+      "last": 2000,
+      "rows": 1000,
+      "input_seconds": 0.0005163750029169023,
+      "query_and_insert_seconds": 0.6483163750381209
+    },
+    {
+      "first": 2001,
+      "last": 3000,
+      "rows": 1000,
+      "input_seconds": 0.0005376669578254223,
+      "query_and_insert_seconds": 0.6530671250075102
+    },
+    {
+      "first": 3001,
+      "last": 4000,
+      "rows": 1000,
+      "input_seconds": 0.0005311670247465372,
+      "query_and_insert_seconds": 1.8662874579895288
+    },
+    {
+      "first": 4001,
+      "last": 5000,
+      "rows": 1000,
+      "input_seconds": 0.0005717500462196767,
+      "query_and_insert_seconds": 1.4383216249989346
+    },
+    {
+      "first": 5001,
+      "last": 6000,
+      "rows": 1000,
+      "input_seconds": 0.0005475829821079969,
+      "query_and_insert_seconds": 2.3475867079687305
+    },
+    {
+      "first": 6001,
+      "last": 7000,
+      "rows": 1000,
+      "input_seconds": 0.0005800410290248692,
+      "query_and_insert_seconds": 0.7381347920163535
+    },
+    {
+      "first": 7001,
+      "last": 8000,
+      "rows": 1000,
+      "input_seconds": 0.0005223340122029185,
+      "query_and_insert_seconds": 1.1204238329664804
+    },
+    {
+      "first": 8001,
+      "last": 9000,
+      "rows": 1000,
+      "input_seconds": 0.0005743750371038914,
+      "query_and_insert_seconds": 1.069133042008616
+    },
+    {
+      "first": 9001,
+      "last": 10000,
+      "rows": 1000,
+      "input_seconds": 0.0005567909684032202,
+      "query_and_insert_seconds": 1.1313102500280365
+    },
+    {
+      "first": 10001,
+      "last": 11000,
+      "rows": 1000,
+      "input_seconds": 0.0005617080023512244,
+      "query_and_insert_seconds": 1.574209917045664
+    },
+    {
+      "first": 11001,
+      "last": 12000,
+      "rows": 1000,
+      "input_seconds": 0.000542209018021822,
+      "query_and_insert_seconds": 1.6608727920101956
+    },
+    {
+      "first": 12001,
+      "last": 13000,
+      "rows": 1000,
+      "input_seconds": 0.0005731660057790577,
+      "query_and_insert_seconds": 2.081110750033986
+    },
+    {
+      "first": 13001,
+      "last": 14000,
+      "rows": 1000,
+      "input_seconds": 0.0005343329976312816,
+      "query_and_insert_seconds": 2.4516294170171022
+    },
+    {
+      "first": 14001,
+      "last": 15000,
+      "rows": 1000,
+      "input_seconds": 0.0005865420098416507,
+      "query_and_insert_seconds": 1.8892781250178814
+    },
+    {
+      "first": 15001,
+      "last": 16000,
+      "rows": 1000,
+      "input_seconds": 0.0005179999861866236,
+      "query_and_insert_seconds": 2.331385749974288
+    },
+    {
+      "first": 16001,
+      "last": 17000,
+      "rows": 1000,
+      "input_seconds": 0.0005732920253649354,
+      "query_and_insert_seconds": 2.1783490410307422
+    },
+    {
+      "first": 17001,
+      "last": 18000,
+      "rows": 1000,
+      "input_seconds": 0.0005530000198632479,
+      "query_and_insert_seconds": 1.399150124983862
+    },
+    {
+      "first": 18001,
+      "last": 19000,
+      "rows": 1000,
+      "input_seconds": 0.0005890830070711672,
+      "query_and_insert_seconds": 0.8077706250478514
+    },
+    {
+      "first": 19001,
+      "last": 20000,
+      "rows": 1000,
+      "input_seconds": 0.000546208000741899,
+      "query_and_insert_seconds": 0.8313954169861972
+    },
+    {
+      "first": 20001,
+      "last": 21000,
+      "rows": 1000,
+      "input_seconds": 0.0005839590448886156,
+      "query_and_insert_seconds": 0.7450739169726148
+    },
+    {
+      "first": 21001,
+      "last": 22000,
+      "rows": 1000,
+      "input_seconds": 0.0005359579809010029,
+      "query_and_insert_seconds": 1.857893874985166
+    },
+    {
+      "first": 22001,
+      "last": 23000,
+      "rows": 1000,
+      "input_seconds": 0.0005846669664606452,
+      "query_and_insert_seconds": 1.9349723749910481
+    },
+    {
+      "first": 23001,
+      "last": 24000,
+      "rows": 1000,
+      "input_seconds": 0.0005420420202426612,
+      "query_and_insert_seconds": 1.2544035409810022
+    },
+    {
+      "first": 24001,
+      "last": 25000,
+      "rows": 1000,
+      "input_seconds": 0.0005834590410813689,
+      "query_and_insert_seconds": 1.485395666968543
+    },
+    {
+      "first": 25001,
+      "last": 26000,
+      "rows": 1000,
+      "input_seconds": 0.0005487920134328306,
+      "query_and_insert_seconds": 1.7058618330047466
+    },
+    {
+      "first": 26001,
+      "last": 27000,
+      "rows": 1000,
+      "input_seconds": 0.0005613339599221945,
+      "query_and_insert_seconds": 1.9151843329891562
+    },
+    {
+      "first": 27001,
+      "last": 28000,
+      "rows": 1000,
+      "input_seconds": 0.0004925410030409694,
+      "query_and_insert_seconds": 1.9181194999837317
+    },
+    {
+      "first": 28001,
+      "last": 29000,
+      "rows": 1000,
+      "input_seconds": 0.0005843749968335032,
+      "query_and_insert_seconds": 1.3078622500179335
+    },
+    {
+      "first": 29001,
+      "last": 30000,
+      "rows": 1000,
+      "input_seconds": 0.0005445829592645168,
+      "query_and_insert_seconds": 1.4920653749722987
+    },
+    {
+      "first": 30001,
+      "last": 31000,
+      "rows": 1000,
+      "input_seconds": 0.0005796659970656037,
+      "query_and_insert_seconds": 1.5291868330095895
+    },
+    {
+      "first": 31001,
+      "last": 32000,
+      "rows": 1000,
+      "input_seconds": 0.0005511670024134219,
+      "query_and_insert_seconds": 1.352344833954703
+    },
+    {
+      "first": 32001,
+      "last": 33000,
+      "rows": 1000,
+      "input_seconds": 0.0005864579579792917,
+      "query_and_insert_seconds": 2.3828627500333823
+    },
+    {
+      "first": 33001,
+      "last": 34000,
+      "rows": 1000,
+      "input_seconds": 0.0005442500114440918,
+      "query_and_insert_seconds": 1.387681332998909
+    },
+    {
+      "first": 34001,
+      "last": 35000,
+      "rows": 1000,
+      "input_seconds": 0.0005600420408882201,
+      "query_and_insert_seconds": 1.4714328750269488
+    },
+    {
+      "first": 35001,
+      "last": 36000,
+      "rows": 1000,
+      "input_seconds": 0.0005565419560298324,
+      "query_and_insert_seconds": 1.2741452910122462
+    },
+    {
+      "first": 36001,
+      "last": 37000,
+      "rows": 1000,
+      "input_seconds": 0.000556665996555239,
+      "query_and_insert_seconds": 1.4508231660001911
+    },
+    {
+      "first": 37001,
+      "last": 38000,
+      "rows": 1000,
+      "input_seconds": 0.0005600829608738422,
+      "query_and_insert_seconds": 1.40485566703137
+    },
+    {
+      "first": 38001,
+      "last": 39000,
+      "rows": 1000,
+      "input_seconds": 0.0005908749881200492,
+      "query_and_insert_seconds": 1.380946125020273
+    },
+    {
+      "first": 39001,
+      "last": 40000,
+      "rows": 1000,
+      "input_seconds": 0.0005917079979553819,
+      "query_and_insert_seconds": 1.4019810000318103
+    },
+    {
+      "first": 40001,
+      "last": 41000,
+      "rows": 1000,
+      "input_seconds": 0.00059179199161008,
+      "query_and_insert_seconds": 2.3624628329998814
+    },
+    {
+      "first": 41001,
+      "last": 42000,
+      "rows": 1000,
+      "input_seconds": 0.0005732089630328119,
+      "query_and_insert_seconds": 1.8614481249824166
+    },
+    {
+      "first": 42001,
+      "last": 43000,
+      "rows": 1000,
+      "input_seconds": 0.0005662500043399632,
+      "query_and_insert_seconds": 1.7174923329730518
+    },
+    {
+      "first": 43001,
+      "last": 44000,
+      "rows": 1000,
+      "input_seconds": 0.0005735839949920774,
+      "query_and_insert_seconds": 1.0472952499985695
+    },
+    {
+      "first": 44001,
+      "last": 45000,
+      "rows": 1000,
+      "input_seconds": 0.0005452500190585852,
+      "query_and_insert_seconds": 1.0676807499839924
+    },
+    {
+      "first": 45001,
+      "last": 46000,
+      "rows": 1000,
+      "input_seconds": 0.0005713750142604113,
+      "query_and_insert_seconds": 0.62303666601656
+    },
+    {
+      "first": 46001,
+      "last": 47000,
+      "rows": 1000,
+      "input_seconds": 0.0005490410258062184,
+      "query_and_insert_seconds": 0.629759915987961
+    },
+    {
+      "first": 47001,
+      "last": 48000,
+      "rows": 1000,
+      "input_seconds": 0.0005711660487577319,
+      "query_and_insert_seconds": 1.0762010409962386
+    },
+    {
+      "first": 48001,
+      "last": 49000,
+      "rows": 1000,
+      "input_seconds": 0.0005222909967415035,
+      "query_and_insert_seconds": 0.7150687499670312
+    },
+    {
+      "first": 49001,
+      "last": 50000,
+      "rows": 1000,
+      "input_seconds": 0.0005281250341795385,
+      "query_and_insert_seconds": 0.7220537079847418
+    },
+    {
+      "first": 50001,
+      "last": 51000,
+      "rows": 1000,
+      "input_seconds": 0.0005135420360602438,
+      "query_and_insert_seconds": 0.5853634579689242
+    },
+    {
+      "first": 51001,
+      "last": 52000,
+      "rows": 1000,
+      "input_seconds": 0.0006072499672882259,
+      "query_and_insert_seconds": 0.4834567499929108
+    },
+    {
+      "first": 52001,
+      "last": 53000,
+      "rows": 1000,
+      "input_seconds": 0.0005611249944195151,
+      "query_and_insert_seconds": 0.5356250420445576
+    },
+    {
+      "first": 53001,
+      "last": 54000,
+      "rows": 1000,
+      "input_seconds": 0.0005729999975301325,
+      "query_and_insert_seconds": 0.6633037500432692
+    },
+    {
+      "first": 54001,
+      "last": 55000,
+      "rows": 1000,
+      "input_seconds": 0.0005432500038295984,
+      "query_and_insert_seconds": 0.6474959159968421
+    },
+    {
+      "first": 55001,
+      "last": 56000,
+      "rows": 1000,
+      "input_seconds": 0.0005867920117452741,
+      "query_and_insert_seconds": 0.747959875036031
+    },
+    {
+      "first": 56001,
+      "last": 57000,
+      "rows": 1000,
+      "input_seconds": 0.0005459589883685112,
+      "query_and_insert_seconds": 0.5604444170021452
+    },
+    {
+      "first": 57001,
+      "last": 58000,
+      "rows": 1000,
+      "input_seconds": 0.000591500021982938,
+      "query_and_insert_seconds": 0.5186972920200787
+    },
+    {
+      "first": 58001,
+      "last": 59000,
+      "rows": 1000,
+      "input_seconds": 0.0005398750072345138,
+      "query_and_insert_seconds": 0.8462460410082713
+    },
+    {
+      "first": 59001,
+      "last": 60000,
+      "rows": 1000,
+      "input_seconds": 0.0005883339908905327,
+      "query_and_insert_seconds": 0.8784485000069253
+    },
+    {
+      "first": 60001,
+      "last": 61000,
+      "rows": 1000,
+      "input_seconds": 0.0005113329971209168,
+      "query_and_insert_seconds": 0.8198470419738442
+    },
+    {
+      "first": 61001,
+      "last": 62000,
+      "rows": 1000,
+      "input_seconds": 0.0005353749729692936,
+      "query_and_insert_seconds": 0.8862307079834864
+    },
+    {
+      "first": 62001,
+      "last": 63000,
+      "rows": 1000,
+      "input_seconds": 0.0005445420392788947,
+      "query_and_insert_seconds": 0.692187333945185
+    },
+    {
+      "first": 63001,
+      "last": 64000,
+      "rows": 1000,
+      "input_seconds": 0.0005574169917963445,
+      "query_and_insert_seconds": 0.7667102920240723
+    },
+    {
+      "first": 64001,
+      "last": 65000,
+      "rows": 1000,
+      "input_seconds": 0.0005304589867591858,
+      "query_and_insert_seconds": 0.4981860000407323
+    },
+    {
+      "first": 65001,
+      "last": 66000,
+      "rows": 1000,
+      "input_seconds": 0.0005353339947760105,
+      "query_and_insert_seconds": 0.7743147079600021
+    },
+    {
+      "first": 66001,
+      "last": 67000,
+      "rows": 1000,
+      "input_seconds": 0.0005297499592415988,
+      "query_and_insert_seconds": 0.7060184170259163
+    },
+    {
+      "first": 67001,
+      "last": 68000,
+      "rows": 1000,
+      "input_seconds": 0.000528041971847415,
+      "query_and_insert_seconds": 0.8194429579889402
+    },
+    {
+      "first": 68001,
+      "last": 69000,
+      "rows": 1000,
+      "input_seconds": 0.000518666987773031,
+      "query_and_insert_seconds": 1.2925909999758005
+    },
+    {
+      "first": 69001,
+      "last": 70000,
+      "rows": 1000,
+      "input_seconds": 0.0005214579869061708,
+      "query_and_insert_seconds": 0.7375987499835901
+    },
+    {
+      "first": 70001,
+      "last": 71000,
+      "rows": 1000,
+      "input_seconds": 0.0005104170413687825,
+      "query_and_insert_seconds": 0.6788188749924302
+    },
+    {
+      "first": 71001,
+      "last": 72000,
+      "rows": 1000,
+      "input_seconds": 0.0005580830038525164,
+      "query_and_insert_seconds": 0.6050798330106772
+    },
+    {
+      "first": 72001,
+      "last": 73000,
+      "rows": 1000,
+      "input_seconds": 0.0004977500066161156,
+      "query_and_insert_seconds": 0.5172078749747016
+    },
+    {
+      "first": 73001,
+      "last": 74000,
+      "rows": 1000,
+      "input_seconds": 0.0005298750475049019,
+      "query_and_insert_seconds": 0.5280292499810457
+    },
+    {
+      "first": 74001,
+      "last": 75000,
+      "rows": 1000,
+      "input_seconds": 0.0005093339714221656,
+      "query_and_insert_seconds": 0.5939456250052899
+    },
+    {
+      "first": 75001,
+      "last": 76000,
+      "rows": 1000,
+      "input_seconds": 0.000559499952942133,
+      "query_and_insert_seconds": 0.6085498750326224
+    },
+    {
+      "first": 76001,
+      "last": 77000,
+      "rows": 1000,
+      "input_seconds": 0.0005174160469323397,
+      "query_and_insert_seconds": 0.5379561249865219
+    },
+    {
+      "first": 77001,
+      "last": 78000,
+      "rows": 1000,
+      "input_seconds": 0.0005249169771559536,
+      "query_and_insert_seconds": 0.509055582981091
+    },
+    {
+      "first": 78001,
+      "last": 79000,
+      "rows": 1000,
+      "input_seconds": 0.0005385419935919344,
+      "query_and_insert_seconds": 0.5512457080185413
+    },
+    {
+      "first": 79001,
+      "last": 80000,
+      "rows": 1000,
+      "input_seconds": 0.0005387919954955578,
+      "query_and_insert_seconds": 0.5740253750118427
+    },
+    {
+      "first": 80001,
+      "last": 81000,
+      "rows": 1000,
+      "input_seconds": 0.0005441249813884497,
+      "query_and_insert_seconds": 0.4085288749774918
+    },
+    {
+      "first": 81001,
+      "last": 82000,
+      "rows": 1000,
+      "input_seconds": 0.000542916008271277,
+      "query_and_insert_seconds": 0.46692745899781585
+    },
+    {
+      "first": 82001,
+      "last": 83000,
+      "rows": 1000,
+      "input_seconds": 0.0005373330204747617,
+      "query_and_insert_seconds": 0.5504523339914158
+    },
+    {
+      "first": 83001,
+      "last": 84000,
+      "rows": 1000,
+      "input_seconds": 0.0005642499891109765,
+      "query_and_insert_seconds": 0.5834475830197334
+    },
+    {
+      "first": 84001,
+      "last": 85000,
+      "rows": 1000,
+      "input_seconds": 0.000538207998033613,
+      "query_and_insert_seconds": 0.6987467919825576
+    },
+    {
+      "first": 85001,
+      "last": 86000,
+      "rows": 1000,
+      "input_seconds": 0.0005220409948378801,
+      "query_and_insert_seconds": 0.5490390830091201
+    },
+    {
+      "first": 86001,
+      "last": 87000,
+      "rows": 1000,
+      "input_seconds": 0.0005561670404858887,
+      "query_and_insert_seconds": 0.5098482079920359
+    },
+    {
+      "first": 87001,
+      "last": 88000,
+      "rows": 1000,
+      "input_seconds": 0.0004982919781468809,
+      "query_and_insert_seconds": 0.7981488750083372
+    },
+    {
+      "first": 88001,
+      "last": 89000,
+      "rows": 1000,
+      "input_seconds": 0.000537124986294657,
+      "query_and_insert_seconds": 0.6331858750199899
+    },
+    {
+      "first": 89001,
+      "last": 90000,
+      "rows": 1000,
+      "input_seconds": 0.0005367079866118729,
+      "query_and_insert_seconds": 0.6211327500059269
+    },
+    {
+      "first": 90001,
+      "last": 91000,
+      "rows": 1000,
+      "input_seconds": 0.0005538749974220991,
+      "query_and_insert_seconds": 0.6946627920260653
+    },
+    {
+      "first": 91001,
+      "last": 92000,
+      "rows": 1000,
+      "input_seconds": 0.0005012910114601254,
+      "query_and_insert_seconds": 0.701342582993675
+    },
+    {
+      "first": 92001,
+      "last": 93000,
+      "rows": 1000,
+      "input_seconds": 0.0005621669697575271,
+      "query_and_insert_seconds": 0.7463195409509353
+    },
+    {
+      "first": 93001,
+      "last": 94000,
+      "rows": 1000,
+      "input_seconds": 0.0005217499565333128,
+      "query_and_insert_seconds": 0.7853497909964062
+    },
+    {
+      "first": 94001,
+      "last": 95000,
+      "rows": 1000,
+      "input_seconds": 0.0005589170032180846,
+      "query_and_insert_seconds": 0.7142657500226051
+    },
+    {
+      "first": 95001,
+      "last": 96000,
+      "rows": 1000,
+      "input_seconds": 0.0005216669524088502,
+      "query_and_insert_seconds": 0.6723706250195391
+    },
+    {
+      "first": 96001,
+      "last": 97000,
+      "rows": 1000,
+      "input_seconds": 0.0005680419853888452,
+      "query_and_insert_seconds": 0.6967244999832474
+    },
+    {
+      "first": 97001,
+      "last": 98000,
+      "rows": 1000,
+      "input_seconds": 0.0005455409991554916,
+      "query_and_insert_seconds": 0.6544893750105985
+    },
+    {
+      "first": 98001,
+      "last": 99000,
+      "rows": 1000,
+      "input_seconds": 0.0005577919655479491,
+      "query_and_insert_seconds": 1.0890508340089582
+    },
+    {
+      "first": 99001,
+      "last": 100000,
+      "rows": 1000,
+      "input_seconds": 0.0005214589764364064,
+      "query_and_insert_seconds": 0.9434927910333499
+    },
+    {
+      "first": 100001,
+      "last": 101000,
+      "rows": 1000,
+      "input_seconds": 0.0005763749941252172,
+      "query_and_insert_seconds": 1.0504164169542491
+    },
+    {
+      "first": 101001,
+      "last": 102000,
+      "rows": 1000,
+      "input_seconds": 0.0005185410263948143,
+      "query_and_insert_seconds": 0.788281166984234
+    },
+    {
+      "first": 102001,
+      "last": 103000,
+      "rows": 1000,
+      "input_seconds": 0.0005598749849013984,
+      "query_and_insert_seconds": 0.8313127920264378
+    },
+    {
+      "first": 103001,
+      "last": 104000,
+      "rows": 1000,
+      "input_seconds": 0.0005222909967415035,
+      "query_and_insert_seconds": 0.7978974580182694
+    },
+    {
+      "first": 104001,
+      "last": 105000,
+      "rows": 1000,
+      "input_seconds": 0.0005419579683803022,
+      "query_and_insert_seconds": 0.8379760420066305
+    },
+    {
+      "first": 105001,
+      "last": 106000,
+      "rows": 1000,
+      "input_seconds": 0.0005209170049056411,
+      "query_and_insert_seconds": 0.9012735839933157
+    },
+    {
+      "first": 106001,
+      "last": 107000,
+      "rows": 1000,
+      "input_seconds": 0.0005304999649524689,
+      "query_and_insert_seconds": 0.869016417011153
+    },
+    {
+      "first": 107001,
+      "last": 108000,
+      "rows": 1000,
+      "input_seconds": 0.0005415420164354146,
+      "query_and_insert_seconds": 0.8120149170281366
+    },
+    {
+      "first": 108001,
+      "last": 109000,
+      "rows": 1000,
+      "input_seconds": 0.0005395830376073718,
+      "query_and_insert_seconds": 0.6702725830255076
+    },
+    {
+      "first": 109001,
+      "last": 110000,
+      "rows": 1000,
+      "input_seconds": 0.0004994160262867808,
+      "query_and_insert_seconds": 0.7490307500120252
+    },
+    {
+      "first": 110001,
+      "last": 111000,
+      "rows": 1000,
+      "input_seconds": 0.0005963750299997628,
+      "query_and_insert_seconds": 0.8268512920476496
+    },
+    {
+      "first": 111001,
+      "last": 112000,
+      "rows": 1000,
+      "input_seconds": 0.000545416958630085,
+      "query_and_insert_seconds": 0.768517000018619
+    },
+    {
+      "first": 112001,
+      "last": 113000,
+      "rows": 1000,
+      "input_seconds": 0.0005732920253649354,
+      "query_and_insert_seconds": 0.7156392910401337
+    },
+    {
+      "first": 113001,
+      "last": 114000,
+      "rows": 1000,
+      "input_seconds": 0.0005127080366946757,
+      "query_and_insert_seconds": 0.7282413749489933
+    },
+    {
+      "first": 114001,
+      "last": 115000,
+      "rows": 1000,
+      "input_seconds": 0.0005037080263718963,
+      "query_and_insert_seconds": 1.0729153330321424
+    },
+    {
+      "first": 115001,
+      "last": 116000,
+      "rows": 1000,
+      "input_seconds": 0.0005099580157548189,
+      "query_and_insert_seconds": 1.1920653749839403
+    },
+    {
+      "first": 116001,
+      "last": 117000,
+      "rows": 1000,
+      "input_seconds": 0.0005063330172561109,
+      "query_and_insert_seconds": 0.5293645829660818
+    },
+    {
+      "first": 117001,
+      "last": 118000,
+      "rows": 1000,
+      "input_seconds": 0.0004789580125361681,
+      "query_and_insert_seconds": 0.4707098340149969
+    },
+    {
+      "first": 118001,
+      "last": 119000,
+      "rows": 1000,
+      "input_seconds": 0.000537874992005527,
+      "query_and_insert_seconds": 0.4476643329835497
+    },
+    {
+      "first": 119001,
+      "last": 120000,
+      "rows": 1000,
+      "input_seconds": 0.0005108749610371888,
+      "query_and_insert_seconds": 0.5041206250316463
+    },
+    {
+      "first": 120001,
+      "last": 121000,
+      "rows": 1000,
+      "input_seconds": 0.0005592919769696891,
+      "query_and_insert_seconds": 0.7417093330295756
+    },
+    {
+      "first": 121001,
+      "last": 122000,
+      "rows": 1000,
+      "input_seconds": 0.0005049160099588335,
+      "query_and_insert_seconds": 0.6687902080011554
+    },
+    {
+      "first": 122001,
+      "last": 123000,
+      "rows": 1000,
+      "input_seconds": 0.0007037079776637256,
+      "query_and_insert_seconds": 0.5649952499661595
+    },
+    {
+      "first": 123001,
+      "last": 124000,
+      "rows": 1000,
+      "input_seconds": 0.0005385419935919344,
+      "query_and_insert_seconds": 0.7179865830112249
+    },
+    {
+      "first": 124001,
+      "last": 125000,
+      "rows": 1000,
+      "input_seconds": 0.0005372500163502991,
+      "query_and_insert_seconds": 0.8434957080171444
+    },
+    {
+      "first": 125001,
+      "last": 126000,
+      "rows": 1000,
+      "input_seconds": 0.000545124989002943,
+      "query_and_insert_seconds": 0.628811415983364
+    },
+    {
+      "first": 126001,
+      "last": 127000,
+      "rows": 1000,
+      "input_seconds": 0.0005486670415848494,
+      "query_and_insert_seconds": 0.6271548749646172
+    },
+    {
+      "first": 127001,
+      "last": 128000,
+      "rows": 1000,
+      "input_seconds": 0.0005083330324850976,
+      "query_and_insert_seconds": 0.8715135420206934
+    },
+    {
+      "first": 128001,
+      "last": 129000,
+      "rows": 1000,
+      "input_seconds": 0.0005457910010591149,
+      "query_and_insert_seconds": 0.542769749998115
+    },
+    {
+      "first": 129001,
+      "last": 130000,
+      "rows": 1000,
+      "input_seconds": 0.0005734590231440961,
+      "query_and_insert_seconds": 0.6978928329772316
+    },
+    {
+      "first": 130001,
+      "last": 131000,
+      "rows": 1000,
+      "input_seconds": 0.0005473750061355531,
+      "query_and_insert_seconds": 0.6611802910338156
+    },
+    {
+      "first": 131001,
+      "last": 132000,
+      "rows": 1000,
+      "input_seconds": 0.0005859169759787619,
+      "query_and_insert_seconds": 0.6351412500371225
+    },
+    {
+      "first": 132001,
+      "last": 133000,
+      "rows": 1000,
+      "input_seconds": 0.0005166669725440443,
+      "query_and_insert_seconds": 0.933016458991915
+    },
+    {
+      "first": 133001,
+      "last": 134000,
+      "rows": 1000,
+      "input_seconds": 0.0005352909793145955,
+      "query_and_insert_seconds": 0.9006554589723237
+    },
+    {
+      "first": 134001,
+      "last": 135000,
+      "rows": 1000,
+      "input_seconds": 0.0005861250101588666,
+      "query_and_insert_seconds": 1.204401415947359
+    },
+    {
+      "first": 135001,
+      "last": 136000,
+      "rows": 1000,
+      "input_seconds": 0.0005529579939320683,
+      "query_and_insert_seconds": 1.1109236250049435
+    },
+    {
+      "first": 136001,
+      "last": 137000,
+      "rows": 1000,
+      "input_seconds": 0.0005782080115750432,
+      "query_and_insert_seconds": 1.1826207080157474
+    },
+    {
+      "first": 137001,
+      "last": 138000,
+      "rows": 1000,
+      "input_seconds": 0.0005573750240728259,
+      "query_and_insert_seconds": 0.9808835829608142
+    },
+    {
+      "first": 138001,
+      "last": 139000,
+      "rows": 1000,
+      "input_seconds": 0.0005549579509533942,
+      "query_and_insert_seconds": 0.7924502500100061
+    },
+    {
+      "first": 139001,
+      "last": 140000,
+      "rows": 1000,
+      "input_seconds": 0.0005573330563493073,
+      "query_and_insert_seconds": 0.6879493329906836
+    },
+    {
+      "first": 140001,
+      "last": 141000,
+      "rows": 1000,
+      "input_seconds": 0.0005355420289561152,
+      "query_and_insert_seconds": 0.7296787499799393
+    },
+    {
+      "first": 141001,
+      "last": 142000,
+      "rows": 1000,
+      "input_seconds": 0.0005532909999601543,
+      "query_and_insert_seconds": 1.2819405419868417
+    },
+    {
+      "first": 142001,
+      "last": 143000,
+      "rows": 1000,
+      "input_seconds": 0.0005025409627705812,
+      "query_and_insert_seconds": 1.5305350000271574
+    },
+    {
+      "first": 143001,
+      "last": 144000,
+      "rows": 1000,
+      "input_seconds": 0.0005496660014614463,
+      "query_and_insert_seconds": 0.8799949169624597
+    },
+    {
+      "first": 144001,
+      "last": 145000,
+      "rows": 1000,
+      "input_seconds": 0.0005285840015858412,
+      "query_and_insert_seconds": 0.7841696249670349
+    },
+    {
+      "first": 145001,
+      "last": 146000,
+      "rows": 1000,
+      "input_seconds": 0.0005354169989004731,
+      "query_and_insert_seconds": 0.8167103750165552
+    },
+    {
+      "first": 146001,
+      "last": 147000,
+      "rows": 1000,
+      "input_seconds": 0.0005362500087358057,
+      "query_and_insert_seconds": 0.37744500004919246
+    },
+    {
+      "first": 147001,
+      "last": 148000,
+      "rows": 1000,
+      "input_seconds": 0.000530624995008111,
+      "query_and_insert_seconds": 0.3875560410087928
+    },
+    {
+      "first": 148001,
+      "last": 149000,
+      "rows": 1000,
+      "input_seconds": 0.0005094999796710908,
+      "query_and_insert_seconds": 0.5440440000384115
+    },
+    {
+      "first": 149001,
+      "last": 150000,
+      "rows": 1000,
+      "input_seconds": 0.0005859580123797059,
+      "query_and_insert_seconds": 0.775516957975924
+    },
+    {
+      "first": 150001,
+      "last": 151000,
+      "rows": 1000,
+      "input_seconds": 0.0005060419789515436,
+      "query_and_insert_seconds": 1.090741624997463
+    },
+    {
+      "first": 151001,
+      "last": 152000,
+      "rows": 1000,
+      "input_seconds": 0.000543292029760778,
+      "query_and_insert_seconds": 0.92663016699953
+    },
+    {
+      "first": 152001,
+      "last": 153000,
+      "rows": 1000,
+      "input_seconds": 0.0005426669958978891,
+      "query_and_insert_seconds": 0.7919572500395589
+    },
+    {
+      "first": 153001,
+      "last": 154000,
+      "rows": 1000,
+      "input_seconds": 0.0005468750023283064,
+      "query_and_insert_seconds": 0.4676837080041878
+    },
+    {
+      "first": 154001,
+      "last": 155000,
+      "rows": 1000,
+      "input_seconds": 0.0005377909983508289,
+      "query_and_insert_seconds": 0.6038311670417897
+    },
+    {
+      "first": 155001,
+      "last": 156000,
+      "rows": 1000,
+      "input_seconds": 0.0005405000410974026,
+      "query_and_insert_seconds": 0.6529014160041697
+    },
+    {
+      "first": 156001,
+      "last": 157000,
+      "rows": 1000,
+      "input_seconds": 0.000530333025380969,
+      "query_and_insert_seconds": 0.6860711670015007
+    },
+    {
+      "first": 157001,
+      "last": 158000,
+      "rows": 1000,
+      "input_seconds": 0.0005383330280892551,
+      "query_and_insert_seconds": 0.7489714580005966
+    },
+    {
+      "first": 158001,
+      "last": 159000,
+      "rows": 1000,
+      "input_seconds": 0.000523374998010695,
+      "query_and_insert_seconds": 0.33894541597692296
+    },
+    {
+      "first": 159001,
+      "last": 160000,
+      "rows": 1000,
+      "input_seconds": 0.0005844170227646828,
+      "query_and_insert_seconds": 0.5444402499706484
+    },
+    {
+      "first": 160001,
+      "last": 161000,
+      "rows": 1000,
+      "input_seconds": 0.0005758749903179705,
+      "query_and_insert_seconds": 0.6934607080183923
+    },
+    {
+      "first": 161001,
+      "last": 162000,
+      "rows": 1000,
+      "input_seconds": 0.000551292032469064,
+      "query_and_insert_seconds": 0.8805020420113578
+    },
+    {
+      "first": 162001,
+      "last": 163000,
+      "rows": 1000,
+      "input_seconds": 0.0005286670057103038,
+      "query_and_insert_seconds": 0.8307510419981554
+    },
+    {
+      "first": 163001,
+      "last": 164000,
+      "rows": 1000,
+      "input_seconds": 0.0005440830136649311,
+      "query_and_insert_seconds": 0.7586122500360943
+    },
+    {
+      "first": 164001,
+      "last": 165000,
+      "rows": 1000,
+      "input_seconds": 0.000551584002096206,
+      "query_and_insert_seconds": 0.842371417034883
+    },
+    {
+      "first": 165001,
+      "last": 166000,
+      "rows": 1000,
+      "input_seconds": 0.0005601249868050218,
+      "query_and_insert_seconds": 0.7191892919945531
+    },
+    {
+      "first": 166001,
+      "last": 167000,
+      "rows": 1000,
+      "input_seconds": 0.0005183749599382281,
+      "query_and_insert_seconds": 0.7726260419585742
+    },
+    {
+      "first": 167001,
+      "last": 168000,
+      "rows": 1000,
+      "input_seconds": 0.0005546250031329691,
+      "query_and_insert_seconds": 0.8430310419644229
+    },
+    {
+      "first": 168001,
+      "last": 169000,
+      "rows": 1000,
+      "input_seconds": 0.00054583401652053,
+      "query_and_insert_seconds": 0.8914767089881934
+    },
+    {
+      "first": 169001,
+      "last": 170000,
+      "rows": 1000,
+      "input_seconds": 0.0005499169928953052,
+      "query_and_insert_seconds": 0.8933426250005141
+    },
+    {
+      "first": 170001,
+      "last": 171000,
+      "rows": 1000,
+      "input_seconds": 0.0005338329938240349,
+      "query_and_insert_seconds": 0.8821981669752859
+    },
+    {
+      "first": 171001,
+      "last": 172000,
+      "rows": 1000,
+      "input_seconds": 0.0005157499690540135,
+      "query_and_insert_seconds": 0.8067998330225237
+    },
+    {
+      "first": 172001,
+      "last": 173000,
+      "rows": 1000,
+      "input_seconds": 0.0005823340034112334,
+      "query_and_insert_seconds": 0.7321374170132913
+    },
+    {
+      "first": 173001,
+      "last": 174000,
+      "rows": 1000,
+      "input_seconds": 0.0005244159838184714,
+      "query_and_insert_seconds": 0.6464830829645507
+    },
+    {
+      "first": 174001,
+      "last": 175000,
+      "rows": 1000,
+      "input_seconds": 0.0005373749881982803,
+      "query_and_insert_seconds": 1.0183899169787765
+    },
+    {
+      "first": 175001,
+      "last": 176000,
+      "rows": 1000,
+      "input_seconds": 0.0005401250091381371,
+      "query_and_insert_seconds": 1.055738916969858
+    },
+    {
+      "first": 176001,
+      "last": 177000,
+      "rows": 1000,
+      "input_seconds": 0.0005742500070482492,
+      "query_and_insert_seconds": 0.8849632909987122
+    },
+    {
+      "first": 177001,
+      "last": 178000,
+      "rows": 1000,
+      "input_seconds": 0.0005627500358968973,
+      "query_and_insert_seconds": 0.8732841670280322
+    },
+    {
+      "first": 178001,
+      "last": 179000,
+      "rows": 1000,
+      "input_seconds": 0.0005917910020798445,
+      "query_and_insert_seconds": 0.678103041020222
+    },
+    {
+      "first": 179001,
+      "last": 180000,
+      "rows": 1000,
+      "input_seconds": 0.000541832996532321,
+      "query_and_insert_seconds": 0.8348750839941204
+    },
+    {
+      "first": 180001,
+      "last": 181000,
+      "rows": 1000,
+      "input_seconds": 0.0005820830119773746,
+      "query_and_insert_seconds": 0.4712905829655938
+    },
+    {
+      "first": 181001,
+      "last": 182000,
+      "rows": 1000,
+      "input_seconds": 0.0005359579809010029,
+      "query_and_insert_seconds": 0.8903424169984646
+    },
+    {
+      "first": 182001,
+      "last": 183000,
+      "rows": 1000,
+      "input_seconds": 0.0006074580014683306,
+      "query_and_insert_seconds": 1.0640094580012374
+    },
+    {
+      "first": 183001,
+      "last": 184000,
+      "rows": 1000,
+      "input_seconds": 0.0005188750219531357,
+      "query_and_insert_seconds": 0.900444500031881
+    },
+    {
+      "first": 184001,
+      "last": 185000,
+      "rows": 1000,
+      "input_seconds": 0.0005590830114670098,
+      "query_and_insert_seconds": 0.9463945410097949
+    },
+    {
+      "first": 185001,
+      "last": 186000,
+      "rows": 1000,
+      "input_seconds": 0.0005060830153524876,
+      "query_and_insert_seconds": 0.856707250000909
+    },
+    {
+      "first": 186001,
+      "last": 187000,
+      "rows": 1000,
+      "input_seconds": 0.0005574999959208071,
+      "query_and_insert_seconds": 0.6628447500406764
+    },
+    {
+      "first": 187001,
+      "last": 188000,
+      "rows": 1000,
+      "input_seconds": 0.0004989579902030528,
+      "query_and_insert_seconds": 0.9982288749888539
+    },
+    {
+      "first": 188001,
+      "last": 189000,
+      "rows": 1000,
+      "input_seconds": 0.0005520000122487545,
+      "query_and_insert_seconds": 0.5489875409984961
+    },
+    {
+      "first": 189001,
+      "last": 190000,
+      "rows": 1000,
+      "input_seconds": 0.0004899589694105089,
+      "query_and_insert_seconds": 1.0364312090096064
+    },
+    {
+      "first": 190001,
+      "last": 191000,
+      "rows": 1000,
+      "input_seconds": 0.0005362499505281448,
+      "query_and_insert_seconds": 0.846949249971658
+    },
+    {
+      "first": 191001,
+      "last": 192000,
+      "rows": 1000,
+      "input_seconds": 0.0004927910049445927,
+      "query_and_insert_seconds": 0.834081957989838
+    },
+    {
+      "first": 192001,
+      "last": 193000,
+      "rows": 1000,
+      "input_seconds": 0.0005380419897846878,
+      "query_and_insert_seconds": 0.7218385420273989
+    },
+    {
+      "first": 193001,
+      "last": 194000,
+      "rows": 1000,
+      "input_seconds": 0.0005210840026848018,
+      "query_and_insert_seconds": 0.8746560420258902
+    },
+    {
+      "first": 194001,
+      "last": 195000,
+      "rows": 1000,
+      "input_seconds": 0.0005541669670492411,
+      "query_and_insert_seconds": 0.6889063330017962
+    },
+    {
+      "first": 195001,
+      "last": 196000,
+      "rows": 1000,
+      "input_seconds": 0.000512166996486485,
+      "query_and_insert_seconds": 0.9088509170105681
+    },
+    {
+      "first": 196001,
+      "last": 197000,
+      "rows": 1000,
+      "input_seconds": 0.0005563339800573885,
+      "query_and_insert_seconds": 0.6497638750006445
+    },
+    {
+      "first": 197001,
+      "last": 198000,
+      "rows": 1000,
+      "input_seconds": 0.0005229590460658073,
+      "query_and_insert_seconds": 0.9791456660022959
+    },
+    {
+      "first": 198001,
+      "last": 199000,
+      "rows": 1000,
+      "input_seconds": 0.0005513750365935266,
+      "query_and_insert_seconds": 0.99091870902339
+    },
+    {
+      "first": 199001,
+      "last": 200000,
+      "rows": 1000,
+      "input_seconds": 0.000534582999534905,
+      "query_and_insert_seconds": 0.6618065419606864
+    },
+    {
+      "first": 200001,
+      "last": 201000,
+      "rows": 1000,
+      "input_seconds": 0.0005350830033421516,
+      "query_and_insert_seconds": 0.7675491250120103
+    },
+    {
+      "first": 201001,
+      "last": 202000,
+      "rows": 1000,
+      "input_seconds": 0.0004891660064458847,
+      "query_and_insert_seconds": 0.5755336660076864
+    },
+    {
+      "first": 202001,
+      "last": 203000,
+      "rows": 1000,
+      "input_seconds": 0.0005616670241579413,
+      "query_and_insert_seconds": 1.0571079999790527
+    },
+    {
+      "first": 203001,
+      "last": 204000,
+      "rows": 1000,
+      "input_seconds": 0.0005195830017328262,
+      "query_and_insert_seconds": 1.1347009159508161
+    },
+    {
+      "first": 204001,
+      "last": 205000,
+      "rows": 1000,
+      "input_seconds": 0.000530624995008111,
+      "query_and_insert_seconds": 1.0334035000414588
+    },
+    {
+      "first": 205001,
+      "last": 206000,
+      "rows": 1000,
+      "input_seconds": 0.0005070409970358014,
+      "query_and_insert_seconds": 0.872933209000621
+    },
+    {
+      "first": 206001,
+      "last": 207000,
+      "rows": 1000,
+      "input_seconds": 0.0005258340388536453,
+      "query_and_insert_seconds": 0.7550518329953775
+    },
+    {
+      "first": 207001,
+      "last": 208000,
+      "rows": 1000,
+      "input_seconds": 0.000558916013687849,
+      "query_and_insert_seconds": 0.8601850420236588
+    },
+    {
+      "first": 208001,
+      "last": 209000,
+      "rows": 1000,
+      "input_seconds": 0.0005709159886464477,
+      "query_and_insert_seconds": 0.9971762910136022
+    },
+    {
+      "first": 209001,
+      "last": 210000,
+      "rows": 1000,
+      "input_seconds": 0.0005129590281285346,
+      "query_and_insert_seconds": 0.8429034999571741
+    },
+    {
+      "first": 210001,
+      "last": 211000,
+      "rows": 1000,
+      "input_seconds": 0.0005789159913547337,
+      "query_and_insert_seconds": 0.9586228750413284
+    },
+    {
+      "first": 211001,
+      "last": 212000,
+      "rows": 1000,
+      "input_seconds": 0.0005378329660743475,
+      "query_and_insert_seconds": 0.7668123330222443
+    },
+    {
+      "first": 212001,
+      "last": 213000,
+      "rows": 1000,
+      "input_seconds": 0.0005670840037055314,
+      "query_and_insert_seconds": 0.9507117499597371
+    },
+    {
+      "first": 213001,
+      "last": 214000,
+      "rows": 1000,
+      "input_seconds": 0.0005297079915180802,
+      "query_and_insert_seconds": 0.9502272089594044
+    },
+    {
+      "first": 214001,
+      "last": 215000,
+      "rows": 1000,
+      "input_seconds": 0.000503125018440187,
+      "query_and_insert_seconds": 0.8286634579999372
+    },
+    {
+      "first": 215001,
+      "last": 216000,
+      "rows": 1000,
+      "input_seconds": 0.0005528750480152667,
+      "query_and_insert_seconds": 0.9328692919807509
+    },
+    {
+      "first": 216001,
+      "last": 217000,
+      "rows": 1000,
+      "input_seconds": 0.0005291249835863709,
+      "query_and_insert_seconds": 0.7190005829907022
+    },
+    {
+      "first": 217001,
+      "last": 218000,
+      "rows": 1000,
+      "input_seconds": 0.0005730410339310765,
+      "query_and_insert_seconds": 0.8606221249792725
+    },
+    {
+      "first": 218001,
+      "last": 219000,
+      "rows": 1000,
+      "input_seconds": 0.0005267909727990627,
+      "query_and_insert_seconds": 0.7185654999921098
+    },
+    {
+      "first": 219001,
+      "last": 220000,
+      "rows": 1000,
+      "input_seconds": 0.0005644580232910812,
+      "query_and_insert_seconds": 0.590556374983862
+    },
+    {
+      "first": 220001,
+      "last": 221000,
+      "rows": 1000,
+      "input_seconds": 0.0005388330318965018,
+      "query_and_insert_seconds": 0.908975750033278
+    },
+    {
+      "first": 221001,
+      "last": 222000,
+      "rows": 1000,
+      "input_seconds": 0.0005362079828046262,
+      "query_and_insert_seconds": 0.7613791660405695
+    },
+    {
+      "first": 222001,
+      "last": 223000,
+      "rows": 1000,
+      "input_seconds": 0.0004936250043101609,
+      "query_and_insert_seconds": 0.671802208002191
+    },
+    {
+      "first": 223001,
+      "last": 224000,
+      "rows": 1000,
+      "input_seconds": 0.0005340829957276583,
+      "query_and_insert_seconds": 0.9426625409978442
+    },
+    {
+      "first": 224001,
+      "last": 225000,
+      "rows": 1000,
+      "input_seconds": 0.0004970419686287642,
+      "query_and_insert_seconds": 1.2128197500132956
+    },
+    {
+      "first": 225001,
+      "last": 226000,
+      "rows": 1000,
+      "input_seconds": 0.0005622080061584711,
+      "query_and_insert_seconds": 0.8608320829807781
+    },
+    {
+      "first": 226001,
+      "last": 227000,
+      "rows": 1000,
+      "input_seconds": 0.0005044999998062849,
+      "query_and_insert_seconds": 0.8214517500018701
+    },
+    {
+      "first": 227001,
+      "last": 228000,
+      "rows": 1000,
+      "input_seconds": 0.000578792009036988,
+      "query_and_insert_seconds": 1.1540704169892706
+    },
+    {
+      "first": 228001,
+      "last": 229000,
+      "rows": 1000,
+      "input_seconds": 0.0005210000090301037,
+      "query_and_insert_seconds": 1.047241332998965
+    },
+    {
+      "first": 229001,
+      "last": 230000,
+      "rows": 1000,
+      "input_seconds": 0.000530958001036197,
+      "query_and_insert_seconds": 0.8798683329951018
+    },
+    {
+      "first": 230001,
+      "last": 231000,
+      "rows": 1000,
+      "input_seconds": 0.0005173749523237348,
+      "query_and_insert_seconds": 0.7324788750265725
+    },
+    {
+      "first": 231001,
+      "last": 232000,
+      "rows": 1000,
+      "input_seconds": 0.0005595000111497939,
+      "query_and_insert_seconds": 0.994281666004099
+    },
+    {
+      "first": 232001,
+      "last": 233000,
+      "rows": 1000,
+      "input_seconds": 0.0005409999866969883,
+      "query_and_insert_seconds": 1.445837416977156
+    },
+    {
+      "first": 233001,
+      "last": 234000,
+      "rows": 1000,
+      "input_seconds": 0.0005652090185321867,
+      "query_and_insert_seconds": 1.065267541038338
+    },
+    {
+      "first": 234001,
+      "last": 235000,
+      "rows": 1000,
+      "input_seconds": 0.0005048330058343709,
+      "query_and_insert_seconds": 1.1352788750082254
+    },
+    {
+      "first": 235001,
+      "last": 236000,
+      "rows": 1000,
+      "input_seconds": 0.0005635410198010504,
+      "query_and_insert_seconds": 1.0966646250453778
+    },
+    {
+      "first": 236001,
+      "last": 237000,
+      "rows": 1000,
+      "input_seconds": 0.000522291986271739,
+      "query_and_insert_seconds": 1.0289345830096863
+    },
+    {
+      "first": 237001,
+      "last": 238000,
+      "rows": 1000,
+      "input_seconds": 0.0005792090087197721,
+      "query_and_insert_seconds": 1.1235844579641707
+    },
+    {
+      "first": 238001,
+      "last": 239000,
+      "rows": 1000,
+      "input_seconds": 0.0005242920015007257,
+      "query_and_insert_seconds": 1.337363208993338
+    },
+    {
+      "first": 239001,
+      "last": 240000,
+      "rows": 1000,
+      "input_seconds": 0.0005712920101359487,
+      "query_and_insert_seconds": 1.1731770409969613
+    },
+    {
+      "first": 240001,
+      "last": 241000,
+      "rows": 1000,
+      "input_seconds": 0.0005082919960841537,
+      "query_and_insert_seconds": 0.9608724580029957
+    },
+    {
+      "first": 241001,
+      "last": 242000,
+      "rows": 1000,
+      "input_seconds": 0.0005020829848945141,
+      "query_and_insert_seconds": 0.9492610829765908
+    },
+    {
+      "first": 242001,
+      "last": 243000,
+      "rows": 1000,
+      "input_seconds": 0.0005108329933136702,
+      "query_and_insert_seconds": 1.0394010419840924
+    },
+    {
+      "first": 243001,
+      "last": 244000,
+      "rows": 1000,
+      "input_seconds": 0.0005427079740911722,
+      "query_and_insert_seconds": 0.9218201250187121
+    },
+    {
+      "first": 244001,
+      "last": 245000,
+      "rows": 1000,
+      "input_seconds": 0.0005094169755466282,
+      "query_and_insert_seconds": 0.9753097500069998
+    },
+    {
+      "first": 245001,
+      "last": 246000,
+      "rows": 1000,
+      "input_seconds": 0.0006681660306639969,
+      "query_and_insert_seconds": 0.9921601249952801
+    },
+    {
+      "first": 246001,
+      "last": 247000,
+      "rows": 1000,
+      "input_seconds": 0.0005321250064298511,
+      "query_and_insert_seconds": 1.3704031250090338
+    },
+    {
+      "first": 247001,
+      "last": 248000,
+      "rows": 1000,
+      "input_seconds": 0.0005583750316873193,
+      "query_and_insert_seconds": 0.7764592909952626
+    },
+    {
+      "first": 248001,
+      "last": 249000,
+      "rows": 1000,
+      "input_seconds": 0.0005434589693322778,
+      "query_and_insert_seconds": 1.5768717500031926
+    },
+    {
+      "first": 249001,
+      "last": 250000,
+      "rows": 1000,
+      "input_seconds": 0.0005725829978473485,
+      "query_and_insert_seconds": 1.8048432500218041
+    },
+    {
+      "first": 250001,
+      "last": 251000,
+      "rows": 1000,
+      "input_seconds": 0.0005323750083334744,
+      "query_and_insert_seconds": 1.4610360420192592
+    },
+    {
+      "first": 251001,
+      "last": 252000,
+      "rows": 1000,
+      "input_seconds": 0.0005708339740522206,
+      "query_and_insert_seconds": 1.5631057919817977
+    },
+    {
+      "first": 252001,
+      "last": 253000,
+      "rows": 1000,
+      "input_seconds": 0.0005301660276018083,
+      "query_and_insert_seconds": 1.6662727079819888
+    },
+    {
+      "first": 253001,
+      "last": 254000,
+      "rows": 1000,
+      "input_seconds": 0.000559584004804492,
+      "query_and_insert_seconds": 1.525378999998793
+    },
+    {
+      "first": 254001,
+      "last": 255000,
+      "rows": 1000,
+      "input_seconds": 0.000541499990504235,
+      "query_and_insert_seconds": 1.7426612919662148
+    },
+    {
+      "first": 255001,
+      "last": 256000,
+      "rows": 1000,
+      "input_seconds": 0.0005354160093702376,
+      "query_and_insert_seconds": 1.6032946670311503
+    },
+    {
+      "first": 256001,
+      "last": 257000,
+      "rows": 1000,
+      "input_seconds": 0.0005466670263558626,
+      "query_and_insert_seconds": 0.722250749997329
+    },
+    {
+      "first": 257001,
+      "last": 258000,
+      "rows": 1000,
+      "input_seconds": 0.000538625055924058,
+      "query_and_insert_seconds": 1.28295458300272
+    },
+    {
+      "first": 258001,
+      "last": 259000,
+      "rows": 1000,
+      "input_seconds": 0.0005902500124648213,
+      "query_and_insert_seconds": 1.4013324169791304
+    },
+    {
+      "first": 259001,
+      "last": 260000,
+      "rows": 1000,
+      "input_seconds": 0.0005611249944195151,
+      "query_and_insert_seconds": 1.5034370420034975
+    },
+    {
+      "first": 260001,
+      "last": 261000,
+      "rows": 1000,
+      "input_seconds": 0.0005741669447161257,
+      "query_and_insert_seconds": 1.3826326670241542
+    },
+    {
+      "first": 261001,
+      "last": 262000,
+      "rows": 1000,
+      "input_seconds": 0.0005457499646581709,
+      "query_and_insert_seconds": 1.4945994580048136
+    },
+    {
+      "first": 262001,
+      "last": 263000,
+      "rows": 1000,
+      "input_seconds": 0.0005833339528180659,
+      "query_and_insert_seconds": 1.4266997500089929
+    },
+    {
+      "first": 263001,
+      "last": 264000,
+      "rows": 1000,
+      "input_seconds": 0.0005457910010591149,
+      "query_and_insert_seconds": 1.4963857920374721
+    },
+    {
+      "first": 264001,
+      "last": 265000,
+      "rows": 1000,
+      "input_seconds": 0.000560707994736731,
+      "query_and_insert_seconds": 1.2402707500150427
+    },
+    {
+      "first": 265001,
+      "last": 266000,
+      "rows": 1000,
+      "input_seconds": 0.0005421250243671238,
+      "query_and_insert_seconds": 0.9954233749886043
+    },
+    {
+      "first": 266001,
+      "last": 267000,
+      "rows": 1000,
+      "input_seconds": 0.0006002500304020941,
+      "query_and_insert_seconds": 0.9201885410002433
+    },
+    {
+      "first": 267001,
+      "last": 268000,
+      "rows": 1000,
+      "input_seconds": 0.000531666970346123,
+      "query_and_insert_seconds": 0.733912458003033
+    },
+    {
+      "first": 268001,
+      "last": 269000,
+      "rows": 1000,
+      "input_seconds": 0.0005938750109635293,
+      "query_and_insert_seconds": 0.8822089579771273
+    },
+    {
+      "first": 269001,
+      "last": 270000,
+      "rows": 1000,
+      "input_seconds": 0.0005389589932747185,
+      "query_and_insert_seconds": 0.8822617920232005
+    },
+    {
+      "first": 270001,
+      "last": 271000,
+      "rows": 1000,
+      "input_seconds": 0.0005519159603863955,
+      "query_and_insert_seconds": 0.9383866250282153
+    },
+    {
+      "first": 271001,
+      "last": 272000,
+      "rows": 1000,
+      "input_seconds": 0.000533499987795949,
+      "query_and_insert_seconds": 0.9251718750456348
+    },
+    {
+      "first": 272001,
+      "last": 273000,
+      "rows": 1000,
+      "input_seconds": 0.0005697499727830291,
+      "query_and_insert_seconds": 1.0379323340021074
+    },
+    {
+      "first": 273001,
+      "last": 274000,
+      "rows": 1000,
+      "input_seconds": 0.0005600829608738422,
+      "query_and_insert_seconds": 0.9483543750247918
+    },
+    {
+      "first": 274001,
+      "last": 275000,
+      "rows": 1000,
+      "input_seconds": 0.000541082990821451,
+      "query_and_insert_seconds": 1.1866207079729065
+    },
+    {
+      "first": 275001,
+      "last": 276000,
+      "rows": 1000,
+      "input_seconds": 0.0005420420202426612,
+      "query_and_insert_seconds": 1.2943071670015343
+    },
+    {
+      "first": 276001,
+      "last": 277000,
+      "rows": 1000,
+      "input_seconds": 0.0005803750245831907,
+      "query_and_insert_seconds": 1.3722789579769596
+    },
+    {
+      "first": 277001,
+      "last": 278000,
+      "rows": 1000,
+      "input_seconds": 0.0005420410307124257,
+      "query_and_insert_seconds": 1.39369654096663
+    },
+    {
+      "first": 278001,
+      "last": 279000,
+      "rows": 1000,
+      "input_seconds": 0.0005644579650834203,
+      "query_and_insert_seconds": 0.8947688749758527
+    },
+    {
+      "first": 279001,
+      "last": 280000,
+      "rows": 1000,
+      "input_seconds": 0.000509333040099591,
+      "query_and_insert_seconds": 0.724989167007152
+    },
+    {
+      "first": 280001,
+      "last": 281000,
+      "rows": 1000,
+      "input_seconds": 0.0006791249616071582,
+      "query_and_insert_seconds": 0.33729449997190386
+    },
+    {
+      "first": 281001,
+      "last": 282000,
+      "rows": 1000,
+      "input_seconds": 0.0005112920189276338,
+      "query_and_insert_seconds": 0.37225020898040384
+    },
+    {
+      "first": 282001,
+      "last": 283000,
+      "rows": 1000,
+      "input_seconds": 0.0005320420023053885,
+      "query_and_insert_seconds": 1.1650551659986377
+    },
+    {
+      "first": 283001,
+      "last": 284000,
+      "rows": 1000,
+      "input_seconds": 0.0005469589959830046,
+      "query_and_insert_seconds": 1.8485950829926878
+    },
+    {
+      "first": 284001,
+      "last": 285000,
+      "rows": 1000,
+      "input_seconds": 0.0005870840395800769,
+      "query_and_insert_seconds": 1.7425641660229303
+    },
+    {
+      "first": 285001,
+      "last": 286000,
+      "rows": 1000,
+      "input_seconds": 0.000728582963347435,
+      "query_and_insert_seconds": 1.4651001670281403
+    },
+    {
+      "first": 286001,
+      "last": 287000,
+      "rows": 1000,
+      "input_seconds": 0.0005892079789191484,
+      "query_and_insert_seconds": 1.132318584015593
+    },
+    {
+      "first": 287001,
+      "last": 288000,
+      "rows": 1000,
+      "input_seconds": 0.0005457919905893505,
+      "query_and_insert_seconds": 0.6963140839943662
+    },
+    {
+      "first": 288001,
+      "last": 289000,
+      "rows": 1000,
+      "input_seconds": 0.0005856670322827995,
+      "query_and_insert_seconds": 0.7204868329572491
+    },
+    {
+      "first": 289001,
+      "last": 290000,
+      "rows": 1000,
+      "input_seconds": 0.000524416973348707,
+      "query_and_insert_seconds": 0.31344108295161277
+    },
+    {
+      "first": 290001,
+      "last": 291000,
+      "rows": 1000,
+      "input_seconds": 0.0005759160267189145,
+      "query_and_insert_seconds": 0.27597579202847555
+    },
+    {
+      "first": 291001,
+      "last": 292000,
+      "rows": 1000,
+      "input_seconds": 0.0005467910086736083,
+      "query_and_insert_seconds": 0.5587719159666449
+    },
+    {
+      "first": 292001,
+      "last": 293000,
+      "rows": 1000,
+      "input_seconds": 0.0005766249960288405,
+      "query_and_insert_seconds": 1.6702176249818876
+    },
+    {
+      "first": 293001,
+      "last": 294000,
+      "rows": 1000,
+      "input_seconds": 0.0005495829973369837,
+      "query_and_insert_seconds": 1.4795750829507597
+    },
+    {
+      "first": 294001,
+      "last": 295000,
+      "rows": 1000,
+      "input_seconds": 0.0005515000084415078,
+      "query_and_insert_seconds": 1.6353550420026295
+    },
+    {
+      "first": 295001,
+      "last": 296000,
+      "rows": 1000,
+      "input_seconds": 0.0005347499973140657,
+      "query_and_insert_seconds": 1.4693195419968106
+    },
+    {
+      "first": 296001,
+      "last": 297000,
+      "rows": 1000,
+      "input_seconds": 0.0005884590209461749,
+      "query_and_insert_seconds": 1.1554429999669082
+    },
+    {
+      "first": 297001,
+      "last": 298000,
+      "rows": 1000,
+      "input_seconds": 0.0005385410040616989,
+      "query_and_insert_seconds": 1.1451465419959277
+    },
+    {
+      "first": 298001,
+      "last": 299000,
+      "rows": 1000,
+      "input_seconds": 0.0005374169559217989,
+      "query_and_insert_seconds": 0.8153517919708975
+    },
+    {
+      "first": 299001,
+      "last": 300000,
+      "rows": 1000,
+      "input_seconds": 0.0005602919845841825,
+      "query_and_insert_seconds": 1.3044138749828562
+    },
+    {
+      "first": 300001,
+      "last": 301000,
+      "rows": 1000,
+      "input_seconds": 0.0005337090115062892,
+      "query_and_insert_seconds": 1.6312487079994753
+    },
+    {
+      "first": 301001,
+      "last": 302000,
+      "rows": 1000,
+      "input_seconds": 0.0005619580042548478,
+      "query_and_insert_seconds": 0.7123099580057897
+    },
+    {
+      "first": 302001,
+      "last": 303000,
+      "rows": 1000,
+      "input_seconds": 0.0005724579677917063,
+      "query_and_insert_seconds": 0.43241649999981746
+    },
+    {
+      "first": 303001,
+      "last": 304000,
+      "rows": 1000,
+      "input_seconds": 0.0006045420304872096,
+      "query_and_insert_seconds": 0.43125254195183516
+    },
+    {
+      "first": 304001,
+      "last": 305000,
+      "rows": 1000,
+      "input_seconds": 0.0004921669606119394,
+      "query_and_insert_seconds": 0.7457060420420021
+    },
+    {
+      "first": 305001,
+      "last": 306000,
+      "rows": 1000,
+      "input_seconds": 0.0005217500147409737,
+      "query_and_insert_seconds": 1.2983030419563875
+    },
+    {
+      "first": 306001,
+      "last": 307000,
+      "rows": 1000,
+      "input_seconds": 0.0004936250043101609,
+      "query_and_insert_seconds": 1.5235510420170613
+    },
+    {
+      "first": 307001,
+      "last": 308000,
+      "rows": 1000,
+      "input_seconds": 0.0005426669958978891,
+      "query_and_insert_seconds": 1.0702649170416407
+    },
+    {
+      "first": 308001,
+      "last": 309000,
+      "rows": 1000,
+      "input_seconds": 0.000509625009726733,
+      "query_and_insert_seconds": 1.7693700419622473
+    },
+    {
+      "first": 309001,
+      "last": 310000,
+      "rows": 1000,
+      "input_seconds": 0.0005538330296985805,
+      "query_and_insert_seconds": 0.7022710419842042
+    },
+    {
+      "first": 310001,
+      "last": 311000,
+      "rows": 1000,
+      "input_seconds": 0.0005380419897846878,
+      "query_and_insert_seconds": 1.076983874954749
+    },
+    {
+      "first": 311001,
+      "last": 312000,
+      "rows": 1000,
+      "input_seconds": 0.0005622499738819897,
+      "query_and_insert_seconds": 1.4391382919857278
+    },
+    {
+      "first": 312001,
+      "last": 313000,
+      "rows": 1000,
+      "input_seconds": 0.0005256670410744846,
+      "query_and_insert_seconds": 1.4960792500060052
+    },
+    {
+      "first": 313001,
+      "last": 314000,
+      "rows": 1000,
+      "input_seconds": 0.0005683749914169312,
+      "query_and_insert_seconds": 0.33951591595541686
+    },
+    {
+      "first": 314001,
+      "last": 315000,
+      "rows": 1000,
+      "input_seconds": 0.0005149999633431435,
+      "query_and_insert_seconds": 0.2541294159600511
+    },
+    {
+      "first": 315001,
+      "last": 316000,
+      "rows": 1000,
+      "input_seconds": 0.0005609590443782508,
+      "query_and_insert_seconds": 0.219609749969095
+    },
+    {
+      "first": 316001,
+      "last": 317000,
+      "rows": 1000,
+      "input_seconds": 0.0005269169923849404,
+      "query_and_insert_seconds": 0.26646349998191
+    },
+    {
+      "first": 317001,
+      "last": 318000,
+      "rows": 1000,
+      "input_seconds": 0.0005808749701827765,
+      "query_and_insert_seconds": 0.38600054202834144
+    },
+    {
+      "first": 318001,
+      "last": 319000,
+      "rows": 1000,
+      "input_seconds": 0.0005394580075517297,
+      "query_and_insert_seconds": 0.700784458022099
+    },
+    {
+      "first": 319001,
+      "last": 320000,
+      "rows": 1000,
+      "input_seconds": 0.0005563749582506716,
+      "query_and_insert_seconds": 0.7146167500177398
+    },
+    {
+      "first": 320001,
+      "last": 321000,
+      "rows": 1000,
+      "input_seconds": 0.0005165000329725444,
+      "query_and_insert_seconds": 0.7117608750122599
+    },
+    {
+      "first": 321001,
+      "last": 322000,
+      "rows": 1000,
+      "input_seconds": 0.0005542080034501851,
+      "query_and_insert_seconds": 1.0271555000217631
+    },
+    {
+      "first": 322001,
+      "last": 323000,
+      "rows": 1000,
+      "input_seconds": 0.000528500007931143,
+      "query_and_insert_seconds": 1.4073684580507688
+    },
+    {
+      "first": 323001,
+      "last": 324000,
+      "rows": 1000,
+      "input_seconds": 0.0005352909793145955,
+      "query_and_insert_seconds": 1.6561406250111759
+    },
+    {
+      "first": 324001,
+      "last": 325000,
+      "rows": 1000,
+      "input_seconds": 0.0005276250303722918,
+      "query_and_insert_seconds": 1.6700009169871919
+    },
+    {
+      "first": 325001,
+      "last": 326000,
+      "rows": 1000,
+      "input_seconds": 0.0005620000301860273,
+      "query_and_insert_seconds": 1.4379887499962933
+    },
+    {
+      "first": 326001,
+      "last": 327000,
+      "rows": 1000,
+      "input_seconds": 0.0005092499777674675,
+      "query_and_insert_seconds": 1.3650584170245565
+    },
+    {
+      "first": 327001,
+      "last": 328000,
+      "rows": 1000,
+      "input_seconds": 0.0005396250053308904,
+      "query_and_insert_seconds": 1.1573786669760011
+    },
+    {
+      "first": 328001,
+      "last": 329000,
+      "rows": 1000,
+      "input_seconds": 0.0005633749533444643,
+      "query_and_insert_seconds": 1.1458760419627652
+    },
+    {
+      "first": 329001,
+      "last": 330000,
+      "rows": 1000,
+      "input_seconds": 0.0005559999844990671,
+      "query_and_insert_seconds": 1.3806703750160523
+    },
+    {
+      "first": 330001,
+      "last": 331000,
+      "rows": 1000,
+      "input_seconds": 0.0005310419946908951,
+      "query_and_insert_seconds": 1.0872781249927357
+    },
+    {
+      "first": 331001,
+      "last": 332000,
+      "rows": 1000,
+      "input_seconds": 0.0005731660057790577,
+      "query_and_insert_seconds": 1.9185108749661595
+    },
+    {
+      "first": 332001,
+      "last": 333000,
+      "rows": 1000,
+      "input_seconds": 0.0005271669942885637,
+      "query_and_insert_seconds": 1.8208292920025997
+    },
+    {
+      "first": 333001,
+      "last": 334000,
+      "rows": 1000,
+      "input_seconds": 0.0007667919853702188,
+      "query_and_insert_seconds": 1.9375670420122333
+    },
+    {
+      "first": 334001,
+      "last": 335000,
+      "rows": 1000,
+      "input_seconds": 0.0005605839542113245,
+      "query_and_insert_seconds": 1.5431637080037035
+    },
+    {
+      "first": 335001,
+      "last": 336000,
+      "rows": 1000,
+      "input_seconds": 0.000597541977185756,
+      "query_and_insert_seconds": 1.3277829590369947
+    },
+    {
+      "first": 336001,
+      "last": 337000,
+      "rows": 1000,
+      "input_seconds": 0.0005339169874787331,
+      "query_and_insert_seconds": 1.2570584999630228
+    },
+    {
+      "first": 337001,
+      "last": 338000,
+      "rows": 1000,
+      "input_seconds": 0.0005559580167755485,
+      "query_and_insert_seconds": 0.5848054999951273
+    },
+    {
+      "first": 338001,
+      "last": 339000,
+      "rows": 1000,
+      "input_seconds": 0.0005215000128373504,
+      "query_and_insert_seconds": 0.8793192089651711
+    },
+    {
+      "first": 339001,
+      "last": 340000,
+      "rows": 1000,
+      "input_seconds": 0.0005623339675366879,
+      "query_and_insert_seconds": 0.9301960830343887
+    },
+    {
+      "first": 340001,
+      "last": 341000,
+      "rows": 1000,
+      "input_seconds": 0.0005485830479301512,
+      "query_and_insert_seconds": 0.5302850829903036
+    },
+    {
+      "first": 341001,
+      "last": 342000,
+      "rows": 1000,
+      "input_seconds": 0.0005344579694792628,
+      "query_and_insert_seconds": 0.971470375021454
+    },
+    {
+      "first": 342001,
+      "last": 343000,
+      "rows": 1000,
+      "input_seconds": 0.0005313330329954624,
+      "query_and_insert_seconds": 0.7102406250196509
+    },
+    {
+      "first": 343001,
+      "last": 344000,
+      "rows": 1000,
+      "input_seconds": 0.0005272499984130263,
+      "query_and_insert_seconds": 1.3336670830030926
+    },
+    {
+      "first": 344001,
+      "last": 345000,
+      "rows": 1000,
+      "input_seconds": 0.0005714169819839299,
+      "query_and_insert_seconds": 1.2023395000142045
+    },
+    {
+      "first": 345001,
+      "last": 346000,
+      "rows": 1000,
+      "input_seconds": 0.0005153749953024089,
+      "query_and_insert_seconds": 1.4341467909980565
+    },
+    {
+      "first": 346001,
+      "last": 347000,
+      "rows": 1000,
+      "input_seconds": 0.0005486669833771884,
+      "query_and_insert_seconds": 1.2215487910434604
+    },
+    {
+      "first": 347001,
+      "last": 348000,
+      "rows": 1000,
+      "input_seconds": 0.000520458968821913,
+      "query_and_insert_seconds": 0.9862147080129944
+    },
+    {
+      "first": 348001,
+      "last": 349000,
+      "rows": 1000,
+      "input_seconds": 0.0005531249917112291,
+      "query_and_insert_seconds": 0.8936210420215502
+    },
+    {
+      "first": 349001,
+      "last": 350000,
+      "rows": 1000,
+      "input_seconds": 0.0005343749653548002,
+      "query_and_insert_seconds": 0.5722236669971608
+    },
+    {
+      "first": 350001,
+      "last": 351000,
+      "rows": 1000,
+      "input_seconds": 0.0005569579661823809,
+      "query_and_insert_seconds": 1.4746890410315245
+    },
+    {
+      "first": 351001,
+      "last": 352000,
+      "rows": 1000,
+      "input_seconds": 0.0005071669584140182,
+      "query_and_insert_seconds": 1.1402154159732163
+    },
+    {
+      "first": 352001,
+      "last": 353000,
+      "rows": 1000,
+      "input_seconds": 0.000578042003326118,
+      "query_and_insert_seconds": 1.1496168749872595
+    },
+    {
+      "first": 353001,
+      "last": 354000,
+      "rows": 1000,
+      "input_seconds": 0.0005272919661365449,
+      "query_and_insert_seconds": 1.4586000409908593
+    },
+    {
+      "first": 354001,
+      "last": 355000,
+      "rows": 1000,
+      "input_seconds": 0.0005863329861313105,
+      "query_and_insert_seconds": 1.3134710000013001
+    },
+    {
+      "first": 355001,
+      "last": 356000,
+      "rows": 1000,
+      "input_seconds": 0.0005368750425986946,
+      "query_and_insert_seconds": 1.244137417001184
+    },
+    {
+      "first": 356001,
+      "last": 357000,
+      "rows": 1000,
+      "input_seconds": 0.0005538749974220991,
+      "query_and_insert_seconds": 1.256266415992286
+    },
+    {
+      "first": 357001,
+      "last": 358000,
+      "rows": 1000,
+      "input_seconds": 0.0005582500016316772,
+      "query_and_insert_seconds": 1.274193416989874
+    },
+    {
+      "first": 358001,
+      "last": 359000,
+      "rows": 1000,
+      "input_seconds": 0.0005874159978702664,
+      "query_and_insert_seconds": 1.3723264169530012
+    },
+    {
+      "first": 359001,
+      "last": 360000,
+      "rows": 1000,
+      "input_seconds": 0.0005245829815976322,
+      "query_and_insert_seconds": 0.9651912500266917
+    },
+    {
+      "first": 360001,
+      "last": 361000,
+      "rows": 1000,
+      "input_seconds": 0.0005669170059263706,
+      "query_and_insert_seconds": 1.3789297500043176
+    },
+    {
+      "first": 361001,
+      "last": 362000,
+      "rows": 1000,
+      "input_seconds": 0.0004927500267513096,
+      "query_and_insert_seconds": 1.227852374955546
+    },
+    {
+      "first": 362001,
+      "last": 363000,
+      "rows": 1000,
+      "input_seconds": 0.0006001669680699706,
+      "query_and_insert_seconds": 1.5252389580127783
+    },
+    {
+      "first": 363001,
+      "last": 364000,
+      "rows": 1000,
+      "input_seconds": 0.0005062079872004688,
+      "query_and_insert_seconds": 1.372801250021439
+    },
+    {
+      "first": 364001,
+      "last": 365000,
+      "rows": 1000,
+      "input_seconds": 0.0005127080366946757,
+      "query_and_insert_seconds": 1.4233124580350704
+    },
+    {
+      "first": 365001,
+      "last": 366000,
+      "rows": 1000,
+      "input_seconds": 0.0005112499929964542,
+      "query_and_insert_seconds": 1.3310250830254517
+    },
+    {
+      "first": 366001,
+      "last": 367000,
+      "rows": 1000,
+      "input_seconds": 0.0005539159756153822,
+      "query_and_insert_seconds": 1.2264864169992507
+    },
+    {
+      "first": 367001,
+      "last": 368000,
+      "rows": 1000,
+      "input_seconds": 0.0005033329944126308,
+      "query_and_insert_seconds": 1.422072916990146
+    },
+    {
+      "first": 368001,
+      "last": 369000,
+      "rows": 1000,
+      "input_seconds": 0.0006704170373268425,
+      "query_and_insert_seconds": 1.552663916023448
+    },
+    {
+      "first": 369001,
+      "last": 370000,
+      "rows": 1000,
+      "input_seconds": 0.0005352079751901329,
+      "query_and_insert_seconds": 1.5932560410001315
+    },
+    {
+      "first": 370001,
+      "last": 371000,
+      "rows": 1000,
+      "input_seconds": 0.0005799159989692271,
+      "query_and_insert_seconds": 1.4781783330254257
+    },
+    {
+      "first": 371001,
+      "last": 372000,
+      "rows": 1000,
+      "input_seconds": 0.0005445830174721777,
+      "query_and_insert_seconds": 1.47686233301647
+    },
+    {
+      "first": 372001,
+      "last": 373000,
+      "rows": 1000,
+      "input_seconds": 0.0005690829711966217,
+      "query_and_insert_seconds": 1.6374709170195274
+    },
+    {
+      "first": 373001,
+      "last": 374000,
+      "rows": 1000,
+      "input_seconds": 0.0005504579748958349,
+      "query_and_insert_seconds": 1.6083399589988403
+    },
+    {
+      "first": 374001,
+      "last": 375000,
+      "rows": 1000,
+      "input_seconds": 0.0005866669816896319,
+      "query_and_insert_seconds": 1.3925090829725377
+    },
+    {
+      "first": 375001,
+      "last": 376000,
+      "rows": 1000,
+      "input_seconds": 0.0005385419935919344,
+      "query_and_insert_seconds": 1.480683667003177
+    },
+    {
+      "first": 376001,
+      "last": 377000,
+      "rows": 1000,
+      "input_seconds": 0.0005726669915020466,
+      "query_and_insert_seconds": 1.528132374980487
+    },
+    {
+      "first": 377001,
+      "last": 378000,
+      "rows": 1000,
+      "input_seconds": 0.0005379579961299896,
+      "query_and_insert_seconds": 1.3341147920000367
+    },
+    {
+      "first": 378001,
+      "last": 379000,
+      "rows": 1000,
+      "input_seconds": 0.0005722080240957439,
+      "query_and_insert_seconds": 1.6002999999909662
+    },
+    {
+      "first": 379001,
+      "last": 380000,
+      "rows": 1000,
+      "input_seconds": 0.0005384159740060568,
+      "query_and_insert_seconds": 1.5030387500301003
+    },
+    {
+      "first": 380001,
+      "last": 381000,
+      "rows": 1000,
+      "input_seconds": 0.0005743750371038914,
+      "query_and_insert_seconds": 1.262658999999985
+    },
+    {
+      "first": 381001,
+      "last": 382000,
+      "rows": 1000,
+      "input_seconds": 0.0005495839868672192,
+      "query_and_insert_seconds": 1.4683896669885144
+    },
+    {
+      "first": 382001,
+      "last": 383000,
+      "rows": 1000,
+      "input_seconds": 0.0005935829831287265,
+      "query_and_insert_seconds": 1.4384132920531556
+    },
+    {
+      "first": 383001,
+      "last": 384000,
+      "rows": 1000,
+      "input_seconds": 0.0005510000046342611,
+      "query_and_insert_seconds": 1.5979389590211213
+    },
+    {
+      "first": 384001,
+      "last": 385000,
+      "rows": 1000,
+      "input_seconds": 0.000551584002096206,
+      "query_and_insert_seconds": 1.4555773750180379
+    },
+    {
+      "first": 385001,
+      "last": 386000,
+      "rows": 1000,
+      "input_seconds": 0.0005788329872302711,
+      "query_and_insert_seconds": 1.3751506250118837
+    },
+    {
+      "first": 386001,
+      "last": 387000,
+      "rows": 1000,
+      "input_seconds": 0.0005432080361060798,
+      "query_and_insert_seconds": 1.3984242909937166
+    },
+    {
+      "first": 387001,
+      "last": 388000,
+      "rows": 1000,
+      "input_seconds": 0.0005864999839104712,
+      "query_and_insert_seconds": 1.2979277920094319
+    },
+    {
+      "first": 388001,
+      "last": 389000,
+      "rows": 1000,
+      "input_seconds": 0.0005421660025604069,
+      "query_and_insert_seconds": 1.4324859589687549
+    },
+    {
+      "first": 389001,
+      "last": 390000,
+      "rows": 1000,
+      "input_seconds": 0.0006000829744152725,
+      "query_and_insert_seconds": 1.3441504160291515
+    },
+    {
+      "first": 390001,
+      "last": 391000,
+      "rows": 1000,
+      "input_seconds": 0.0005596670089289546,
+      "query_and_insert_seconds": 1.1512253329856321
+    },
+    {
+      "first": 391001,
+      "last": 392000,
+      "rows": 1000,
+      "input_seconds": 0.0006459170253947377,
+      "query_and_insert_seconds": 1.3777640420012176
+    },
+    {
+      "first": 392001,
+      "last": 393000,
+      "rows": 1000,
+      "input_seconds": 0.0005099590052850544,
+      "query_and_insert_seconds": 1.934890542004723
+    },
+    {
+      "first": 393001,
+      "last": 394000,
+      "rows": 1000,
+      "input_seconds": 0.0005921670235693455,
+      "query_and_insert_seconds": 1.5956715000211261
+    },
+    {
+      "first": 394001,
+      "last": 395000,
+      "rows": 1000,
+      "input_seconds": 0.0005612919921986759,
+      "query_and_insert_seconds": 1.587642833008431
+    },
+    {
+      "first": 395001,
+      "last": 396000,
+      "rows": 1000,
+      "input_seconds": 0.0005731250275857747,
+      "query_and_insert_seconds": 1.394833792001009
+    },
+    {
+      "first": 396001,
+      "last": 397000,
+      "rows": 1000,
+      "input_seconds": 0.0005351250292733312,
+      "query_and_insert_seconds": 1.348247000016272
+    },
+    {
+      "first": 397001,
+      "last": 398000,
+      "rows": 1000,
+      "input_seconds": 0.0005799999926239252,
+      "query_and_insert_seconds": 1.306803084036801
+    },
+    {
+      "first": 398001,
+      "last": 399000,
+      "rows": 1000,
+      "input_seconds": 0.0005439170054160058,
+      "query_and_insert_seconds": 1.727080083976034
+    },
+    {
+      "first": 399001,
+      "last": 400000,
+      "rows": 1000,
+      "input_seconds": 0.0005848750006407499,
+      "query_and_insert_seconds": 1.660025165998377
+    },
+    {
+      "first": 400001,
+      "last": 401000,
+      "rows": 1000,
+      "input_seconds": 0.000581582949962467,
+      "query_and_insert_seconds": 1.1412734579644166
+    },
+    {
+      "first": 401001,
+      "last": 402000,
+      "rows": 1000,
+      "input_seconds": 0.0005954590160399675,
+      "query_and_insert_seconds": 0.597547083045356
+    },
+    {
+      "first": 402001,
+      "last": 403000,
+      "rows": 1000,
+      "input_seconds": 0.0005147919873706996,
+      "query_and_insert_seconds": 0.9504655419732444
+    },
+    {
+      "first": 403001,
+      "last": 404000,
+      "rows": 1000,
+      "input_seconds": 0.0006002919981256127,
+      "query_and_insert_seconds": 0.7687567499815486
+    },
+    {
+      "first": 404001,
+      "last": 405000,
+      "rows": 1000,
+      "input_seconds": 0.0005486670415848494,
+      "query_and_insert_seconds": 0.665574166981969
+    },
+    {
+      "first": 405001,
+      "last": 406000,
+      "rows": 1000,
+      "input_seconds": 0.0005893330089747906,
+      "query_and_insert_seconds": 0.5245677499915473
+    },
+    {
+      "first": 406001,
+      "last": 407000,
+      "rows": 1000,
+      "input_seconds": 0.0005260420148260891,
+      "query_and_insert_seconds": 0.7385932090110146
+    },
+    {
+      "first": 407001,
+      "last": 408000,
+      "rows": 1000,
+      "input_seconds": 0.0005859590019099414,
+      "query_and_insert_seconds": 1.5944539579795673
+    },
+    {
+      "first": 408001,
+      "last": 409000,
+      "rows": 1000,
+      "input_seconds": 0.0005532919894903898,
+      "query_and_insert_seconds": 0.8692894169944339
+    },
+    {
+      "first": 409001,
+      "last": 410000,
+      "rows": 1000,
+      "input_seconds": 0.0005941250128671527,
+      "query_and_insert_seconds": 1.2466619579936378
+    },
+    {
+      "first": 410001,
+      "last": 411000,
+      "rows": 1000,
+      "input_seconds": 0.0005428750300779939,
+      "query_and_insert_seconds": 0.981233833997976
+    },
+    {
+      "first": 411001,
+      "last": 412000,
+      "rows": 1000,
+      "input_seconds": 0.0005600409931503236,
+      "query_and_insert_seconds": 1.1032931670197286
+    },
+    {
+      "first": 412001,
+      "last": 413000,
+      "rows": 1000,
+      "input_seconds": 0.0005447909934446216,
+      "query_and_insert_seconds": 1.5112026660353877
+    },
+    {
+      "first": 413001,
+      "last": 414000,
+      "rows": 1000,
+      "input_seconds": 0.0005815000040456653,
+      "query_and_insert_seconds": 1.5179169159964658
+    },
+    {
+      "first": 414001,
+      "last": 415000,
+      "rows": 1000,
+      "input_seconds": 0.0005509579787030816,
+      "query_and_insert_seconds": 1.065638084022794
+    },
+    {
+      "first": 415001,
+      "last": 416000,
+      "rows": 1000,
+      "input_seconds": 0.0005657080328091979,
+      "query_and_insert_seconds": 0.8876331670326181
+    },
+    {
+      "first": 416001,
+      "last": 417000,
+      "rows": 1000,
+      "input_seconds": 0.0005392919993028045,
+      "query_and_insert_seconds": 1.0316830419469625
+    },
+    {
+      "first": 417001,
+      "last": 418000,
+      "rows": 1000,
+      "input_seconds": 0.0005582500016316772,
+      "query_and_insert_seconds": 1.310918083996512
+    },
+    {
+      "first": 418001,
+      "last": 419000,
+      "rows": 1000,
+      "input_seconds": 0.0005330829881131649,
+      "query_and_insert_seconds": 0.8734845829894766
+    },
+    {
+      "first": 419001,
+      "last": 420000,
+      "rows": 1000,
+      "input_seconds": 0.0005527080502361059,
+      "query_and_insert_seconds": 0.7973640420241281
+    },
+    {
+      "first": 420001,
+      "last": 421000,
+      "rows": 1000,
+      "input_seconds": 0.0005117499968037009,
+      "query_and_insert_seconds": 0.7954857500153594
+    },
+    {
+      "first": 421001,
+      "last": 422000,
+      "rows": 1000,
+      "input_seconds": 0.0005486249574460089,
+      "query_and_insert_seconds": 1.4156637499690987
+    },
+    {
+      "first": 422001,
+      "last": 423000,
+      "rows": 1000,
+      "input_seconds": 0.0005563330487348139,
+      "query_and_insert_seconds": 0.9090652499580756
+    },
+    {
+      "first": 423001,
+      "last": 424000,
+      "rows": 1000,
+      "input_seconds": 0.0005914999637752771,
+      "query_and_insert_seconds": 1.0275968330097385
+    },
+    {
+      "first": 424001,
+      "last": 425000,
+      "rows": 1000,
+      "input_seconds": 0.0005425829440355301,
+      "query_and_insert_seconds": 1.2821157079888508
+    },
+    {
+      "first": 425001,
+      "last": 426000,
+      "rows": 1000,
+      "input_seconds": 0.0006070410017855465,
+      "query_and_insert_seconds": 1.1353938750107773
+    },
+    {
+      "first": 426001,
+      "last": 427000,
+      "rows": 1000,
+      "input_seconds": 0.0005409590085037053,
+      "query_and_insert_seconds": 1.6930281670065597
+    },
+    {
+      "first": 427001,
+      "last": 428000,
+      "rows": 1000,
+      "input_seconds": 0.0005648749647662044,
+      "query_and_insert_seconds": 1.4774564580293372
+    },
+    {
+      "first": 428001,
+      "last": 429000,
+      "rows": 1000,
+      "input_seconds": 0.0006163750076666474,
+      "query_and_insert_seconds": 1.704228124988731
+    },
+    {
+      "first": 429001,
+      "last": 430000,
+      "rows": 1000,
+      "input_seconds": 0.0005274579743854702,
+      "query_and_insert_seconds": 0.7931017500231974
+    },
+    {
+      "first": 430001,
+      "last": 431000,
+      "rows": 1000,
+      "input_seconds": 0.0005292909918352962,
+      "query_and_insert_seconds": 0.795360415999312
+    },
+    {
+      "first": 431001,
+      "last": 432000,
+      "rows": 1000,
+      "input_seconds": 0.0005215000128373504,
+      "query_and_insert_seconds": 0.8814312500180677
+    },
+    {
+      "first": 432001,
+      "last": 433000,
+      "rows": 1000,
+      "input_seconds": 0.0005695829750038683,
+      "query_and_insert_seconds": 0.6993424170068465
+    },
+    {
+      "first": 433001,
+      "last": 434000,
+      "rows": 1000,
+      "input_seconds": 0.0005077500245533884,
+      "query_and_insert_seconds": 1.0568602090352215
+    },
+    {
+      "first": 434001,
+      "last": 435000,
+      "rows": 1000,
+      "input_seconds": 0.0005651250248774886,
+      "query_and_insert_seconds": 0.8187589169829153
+    },
+    {
+      "first": 435001,
+      "last": 436000,
+      "rows": 1000,
+      "input_seconds": 0.000516125001013279,
+      "query_and_insert_seconds": 0.7489264580071904
+    },
+    {
+      "first": 436001,
+      "last": 437000,
+      "rows": 1000,
+      "input_seconds": 0.0005431249737739563,
+      "query_and_insert_seconds": 0.6089688750216737
+    },
+    {
+      "first": 437001,
+      "last": 438000,
+      "rows": 1000,
+      "input_seconds": 0.0005352920270524919,
+      "query_and_insert_seconds": 0.8865630000364035
+    },
+    {
+      "first": 438001,
+      "last": 439000,
+      "rows": 1000,
+      "input_seconds": 0.0005411250167526305,
+      "query_and_insert_seconds": 1.024103500007186
+    },
+    {
+      "first": 439001,
+      "last": 440000,
+      "rows": 1000,
+      "input_seconds": 0.0004825419746339321,
+      "query_and_insert_seconds": 0.8280167499906383
+    },
+    {
+      "first": 440001,
+      "last": 441000,
+      "rows": 1000,
+      "input_seconds": 0.0005058340029790998,
+      "query_and_insert_seconds": 0.924743750016205
+    },
+    {
+      "first": 441001,
+      "last": 442000,
+      "rows": 1000,
+      "input_seconds": 0.0004841670161113143,
+      "query_and_insert_seconds": 0.8411109579610638
+    },
+    {
+      "first": 442001,
+      "last": 443000,
+      "rows": 1000,
+      "input_seconds": 0.0005851250025443733,
+      "query_and_insert_seconds": 0.7861131249810569
+    },
+    {
+      "first": 443001,
+      "last": 444000,
+      "rows": 1000,
+      "input_seconds": 0.0005216249846853316,
+      "query_and_insert_seconds": 0.7669472920242697
+    },
+    {
+      "first": 444001,
+      "last": 445000,
+      "rows": 1000,
+      "input_seconds": 0.0005578330019488931,
+      "query_and_insert_seconds": 0.5880073749576695
+    },
+    {
+      "first": 445001,
+      "last": 446000,
+      "rows": 1000,
+      "input_seconds": 0.0005242499755695462,
+      "query_and_insert_seconds": 0.6513174580177292
+    },
+    {
+      "first": 446001,
+      "last": 447000,
+      "rows": 1000,
+      "input_seconds": 0.0005616249982267618,
+      "query_and_insert_seconds": 0.8922681249678135
+    },
+    {
+      "first": 447001,
+      "last": 448000,
+      "rows": 1000,
+      "input_seconds": 0.0005290840053930879,
+      "query_and_insert_seconds": 0.9583204999798909
+    },
+    {
+      "first": 448001,
+      "last": 449000,
+      "rows": 1000,
+      "input_seconds": 0.0005301660276018083,
+      "query_and_insert_seconds": 0.8537322910269722
+    },
+    {
+      "first": 449001,
+      "last": 450000,
+      "rows": 1000,
+      "input_seconds": 0.0005189999938011169,
+      "query_and_insert_seconds": 1.2574720839620568
+    },
+    {
+      "first": 450001,
+      "last": 451000,
+      "rows": 1000,
+      "input_seconds": 0.0005682079936377704,
+      "query_and_insert_seconds": 1.1031109590549022
+    },
+    {
+      "first": 451001,
+      "last": 452000,
+      "rows": 1000,
+      "input_seconds": 0.0005287500098347664,
+      "query_and_insert_seconds": 1.2356077920412645
+    },
+    {
+      "first": 452001,
+      "last": 453000,
+      "rows": 1000,
+      "input_seconds": 0.0005714999861083925,
+      "query_and_insert_seconds": 1.0205482919700444
+    },
+    {
+      "first": 453001,
+      "last": 454000,
+      "rows": 1000,
+      "input_seconds": 0.0005305830272845924,
+      "query_and_insert_seconds": 2.1006364580243826
+    },
+    {
+      "first": 454001,
+      "last": 455000,
+      "rows": 1000,
+      "input_seconds": 0.0005669170059263706,
+      "query_and_insert_seconds": 1.485886333975941
+    },
+    {
+      "first": 455001,
+      "last": 456000,
+      "rows": 1000,
+      "input_seconds": 0.0005062500131316483,
+      "query_and_insert_seconds": 0.97567670798162
+    },
+    {
+      "first": 456001,
+      "last": 457000,
+      "rows": 1000,
+      "input_seconds": 0.0005955829983577132,
+      "query_and_insert_seconds": 0.699784958967939
+    },
+    {
+      "first": 457001,
+      "last": 458000,
+      "rows": 1000,
+      "input_seconds": 0.0005329999839887023,
+      "query_and_insert_seconds": 1.5294977499870583
+    },
+    {
+      "first": 458001,
+      "last": 459000,
+      "rows": 1000,
+      "input_seconds": 0.0005571669898927212,
+      "query_and_insert_seconds": 1.974946166970767
+    },
+    {
+      "first": 459001,
+      "last": 460000,
+      "rows": 1000,
+      "input_seconds": 0.0005289170076139271,
+      "query_and_insert_seconds": 2.030893833958544
+    },
+    {
+      "first": 460001,
+      "last": 461000,
+      "rows": 1000,
+      "input_seconds": 0.0005750419804826379,
+      "query_and_insert_seconds": 1.6019209580263123
+    },
+    {
+      "first": 461001,
+      "last": 462000,
+      "rows": 1000,
+      "input_seconds": 0.0005365000106394291,
+      "query_and_insert_seconds": 0.769717541988939
+    },
+    {
+      "first": 462001,
+      "last": 463000,
+      "rows": 1000,
+      "input_seconds": 0.0005606249906122684,
+      "query_and_insert_seconds": 1.1155080000171438
+    },
+    {
+      "first": 463001,
+      "last": 464000,
+      "rows": 1000,
+      "input_seconds": 0.0005308749969117343,
+      "query_and_insert_seconds": 1.6357915420085192
+    },
+    {
+      "first": 464001,
+      "last": 465000,
+      "rows": 1000,
+      "input_seconds": 0.0005578750278800726,
+      "query_and_insert_seconds": 1.3561762500321493
+    },
+    {
+      "first": 465001,
+      "last": 466000,
+      "rows": 1000,
+      "input_seconds": 0.0005402920069172978,
+      "query_and_insert_seconds": 0.9260510000167415
+    },
+    {
+      "first": 466001,
+      "last": 467000,
+      "rows": 1000,
+      "input_seconds": 0.0005655420245602727,
+      "query_and_insert_seconds": 1.7304970000404865
+    },
+    {
+      "first": 467001,
+      "last": 468000,
+      "rows": 1000,
+      "input_seconds": 0.0005397499771788716,
+      "query_and_insert_seconds": 1.4504477090085857
+    },
+    {
+      "first": 468001,
+      "last": 469000,
+      "rows": 1000,
+      "input_seconds": 0.0005610830266959965,
+      "query_and_insert_seconds": 1.4842555419891141
+    },
+    {
+      "first": 469001,
+      "last": 470000,
+      "rows": 1000,
+      "input_seconds": 0.0005245420034043491,
+      "query_and_insert_seconds": 1.6354068749933504
+    },
+    {
+      "first": 470001,
+      "last": 471000,
+      "rows": 1000,
+      "input_seconds": 0.0005332920118235052,
+      "query_and_insert_seconds": 1.4320910839596763
+    },
+    {
+      "first": 471001,
+      "last": 472000,
+      "rows": 1000,
+      "input_seconds": 0.0005681670154444873,
+      "query_and_insert_seconds": 1.4222453340189531
+    },
+    {
+      "first": 472001,
+      "last": 473000,
+      "rows": 1000,
+      "input_seconds": 0.0005260420148260891,
+      "query_and_insert_seconds": 1.3425674579921179
+    },
+    {
+      "first": 473001,
+      "last": 474000,
+      "rows": 1000,
+      "input_seconds": 0.0005649580270983279,
+      "query_and_insert_seconds": 1.2066237920080312
+    },
+    {
+      "first": 474001,
+      "last": 475000,
+      "rows": 1000,
+      "input_seconds": 0.0005319170304574072,
+      "query_and_insert_seconds": 1.8083858750178479
+    },
+    {
+      "first": 475001,
+      "last": 476000,
+      "rows": 1000,
+      "input_seconds": 0.0005508330068551004,
+      "query_and_insert_seconds": 1.3197321249754168
+    },
+    {
+      "first": 476001,
+      "last": 477000,
+      "rows": 1000,
+      "input_seconds": 0.0005441250395961106,
+      "query_and_insert_seconds": 1.2580026250216179
+    },
+    {
+      "first": 477001,
+      "last": 478000,
+      "rows": 1000,
+      "input_seconds": 0.0005819170037284493,
+      "query_and_insert_seconds": 1.211520666955039
+    },
+    {
+      "first": 478001,
+      "last": 479000,
+      "rows": 1000,
+      "input_seconds": 0.0005562499864026904,
+      "query_and_insert_seconds": 0.9448554999544285
+    },
+    {
+      "first": 479001,
+      "last": 480000,
+      "rows": 1000,
+      "input_seconds": 0.0005784169770777225,
+      "query_and_insert_seconds": 1.1734514590352774
+    },
+    {
+      "first": 480001,
+      "last": 481000,
+      "rows": 1000,
+      "input_seconds": 0.0005498339887708426,
+      "query_and_insert_seconds": 1.1005259999656118
+    },
+    {
+      "first": 481001,
+      "last": 482000,
+      "rows": 1000,
+      "input_seconds": 0.0005937090027146041,
+      "query_and_insert_seconds": 0.9314822090091184
+    },
+    {
+      "first": 482001,
+      "last": 483000,
+      "rows": 1000,
+      "input_seconds": 0.0005307910032570362,
+      "query_and_insert_seconds": 1.4736918749986216
+    },
+    {
+      "first": 483001,
+      "last": 484000,
+      "rows": 1000,
+      "input_seconds": 0.0005967089673504233,
+      "query_and_insert_seconds": 1.8518137920182198
+    },
+    {
+      "first": 484001,
+      "last": 485000,
+      "rows": 1000,
+      "input_seconds": 0.0005364170065149665,
+      "query_and_insert_seconds": 1.1716532920254394
+    },
+    {
+      "first": 485001,
+      "last": 486000,
+      "rows": 1000,
+      "input_seconds": 0.0005836659693159163,
+      "query_and_insert_seconds": 0.9032574580051005
+    },
+    {
+      "first": 486001,
+      "last": 487000,
+      "rows": 1000,
+      "input_seconds": 0.0004675840027630329,
+      "query_and_insert_seconds": 1.024825167027302
+    },
+    {
+      "first": 487001,
+      "last": 488000,
+      "rows": 1000,
+      "input_seconds": 0.0005457499646581709,
+      "query_and_insert_seconds": 0.881760333024431
+    },
+    {
+      "first": 488001,
+      "last": 489000,
+      "rows": 1000,
+      "input_seconds": 0.00048295798478648067,
+      "query_and_insert_seconds": 1.0536332079791464
+    },
+    {
+      "first": 489001,
+      "last": 490000,
+      "rows": 1000,
+      "input_seconds": 0.0005546669708564878,
+      "query_and_insert_seconds": 1.0082680420018733
+    },
+    {
+      "first": 490001,
+      "last": 491000,
+      "rows": 1000,
+      "input_seconds": 0.00048045802395790815,
+      "query_and_insert_seconds": 0.7962362920516171
+    },
+    {
+      "first": 491001,
+      "last": 492000,
+      "rows": 1000,
+      "input_seconds": 0.0007233750075101852,
+      "query_and_insert_seconds": 0.7849250410217792
+    },
+    {
+      "first": 492001,
+      "last": 493000,
+      "rows": 1000,
+      "input_seconds": 0.0005430000019259751,
+      "query_and_insert_seconds": 0.8169501250376925
+    },
+    {
+      "first": 493001,
+      "last": 494000,
+      "rows": 1000,
+      "input_seconds": 0.0005627920036204159,
+      "query_and_insert_seconds": 1.4707894169841893
+    },
+    {
+      "first": 494001,
+      "last": 495000,
+      "rows": 1000,
+      "input_seconds": 0.0005297500174492598,
+      "query_and_insert_seconds": 1.9657303330022842
+    },
+    {
+      "first": 495001,
+      "last": 496000,
+      "rows": 1000,
+      "input_seconds": 0.0005973750376142561,
+      "query_and_insert_seconds": 0.7883429999928921
+    },
+    {
+      "first": 496001,
+      "last": 497000,
+      "rows": 1000,
+      "input_seconds": 0.0005071660270914435,
+      "query_and_insert_seconds": 1.0561409160145558
+    },
+    {
+      "first": 497001,
+      "last": 498000,
+      "rows": 1000,
+      "input_seconds": 0.0005792920128442347,
+      "query_and_insert_seconds": 1.1138691669912077
+    },
+    {
+      "first": 498001,
+      "last": 499000,
+      "rows": 1000,
+      "input_seconds": 0.0005319580086506903,
+      "query_and_insert_seconds": 1.2725331250112504
+    },
+    {
+      "first": 499001,
+      "last": 500000,
+      "rows": 1000,
+      "input_seconds": 0.0005820410442538559,
+      "query_and_insert_seconds": 1.1455412499490194
+    },
+    {
+      "first": 500001,
+      "last": 501000,
+      "rows": 1000,
+      "input_seconds": 0.0005447909934446216,
+      "query_and_insert_seconds": 1.137506500002928
+    },
+    {
+      "first": 501001,
+      "last": 502000,
+      "rows": 1000,
+      "input_seconds": 0.0005712080164812505,
+      "query_and_insert_seconds": 1.4669405000167899
+    },
+    {
+      "first": 502001,
+      "last": 503000,
+      "rows": 1000,
+      "input_seconds": 0.0005373329622671008,
+      "query_and_insert_seconds": 1.3099375420133583
+    },
+    {
+      "first": 503001,
+      "last": 504000,
+      "rows": 1000,
+      "input_seconds": 0.0005981670110486448,
+      "query_and_insert_seconds": 1.0269681669888087
+    },
+    {
+      "first": 504001,
+      "last": 505000,
+      "rows": 1000,
+      "input_seconds": 0.000519458029884845,
+      "query_and_insert_seconds": 1.115064750018064
+    },
+    {
+      "first": 505001,
+      "last": 506000,
+      "rows": 1000,
+      "input_seconds": 0.0005718329921364784,
+      "query_and_insert_seconds": 1.4172704170341603
+    },
+    {
+      "first": 506001,
+      "last": 507000,
+      "rows": 1000,
+      "input_seconds": 0.0005656249704770744,
+      "query_and_insert_seconds": 1.2579117499990389
+    },
+    {
+      "first": 507001,
+      "last": 508000,
+      "rows": 1000,
+      "input_seconds": 0.0005905410507693887,
+      "query_and_insert_seconds": 1.5877786250202917
+    },
+    {
+      "first": 508001,
+      "last": 509000,
+      "rows": 1000,
+      "input_seconds": 0.0005383330280892551,
+      "query_and_insert_seconds": 1.9989852500148118
+    },
+    {
+      "first": 509001,
+      "last": 510000,
+      "rows": 1000,
+      "input_seconds": 0.00059104198589921,
+      "query_and_insert_seconds": 1.9751624169875868
+    },
+    {
+      "first": 510001,
+      "last": 511000,
+      "rows": 1000,
+      "input_seconds": 0.0005529169575311244,
+      "query_and_insert_seconds": 1.5776508749695495
+    },
+    {
+      "first": 511001,
+      "last": 512000,
+      "rows": 1000,
+      "input_seconds": 0.0005525830201804638,
+      "query_and_insert_seconds": 1.5909142500022426
+    },
+    {
+      "first": 512001,
+      "last": 513000,
+      "rows": 1000,
+      "input_seconds": 0.0005685409996658564,
+      "query_and_insert_seconds": 1.6961564579978585
+    },
+    {
+      "first": 513001,
+      "last": 514000,
+      "rows": 1000,
+      "input_seconds": 0.0005417499924078584,
+      "query_and_insert_seconds": 1.5136201669811271
+    },
+    {
+      "first": 514001,
+      "last": 515000,
+      "rows": 1000,
+      "input_seconds": 0.0006257499917410314,
+      "query_and_insert_seconds": 2.0065659169922583
+    },
+    {
+      "first": 515001,
+      "last": 516000,
+      "rows": 1000,
+      "input_seconds": 0.0005569999921135604,
+      "query_and_insert_seconds": 2.327538082958199
+    },
+    {
+      "first": 516001,
+      "last": 517000,
+      "rows": 1000,
+      "input_seconds": 0.0005910000181756914,
+      "query_and_insert_seconds": 1.6517445420031436
+    },
+    {
+      "first": 517001,
+      "last": 518000,
+      "rows": 1000,
+      "input_seconds": 0.0005435000057332218,
+      "query_and_insert_seconds": 1.7726743330131285
+    },
+    {
+      "first": 518001,
+      "last": 519000,
+      "rows": 1000,
+      "input_seconds": 0.0005935829831287265,
+      "query_and_insert_seconds": 2.0642333339783363
+    },
+    {
+      "first": 519001,
+      "last": 520000,
+      "rows": 1000,
+      "input_seconds": 0.0005478750099427998,
+      "query_and_insert_seconds": 2.0960699999704957
+    },
+    {
+      "first": 520001,
+      "last": 521000,
+      "rows": 1000,
+      "input_seconds": 0.0005996249965392053,
+      "query_and_insert_seconds": 1.4599896669969894
+    },
+    {
+      "first": 521001,
+      "last": 522000,
+      "rows": 1000,
+      "input_seconds": 0.0005227079964242876,
+      "query_and_insert_seconds": 1.6367776250117458
+    },
+    {
+      "first": 522001,
+      "last": 523000,
+      "rows": 1000,
+      "input_seconds": 0.0005918749957345426,
+      "query_and_insert_seconds": 1.9578344160108827
+    },
+    {
+      "first": 523001,
+      "last": 524000,
+      "rows": 1000,
+      "input_seconds": 0.0005777499754913151,
+      "query_and_insert_seconds": 1.6382851250236854
+    },
+    {
+      "first": 524001,
+      "last": 525000,
+      "rows": 1000,
+      "input_seconds": 0.0005777499754913151,
+      "query_and_insert_seconds": 0.989764291967731
+    },
+    {
+      "first": 525001,
+      "last": 526000,
+      "rows": 1000,
+      "input_seconds": 0.0005105839809402823,
+      "query_and_insert_seconds": 1.168591458001174
+    },
+    {
+      "first": 526001,
+      "last": 527000,
+      "rows": 1000,
+      "input_seconds": 0.0006087920046411455,
+      "query_and_insert_seconds": 1.1538351670023985
+    },
+    {
+      "first": 527001,
+      "last": 528000,
+      "rows": 1000,
+      "input_seconds": 0.0005276670563034713,
+      "query_and_insert_seconds": 1.0775474160327576
+    },
+    {
+      "first": 528001,
+      "last": 529000,
+      "rows": 1000,
+      "input_seconds": 0.0006069999653846025,
+      "query_and_insert_seconds": 0.5883674579672515
+    },
+    {
+      "first": 529001,
+      "last": 530000,
+      "rows": 1000,
+      "input_seconds": 0.0005602500168606639,
+      "query_and_insert_seconds": 1.8305995000409894
+    },
+    {
+      "first": 530001,
+      "last": 531000,
+      "rows": 1000,
+      "input_seconds": 0.0005858329823240638,
+      "query_and_insert_seconds": 1.8145055830245838
+    },
+    {
+      "first": 531001,
+      "last": 532000,
+      "rows": 1000,
+      "input_seconds": 0.0005550420028157532,
+      "query_and_insert_seconds": 1.7681769169867039
+    },
+    {
+      "first": 532001,
+      "last": 533000,
+      "rows": 1000,
+      "input_seconds": 0.0005977079854346812,
+      "query_and_insert_seconds": 1.5273367500049062
+    },
+    {
+      "first": 533001,
+      "last": 534000,
+      "rows": 1000,
+      "input_seconds": 0.0005474589997902513,
+      "query_and_insert_seconds": 1.6994049579952843
+    },
+    {
+      "first": 534001,
+      "last": 535000,
+      "rows": 1000,
+      "input_seconds": 0.0006332499906420708,
+      "query_and_insert_seconds": 1.9738507500151172
+    },
+    {
+      "first": 535001,
+      "last": 536000,
+      "rows": 1000,
+      "input_seconds": 0.0005586660117842257,
+      "query_and_insert_seconds": 1.782625249994453
+    },
+    {
+      "first": 536001,
+      "last": 537000,
+      "rows": 1000,
+      "input_seconds": 0.0005958750261925161,
+      "query_and_insert_seconds": 1.8763184580020607
+    },
+    {
+      "first": 537001,
+      "last": 538000,
+      "rows": 1000,
+      "input_seconds": 0.0005694999708794057,
+      "query_and_insert_seconds": 1.2911630410235375
+    },
+    {
+      "first": 538001,
+      "last": 539000,
+      "rows": 1000,
+      "input_seconds": 0.000608790956903249,
+      "query_and_insert_seconds": 2.069257083989214
+    },
+    {
+      "first": 539001,
+      "last": 540000,
+      "rows": 1000,
+      "input_seconds": 0.0005484169814735651,
+      "query_and_insert_seconds": 2.110442916979082
+    },
+    {
+      "first": 540001,
+      "last": 541000,
+      "rows": 1000,
+      "input_seconds": 0.0005866670398972929,
+      "query_and_insert_seconds": 2.1277596250292845
+    },
+    {
+      "first": 541001,
+      "last": 542000,
+      "rows": 1000,
+      "input_seconds": 0.0005402920069172978,
+      "query_and_insert_seconds": 1.933911917032674
+    },
+    {
+      "first": 542001,
+      "last": 543000,
+      "rows": 1000,
+      "input_seconds": 0.0006014579557813704,
+      "query_and_insert_seconds": 1.7814129579928704
+    },
+    {
+      "first": 543001,
+      "last": 544000,
+      "rows": 1000,
+      "input_seconds": 0.0005488329916261137,
+      "query_and_insert_seconds": 1.6138712500105612
+    },
+    {
+      "first": 544001,
+      "last": 545000,
+      "rows": 1000,
+      "input_seconds": 0.0005902500124648213,
+      "query_and_insert_seconds": 1.5707436249940656
+    },
+    {
+      "first": 545001,
+      "last": 546000,
+      "rows": 1000,
+      "input_seconds": 0.0005309999687597156,
+      "query_and_insert_seconds": 1.9157994160195813
+    },
+    {
+      "first": 546001,
+      "last": 547000,
+      "rows": 1000,
+      "input_seconds": 0.0005640420131385326,
+      "query_and_insert_seconds": 1.8179803329985589
+    },
+    {
+      "first": 547001,
+      "last": 548000,
+      "rows": 1000,
+      "input_seconds": 0.0005304579972289503,
+      "query_and_insert_seconds": 1.5493490830413066
+    },
+    {
+      "first": 548001,
+      "last": 549000,
+      "rows": 1000,
+      "input_seconds": 0.0006268339930102229,
+      "query_and_insert_seconds": 1.8800852079875767
+    },
+    {
+      "first": 549001,
+      "last": 550000,
+      "rows": 1000,
+      "input_seconds": 0.0005787500413134694,
+      "query_and_insert_seconds": 1.9016290830331855
+    },
+    {
+      "first": 550001,
+      "last": 551000,
+      "rows": 1000,
+      "input_seconds": 0.0006015829858370125,
+      "query_and_insert_seconds": 1.3640685419668444
+    },
+    {
+      "first": 551001,
+      "last": 552000,
+      "rows": 1000,
+      "input_seconds": 0.0005224160267971456,
+      "query_and_insert_seconds": 1.6591630000039004
+    },
+    {
+      "first": 552001,
+      "last": 553000,
+      "rows": 1000,
+      "input_seconds": 0.0005750419804826379,
+      "query_and_insert_seconds": 2.266483290994074
+    },
+    {
+      "first": 553001,
+      "last": 554000,
+      "rows": 1000,
+      "input_seconds": 0.0005212920368649065,
+      "query_and_insert_seconds": 1.847835665976163
+    },
+    {
+      "first": 554001,
+      "last": 555000,
+      "rows": 1000,
+      "input_seconds": 0.0005236670258454978,
+      "query_and_insert_seconds": 2.3680012080003507
+    },
+    {
+      "first": 555001,
+      "last": 556000,
+      "rows": 1000,
+      "input_seconds": 0.0005823330138809979,
+      "query_and_insert_seconds": 1.7218039580038749
+    },
+    {
+      "first": 556001,
+      "last": 557000,
+      "rows": 1000,
+      "input_seconds": 0.0005124169983901083,
+      "query_and_insert_seconds": 2.1567127919988707
+    },
+    {
+      "first": 557001,
+      "last": 558000,
+      "rows": 1000,
+      "input_seconds": 0.0005890830070711672,
+      "query_and_insert_seconds": 1.9128549169981852
+    },
+    {
+      "first": 558001,
+      "last": 559000,
+      "rows": 1000,
+      "input_seconds": 0.0005236670258454978,
+      "query_and_insert_seconds": 2.1343102090177126
+    },
+    {
+      "first": 559001,
+      "last": 560000,
+      "rows": 1000,
+      "input_seconds": 0.0005914160283282399,
+      "query_and_insert_seconds": 1.9349655419937335
+    },
+    {
+      "first": 560001,
+      "last": 561000,
+      "rows": 1000,
+      "input_seconds": 0.0005431660101749003,
+      "query_and_insert_seconds": 2.1030302500003017
+    },
+    {
+      "first": 561001,
+      "last": 562000,
+      "rows": 1000,
+      "input_seconds": 0.000580916996113956,
+      "query_and_insert_seconds": 2.067900166963227
+    },
+    {
+      "first": 562001,
+      "last": 563000,
+      "rows": 1000,
+      "input_seconds": 0.0005308330291882157,
+      "query_and_insert_seconds": 2.0860947090550326
+    },
+    {
+      "first": 563001,
+      "last": 564000,
+      "rows": 1000,
+      "input_seconds": 0.0005538330296985805,
+      "query_and_insert_seconds": 2.258291875012219
+    },
+    {
+      "first": 564001,
+      "last": 565000,
+      "rows": 1000,
+      "input_seconds": 0.0005280840559862554,
+      "query_and_insert_seconds": 2.1756097500328906
+    },
+    {
+      "first": 565001,
+      "last": 566000,
+      "rows": 1000,
+      "input_seconds": 0.000558124971576035,
+      "query_and_insert_seconds": 1.4442616250016727
+    },
+    {
+      "first": 566001,
+      "last": 567000,
+      "rows": 1000,
+      "input_seconds": 0.0005167089984752238,
+      "query_and_insert_seconds": 1.650542665971443
+    },
+    {
+      "first": 567001,
+      "last": 568000,
+      "rows": 1000,
+      "input_seconds": 0.0005514579825103283,
+      "query_and_insert_seconds": 1.8181741670123301
+    },
+    {
+      "first": 568001,
+      "last": 569000,
+      "rows": 1000,
+      "input_seconds": 0.0005522920400835574,
+      "query_and_insert_seconds": 2.1122297499678098
+    },
+    {
+      "first": 569001,
+      "last": 570000,
+      "rows": 1000,
+      "input_seconds": 0.0005611249944195151,
+      "query_and_insert_seconds": 1.862069332972169
+    },
+    {
+      "first": 570001,
+      "last": 571000,
+      "rows": 1000,
+      "input_seconds": 0.00054191704839468,
+      "query_and_insert_seconds": 1.887845249962993
+    },
+    {
+      "first": 571001,
+      "last": 572000,
+      "rows": 1000,
+      "input_seconds": 0.0005619170260615647,
+      "query_and_insert_seconds": 1.7811667500063777
+    },
+    {
+      "first": 572001,
+      "last": 573000,
+      "rows": 1000,
+      "input_seconds": 0.0005366249824874103,
+      "query_and_insert_seconds": 1.9735889590228908
+    },
+    {
+      "first": 573001,
+      "last": 574000,
+      "rows": 1000,
+      "input_seconds": 0.0005732499994337559,
+      "query_and_insert_seconds": 1.8362084580003284
+    },
+    {
+      "first": 574001,
+      "last": 575000,
+      "rows": 1000,
+      "input_seconds": 0.0005279160104691982,
+      "query_and_insert_seconds": 1.7594630409730598
+    },
+    {
+      "first": 575001,
+      "last": 576000,
+      "rows": 1000,
+      "input_seconds": 0.0005874590133316815,
+      "query_and_insert_seconds": 1.648814540996682
+    },
+    {
+      "first": 576001,
+      "last": 577000,
+      "rows": 1000,
+      "input_seconds": 0.0005231249961070716,
+      "query_and_insert_seconds": 1.2974229169776663
+    },
+    {
+      "first": 577001,
+      "last": 578000,
+      "rows": 1000,
+      "input_seconds": 0.0005922910058870912,
+      "query_and_insert_seconds": 0.9061826250399463
+    },
+    {
+      "first": 578001,
+      "last": 579000,
+      "rows": 1000,
+      "input_seconds": 0.000533584039658308,
+      "query_and_insert_seconds": 1.2202452910132706
+    },
+    {
+      "first": 579001,
+      "last": 580000,
+      "rows": 1000,
+      "input_seconds": 0.0005637079593725502,
+      "query_and_insert_seconds": 0.9095904999994673
+    },
+    {
+      "first": 580001,
+      "last": 581000,
+      "rows": 1000,
+      "input_seconds": 0.0005399579531513155,
+      "query_and_insert_seconds": 0.9348927090177312
+    },
+    {
+      "first": 581001,
+      "last": 582000,
+      "rows": 1000,
+      "input_seconds": 0.0006041250308044255,
+      "query_and_insert_seconds": 1.4799212079960853
+    },
+    {
+      "first": 582001,
+      "last": 583000,
+      "rows": 1000,
+      "input_seconds": 0.0005301669589243829,
+      "query_and_insert_seconds": 1.352141500043217
+    },
+    {
+      "first": 583001,
+      "last": 584000,
+      "rows": 1000,
+      "input_seconds": 0.0005553750088438392,
+      "query_and_insert_seconds": 1.6398541249800473
+    },
+    {
+      "first": 584001,
+      "last": 585000,
+      "rows": 1000,
+      "input_seconds": 0.0005327080143615603,
+      "query_and_insert_seconds": 1.4846444160211831
+    },
+    {
+      "first": 585001,
+      "last": 586000,
+      "rows": 1000,
+      "input_seconds": 0.0005734169972129166,
+      "query_and_insert_seconds": 1.727165958029218
+    },
+    {
+      "first": 586001,
+      "last": 587000,
+      "rows": 1000,
+      "input_seconds": 0.0005347499973140657,
+      "query_and_insert_seconds": 1.5111220000544563
+    },
+    {
+      "first": 587001,
+      "last": 588000,
+      "rows": 1000,
+      "input_seconds": 0.0005508330068551004,
+      "query_and_insert_seconds": 1.4683765419758856
+    },
+    {
+      "first": 588001,
+      "last": 589000,
+      "rows": 1000,
+      "input_seconds": 0.0005464169662445784,
+      "query_and_insert_seconds": 1.3315697920043021
+    },
+    {
+      "first": 589001,
+      "last": 590000,
+      "rows": 1000,
+      "input_seconds": 0.0005633329856209457,
+      "query_and_insert_seconds": 1.3923510829918087
+    },
+    {
+      "first": 590001,
+      "last": 591000,
+      "rows": 1000,
+      "input_seconds": 0.0005110829952172935,
+      "query_and_insert_seconds": 1.3064598749624565
+    },
+    {
+      "first": 591001,
+      "last": 592000,
+      "rows": 1000,
+      "input_seconds": 0.0005754579906351864,
+      "query_and_insert_seconds": 1.0632196250371635
+    },
+    {
+      "first": 592001,
+      "last": 593000,
+      "rows": 1000,
+      "input_seconds": 0.0005178339779376984,
+      "query_and_insert_seconds": 1.3679631249979138
+    },
+    {
+      "first": 593001,
+      "last": 594000,
+      "rows": 1000,
+      "input_seconds": 0.0005750000127591193,
+      "query_and_insert_seconds": 1.4009369169943966
+    },
+    {
+      "first": 594001,
+      "last": 595000,
+      "rows": 1000,
+      "input_seconds": 0.0005053339991718531,
+      "query_and_insert_seconds": 0.9065170829999261
+    },
+    {
+      "first": 595001,
+      "last": 596000,
+      "rows": 1000,
+      "input_seconds": 0.0005717499880120158,
+      "query_and_insert_seconds": 1.0646265000104904
+    },
+    {
+      "first": 596001,
+      "last": 597000,
+      "rows": 1000,
+      "input_seconds": 0.000543333007954061,
+      "query_and_insert_seconds": 1.1062874170020223
+    },
+    {
+      "first": 597001,
+      "last": 598000,
+      "rows": 1000,
+      "input_seconds": 0.000504166993778199,
+      "query_and_insert_seconds": 1.205607375013642
+    },
+    {
+      "first": 598001,
+      "last": 599000,
+      "rows": 1000,
+      "input_seconds": 0.0005872499896213412,
+      "query_and_insert_seconds": 0.9957296249922365
+    },
+    {
+      "first": 599001,
+      "last": 600000,
+      "rows": 1000,
+      "input_seconds": 0.0005174170364625752,
+      "query_and_insert_seconds": 1.0035325000062585
+    },
+    {
+      "first": 600001,
+      "last": 601000,
+      "rows": 1000,
+      "input_seconds": 0.0005495420191437006,
+      "query_and_insert_seconds": 0.9063736670068465
+    },
+    {
+      "first": 601001,
+      "last": 602000,
+      "rows": 1000,
+      "input_seconds": 0.0005468750023283064,
+      "query_and_insert_seconds": 1.08369495900115
+    },
+    {
+      "first": 602001,
+      "last": 603000,
+      "rows": 1000,
+      "input_seconds": 0.0006176669849082828,
+      "query_and_insert_seconds": 1.5176182920113206
+    },
+    {
+      "first": 603001,
+      "last": 604000,
+      "rows": 1000,
+      "input_seconds": 0.0005260829930193722,
+      "query_and_insert_seconds": 1.243847250007093
+    },
+    {
+      "first": 604001,
+      "last": 605000,
+      "rows": 1000,
+      "input_seconds": 0.0005814160103909671,
+      "query_and_insert_seconds": 1.2765665000188164
+    },
+    {
+      "first": 605001,
+      "last": 606000,
+      "rows": 1000,
+      "input_seconds": 0.0005313329747878015,
+      "query_and_insert_seconds": 1.4687427079770714
+    },
+    {
+      "first": 606001,
+      "last": 607000,
+      "rows": 1000,
+      "input_seconds": 0.0005598749849013984,
+      "query_and_insert_seconds": 1.1792150419787504
+    },
+    {
+      "first": 607001,
+      "last": 608000,
+      "rows": 1000,
+      "input_seconds": 0.0005308340187184513,
+      "query_and_insert_seconds": 1.6499652919592336
+    },
+    {
+      "first": 608001,
+      "last": 609000,
+      "rows": 1000,
+      "input_seconds": 0.0005981249851174653,
+      "query_and_insert_seconds": 1.3318879589787684
+    },
+    {
+      "first": 609001,
+      "last": 610000,
+      "rows": 1000,
+      "input_seconds": 0.0004935830365866423,
+      "query_and_insert_seconds": 1.5545970000093803
+    },
+    {
+      "first": 610001,
+      "last": 611000,
+      "rows": 1000,
+      "input_seconds": 0.0005105829914100468,
+      "query_and_insert_seconds": 1.7688290419755504
+    },
+    {
+      "first": 611001,
+      "last": 612000,
+      "rows": 1000,
+      "input_seconds": 0.0005048339953646064,
+      "query_and_insert_seconds": 1.2044097500038333
+    },
+    {
+      "first": 612001,
+      "last": 613000,
+      "rows": 1000,
+      "input_seconds": 0.0005287499516271055,
+      "query_and_insert_seconds": 1.3502026250353083
+    },
+    {
+      "first": 613001,
+      "last": 614000,
+      "rows": 1000,
+      "input_seconds": 0.00048495898954570293,
+      "query_and_insert_seconds": 1.6859762080130167
+    },
+    {
+      "first": 614001,
+      "last": 615000,
+      "rows": 1000,
+      "input_seconds": 0.0007027499959804118,
+      "query_and_insert_seconds": 1.2517373749869876
+    },
+    {
+      "first": 615001,
+      "last": 616000,
+      "rows": 1000,
+      "input_seconds": 0.0005303749931044877,
+      "query_and_insert_seconds": 1.6036694590002298
+    },
+    {
+      "first": 616001,
+      "last": 617000,
+      "rows": 1000,
+      "input_seconds": 0.0005522920400835574,
+      "query_and_insert_seconds": 1.4059645410161465
+    },
+    {
+      "first": 617001,
+      "last": 618000,
+      "rows": 1000,
+      "input_seconds": 0.0005394579493440688,
+      "query_and_insert_seconds": 1.5723145839874633
+    },
+    {
+      "first": 618001,
+      "last": 619000,
+      "rows": 1000,
+      "input_seconds": 0.0005748749827034771,
+      "query_and_insert_seconds": 2.0211450420320034
+    },
+    {
+      "first": 619001,
+      "last": 620000,
+      "rows": 1000,
+      "input_seconds": 0.0005439590313471854,
+      "query_and_insert_seconds": 1.6752669579582289
+    },
+    {
+      "first": 620001,
+      "last": 621000,
+      "rows": 1000,
+      "input_seconds": 0.0006003750022500753,
+      "query_and_insert_seconds": 1.8952711669844575
+    },
+    {
+      "first": 621001,
+      "last": 622000,
+      "rows": 1000,
+      "input_seconds": 0.0005340409697964787,
+      "query_and_insert_seconds": 1.6907098750234582
+    },
+    {
+      "first": 622001,
+      "last": 623000,
+      "rows": 1000,
+      "input_seconds": 0.0005899590323679149,
+      "query_and_insert_seconds": 1.7286547079565935
+    },
+    {
+      "first": 623001,
+      "last": 624000,
+      "rows": 1000,
+      "input_seconds": 0.0005157499690540135,
+      "query_and_insert_seconds": 2.0448140000225976
+    },
+    {
+      "first": 624001,
+      "last": 625000,
+      "rows": 1000,
+      "input_seconds": 0.0005967079778201878,
+      "query_and_insert_seconds": 1.2780485000112094
+    },
+    {
+      "first": 625001,
+      "last": 626000,
+      "rows": 1000,
+      "input_seconds": 0.0005375419859774411,
+      "query_and_insert_seconds": 1.692465958010871
+    },
+    {
+      "first": 626001,
+      "last": 627000,
+      "rows": 1000,
+      "input_seconds": 0.0006024590111337602,
+      "query_and_insert_seconds": 1.6635538340196945
+    },
+    {
+      "first": 627001,
+      "last": 628000,
+      "rows": 1000,
+      "input_seconds": 0.0005384169635362923,
+      "query_and_insert_seconds": 1.4647619590396062
+    },
+    {
+      "first": 628001,
+      "last": 629000,
+      "rows": 1000,
+      "input_seconds": 0.0005949169863015413,
+      "query_and_insert_seconds": 1.3596266249660403
+    },
+    {
+      "first": 629001,
+      "last": 630000,
+      "rows": 1000,
+      "input_seconds": 0.0005444590351544321,
+      "query_and_insert_seconds": 1.5943381250253879
+    },
+    {
+      "first": 630001,
+      "last": 631000,
+      "rows": 1000,
+      "input_seconds": 0.0005935829831287265,
+      "query_and_insert_seconds": 2.1039092499995604
+    },
+    {
+      "first": 631001,
+      "last": 632000,
+      "rows": 1000,
+      "input_seconds": 0.0005377079942263663,
+      "query_and_insert_seconds": 1.8991292080027051
+    },
+    {
+      "first": 632001,
+      "last": 633000,
+      "rows": 1000,
+      "input_seconds": 0.0005878329975530505,
+      "query_and_insert_seconds": 2.0526546250330284
+    },
+    {
+      "first": 633001,
+      "last": 634000,
+      "rows": 1000,
+      "input_seconds": 0.0005705420044250786,
+      "query_and_insert_seconds": 1.415255416999571
+    },
+    {
+      "first": 634001,
+      "last": 635000,
+      "rows": 1000,
+      "input_seconds": 0.0006125409854575992,
+      "query_and_insert_seconds": 0.7354341669706628
+    },
+    {
+      "first": 635001,
+      "last": 636000,
+      "rows": 1000,
+      "input_seconds": 0.000531375000718981,
+      "query_and_insert_seconds": 1.8651839579688385
+    },
+    {
+      "first": 636001,
+      "last": 637000,
+      "rows": 1000,
+      "input_seconds": 0.0005938329850323498,
+      "query_and_insert_seconds": 1.789869959000498
+    },
+    {
+      "first": 637001,
+      "last": 638000,
+      "rows": 1000,
+      "input_seconds": 0.000535291968844831,
+      "query_and_insert_seconds": 1.2101013329811394
+    },
+    {
+      "first": 638001,
+      "last": 639000,
+      "rows": 1000,
+      "input_seconds": 0.0005382919916883111,
+      "query_and_insert_seconds": 2.3253020829870366
+    },
+    {
+      "first": 639001,
+      "last": 640000,
+      "rows": 1000,
+      "input_seconds": 0.0005594590329565108,
+      "query_and_insert_seconds": 1.7951361250015907
+    },
+    {
+      "first": 640001,
+      "last": 641000,
+      "rows": 1000,
+      "input_seconds": 0.0005324999801814556,
+      "query_and_insert_seconds": 2.122731042036321
+    },
+    {
+      "first": 641001,
+      "last": 642000,
+      "rows": 1000,
+      "input_seconds": 0.0005887909792363644,
+      "query_and_insert_seconds": 2.0385201249737293
+    },
+    {
+      "first": 642001,
+      "last": 643000,
+      "rows": 1000,
+      "input_seconds": 0.0005438329535536468,
+      "query_and_insert_seconds": 2.061762875004206
+    },
+    {
+      "first": 643001,
+      "last": 644000,
+      "rows": 1000,
+      "input_seconds": 0.0006028750212863088,
+      "query_and_insert_seconds": 1.682391792011913
+    },
+    {
+      "first": 644001,
+      "last": 645000,
+      "rows": 1000,
+      "input_seconds": 0.0005450420430861413,
+      "query_and_insert_seconds": 2.17102025001077
+    },
+    {
+      "first": 645001,
+      "last": 646000,
+      "rows": 1000,
+      "input_seconds": 0.000589290983043611,
+      "query_and_insert_seconds": 2.1595057499944232
+    },
+    {
+      "first": 646001,
+      "last": 647000,
+      "rows": 1000,
+      "input_seconds": 0.0005970830097794533,
+      "query_and_insert_seconds": 2.0490698749781586
+    },
+    {
+      "first": 647001,
+      "last": 648000,
+      "rows": 1000,
+      "input_seconds": 0.0006048749783076346,
+      "query_and_insert_seconds": 1.905697708018124
+    },
+    {
+      "first": 648001,
+      "last": 649000,
+      "rows": 1000,
+      "input_seconds": 0.000550583004951477,
+      "query_and_insert_seconds": 2.027395292010624
+    },
+    {
+      "first": 649001,
+      "last": 650000,
+      "rows": 1000,
+      "input_seconds": 0.0005985000170767307,
+      "query_and_insert_seconds": 2.051917582983151
+    },
+    {
+      "first": 650001,
+      "last": 651000,
+      "rows": 1000,
+      "input_seconds": 0.0005405420088209212,
+      "query_and_insert_seconds": 2.2370610419893637
+    },
+    {
+      "first": 651001,
+      "last": 652000,
+      "rows": 1000,
+      "input_seconds": 0.00060841697268188,
+      "query_and_insert_seconds": 2.134927791019436
+    },
+    {
+      "first": 652001,
+      "last": 653000,
+      "rows": 1000,
+      "input_seconds": 0.0005322920042090118,
+      "query_and_insert_seconds": 2.091659958998207
+    },
+    {
+      "first": 653001,
+      "last": 654000,
+      "rows": 1000,
+      "input_seconds": 0.0005902500124648213,
+      "query_and_insert_seconds": 1.6327083749929443
+    },
+    {
+      "first": 654001,
+      "last": 655000,
+      "rows": 1000,
+      "input_seconds": 0.0005484580178745091,
+      "query_and_insert_seconds": 2.00323212496005
+    },
+    {
+      "first": 655001,
+      "last": 656000,
+      "rows": 1000,
+      "input_seconds": 0.0005968339974060655,
+      "query_and_insert_seconds": 1.7727505000075325
+    },
+    {
+      "first": 656001,
+      "last": 657000,
+      "rows": 1000,
+      "input_seconds": 0.0005590419750660658,
+      "query_and_insert_seconds": 1.7247200830024667
+    },
+    {
+      "first": 657001,
+      "last": 658000,
+      "rows": 1000,
+      "input_seconds": 0.0005971669452264905,
+      "query_and_insert_seconds": 2.2857362080249004
+    },
+    {
+      "first": 658001,
+      "last": 659000,
+      "rows": 1000,
+      "input_seconds": 0.0005598749849013984,
+      "query_and_insert_seconds": 1.8257280410034582
+    },
+    {
+      "first": 659001,
+      "last": 660000,
+      "rows": 1000,
+      "input_seconds": 0.0006248329882510006,
+      "query_and_insert_seconds": 1.059466041973792
+    },
+    {
+      "first": 660001,
+      "last": 661000,
+      "rows": 1000,
+      "input_seconds": 0.0005571249639615417,
+      "query_and_insert_seconds": 0.9009436659980565
+    },
+    {
+      "first": 661001,
+      "last": 662000,
+      "rows": 1000,
+      "input_seconds": 0.0006090829847380519,
+      "query_and_insert_seconds": 1.4470170420245267
+    },
+    {
+      "first": 662001,
+      "last": 663000,
+      "rows": 1000,
+      "input_seconds": 0.0005397089989855886,
+      "query_and_insert_seconds": 1.086587458034046
+    },
+    {
+      "first": 663001,
+      "last": 664000,
+      "rows": 1000,
+      "input_seconds": 0.0006000419962219894,
+      "query_and_insert_seconds": 1.3116244590491988
+    },
+    {
+      "first": 664001,
+      "last": 665000,
+      "rows": 1000,
+      "input_seconds": 0.0005335420137271285,
+      "query_and_insert_seconds": 1.3544137090211734
+    },
+    {
+      "first": 665001,
+      "last": 666000,
+      "rows": 1000,
+      "input_seconds": 0.0005881250253878534,
+      "query_and_insert_seconds": 1.6494721670169383
+    },
+    {
+      "first": 666001,
+      "last": 667000,
+      "rows": 1000,
+      "input_seconds": 0.0005401250091381371,
+      "query_and_insert_seconds": 1.4824015829944983
+    },
+    {
+      "first": 667001,
+      "last": 668000,
+      "rows": 1000,
+      "input_seconds": 0.0006024590111337602,
+      "query_and_insert_seconds": 1.4421733749913983
+    },
+    {
+      "first": 668001,
+      "last": 669000,
+      "rows": 1000,
+      "input_seconds": 0.0005455409991554916,
+      "query_and_insert_seconds": 1.5106352909933776
+    },
+    {
+      "first": 669001,
+      "last": 670000,
+      "rows": 1000,
+      "input_seconds": 0.0005957919638603926,
+      "query_and_insert_seconds": 1.5659863330074586
+    },
+    {
+      "first": 670001,
+      "last": 671000,
+      "rows": 1000,
+      "input_seconds": 0.0005519999540410936,
+      "query_and_insert_seconds": 1.7437538749654777
+    },
+    {
+      "first": 671001,
+      "last": 672000,
+      "rows": 1000,
+      "input_seconds": 0.0006031250231899321,
+      "query_and_insert_seconds": 1.6363628329709172
+    },
+    {
+      "first": 672001,
+      "last": 673000,
+      "rows": 1000,
+      "input_seconds": 0.0005539999692700803,
+      "query_and_insert_seconds": 1.4398067500442266
+    },
+    {
+      "first": 673001,
+      "last": 674000,
+      "rows": 1000,
+      "input_seconds": 0.000616416975390166,
+      "query_and_insert_seconds": 1.9087075830320828
+    },
+    {
+      "first": 674001,
+      "last": 675000,
+      "rows": 1000,
+      "input_seconds": 0.0005613749963231385,
+      "query_and_insert_seconds": 2.157238124986179
+    },
+    {
+      "first": 675001,
+      "last": 676000,
+      "rows": 1000,
+      "input_seconds": 0.0005931250052526593,
+      "query_and_insert_seconds": 1.985049041977618
+    },
+    {
+      "first": 676001,
+      "last": 677000,
+      "rows": 1000,
+      "input_seconds": 0.0005307499668560922,
+      "query_and_insert_seconds": 1.8904156670323573
+    },
+    {
+      "first": 677001,
+      "last": 678000,
+      "rows": 1000,
+      "input_seconds": 0.00054041703697294,
+      "query_and_insert_seconds": 1.6394240829977207
+    },
+    {
+      "first": 678001,
+      "last": 679000,
+      "rows": 1000,
+      "input_seconds": 0.0005456249928101897,
+      "query_and_insert_seconds": 1.6986307089682668
+    },
+    {
+      "first": 679001,
+      "last": 680000,
+      "rows": 1000,
+      "input_seconds": 0.0005744579830206931,
+      "query_and_insert_seconds": 2.0564400000148453
+    },
+    {
+      "first": 680001,
+      "last": 681000,
+      "rows": 1000,
+      "input_seconds": 0.0005261659971438348,
+      "query_and_insert_seconds": 2.1220740410499275
+    },
+    {
+      "first": 681001,
+      "last": 682000,
+      "rows": 1000,
+      "input_seconds": 0.000580166990403086,
+      "query_and_insert_seconds": 2.2830497499671765
+    },
+    {
+      "first": 682001,
+      "last": 683000,
+      "rows": 1000,
+      "input_seconds": 0.0005497920210473239,
+      "query_and_insert_seconds": 1.8682692919974215
+    },
+    {
+      "first": 683001,
+      "last": 684000,
+      "rows": 1000,
+      "input_seconds": 0.0005569590139202774,
+      "query_and_insert_seconds": 1.9220739169977605
+    },
+    {
+      "first": 684001,
+      "last": 685000,
+      "rows": 1000,
+      "input_seconds": 0.0005807080306112766,
+      "query_and_insert_seconds": 1.827861625002697
+    },
+    {
+      "first": 685001,
+      "last": 686000,
+      "rows": 1000,
+      "input_seconds": 0.000530583958607167,
+      "query_and_insert_seconds": 1.8262025829753838
+    },
+    {
+      "first": 686001,
+      "last": 687000,
+      "rows": 1000,
+      "input_seconds": 0.000593958015087992,
+      "query_and_insert_seconds": 2.1190675409743562
+    },
+    {
+      "first": 687001,
+      "last": 688000,
+      "rows": 1000,
+      "input_seconds": 0.0005223749903962016,
+      "query_and_insert_seconds": 2.3009240830433555
+    },
+    {
+      "first": 688001,
+      "last": 689000,
+      "rows": 1000,
+      "input_seconds": 0.0005763330264016986,
+      "query_and_insert_seconds": 2.178514917031862
+    },
+    {
+      "first": 689001,
+      "last": 690000,
+      "rows": 1000,
+      "input_seconds": 0.0005294579896144569,
+      "query_and_insert_seconds": 2.2223122909781523
+    },
+    {
+      "first": 690001,
+      "last": 691000,
+      "rows": 1000,
+      "input_seconds": 0.0005968330078758299,
+      "query_and_insert_seconds": 1.2604152919957414
+    },
+    {
+      "first": 691001,
+      "last": 692000,
+      "rows": 1000,
+      "input_seconds": 0.000533541024196893,
+      "query_and_insert_seconds": 2.152081291016657
+    },
+    {
+      "first": 692001,
+      "last": 693000,
+      "rows": 1000,
+      "input_seconds": 0.0005612919921986759,
+      "query_and_insert_seconds": 2.0872022500261664
+    },
+    {
+      "first": 693001,
+      "last": 694000,
+      "rows": 1000,
+      "input_seconds": 0.000515791994985193,
+      "query_and_insert_seconds": 1.9858297919854522
+    },
+    {
+      "first": 694001,
+      "last": 695000,
+      "rows": 1000,
+      "input_seconds": 0.000581667001824826,
+      "query_and_insert_seconds": 2.161261542001739
+    },
+    {
+      "first": 695001,
+      "last": 696000,
+      "rows": 1000,
+      "input_seconds": 0.000526999996509403,
+      "query_and_insert_seconds": 2.2362047500209883
+    },
+    {
+      "first": 696001,
+      "last": 697000,
+      "rows": 1000,
+      "input_seconds": 0.0005571669898927212,
+      "query_and_insert_seconds": 1.7105349999619648
+    },
+    {
+      "first": 697001,
+      "last": 698000,
+      "rows": 1000,
+      "input_seconds": 0.0005227499641478062,
+      "query_and_insert_seconds": 2.00177466601599
+    },
+    {
+      "first": 698001,
+      "last": 699000,
+      "rows": 1000,
+      "input_seconds": 0.0005646669887937605,
+      "query_and_insert_seconds": 2.2805282499757595
+    },
+    {
+      "first": 699001,
+      "last": 700000,
+      "rows": 1000,
+      "input_seconds": 0.0005166670307517052,
+      "query_and_insert_seconds": 2.212587958027143
+    },
+    {
+      "first": 700001,
+      "last": 701000,
+      "rows": 1000,
+      "input_seconds": 0.000579875020775944,
+      "query_and_insert_seconds": 2.197055166994687
+    },
+    {
+      "first": 701001,
+      "last": 702000,
+      "rows": 1000,
+      "input_seconds": 0.0005142500158399343,
+      "query_and_insert_seconds": 1.679450416995678
+    },
+    {
+      "first": 702001,
+      "last": 703000,
+      "rows": 1000,
+      "input_seconds": 0.0005895830108784139,
+      "query_and_insert_seconds": 1.6732114579644985
+    },
+    {
+      "first": 703001,
+      "last": 704000,
+      "rows": 1000,
+      "input_seconds": 0.0005250419490039349,
+      "query_and_insert_seconds": 1.7683510420029052
+    },
+    {
+      "first": 704001,
+      "last": 705000,
+      "rows": 1000,
+      "input_seconds": 0.0005694159772247076,
+      "query_and_insert_seconds": 2.0857729589915834
+    },
+    {
+      "first": 705001,
+      "last": 706000,
+      "rows": 1000,
+      "input_seconds": 0.0005398329813033342,
+      "query_and_insert_seconds": 1.8308395000058226
+    },
+    {
+      "first": 706001,
+      "last": 707000,
+      "rows": 1000,
+      "input_seconds": 0.0005896669463254511,
+      "query_and_insert_seconds": 1.6314517079736106
+    },
+    {
+      "first": 707001,
+      "last": 708000,
+      "rows": 1000,
+      "input_seconds": 0.0005276669980958104,
+      "query_and_insert_seconds": 1.365074791945517
+    },
+    {
+      "first": 708001,
+      "last": 709000,
+      "rows": 1000,
+      "input_seconds": 0.0005656669964082539,
+      "query_and_insert_seconds": 1.581046375038568
+    },
+    {
+      "first": 709001,
+      "last": 710000,
+      "rows": 1000,
+      "input_seconds": 0.0005091250059194863,
+      "query_and_insert_seconds": 1.703720625024289
+    },
+    {
+      "first": 710001,
+      "last": 711000,
+      "rows": 1000,
+      "input_seconds": 0.0005974589730612934,
+      "query_and_insert_seconds": 1.074839124979917
+    },
+    {
+      "first": 711001,
+      "last": 712000,
+      "rows": 1000,
+      "input_seconds": 0.0005306670209392905,
+      "query_and_insert_seconds": 0.7248604170163162
+    },
+    {
+      "first": 712001,
+      "last": 713000,
+      "rows": 1000,
+      "input_seconds": 0.0005522920400835574,
+      "query_and_insert_seconds": 0.6157406250131316
+    },
+    {
+      "first": 713001,
+      "last": 714000,
+      "rows": 1000,
+      "input_seconds": 0.0005272919661365449,
+      "query_and_insert_seconds": 1.0752809999976307
+    },
+    {
+      "first": 714001,
+      "last": 715000,
+      "rows": 1000,
+      "input_seconds": 0.0005657919682562351,
+      "query_and_insert_seconds": 1.082526040961966
+    },
+    {
+      "first": 715001,
+      "last": 716000,
+      "rows": 1000,
+      "input_seconds": 0.0005424169939942658,
+      "query_and_insert_seconds": 1.313052291981876
+    },
+    {
+      "first": 716001,
+      "last": 717000,
+      "rows": 1000,
+      "input_seconds": 0.0005927089951001108,
+      "query_and_insert_seconds": 2.291882749996148
+    },
+    {
+      "first": 717001,
+      "last": 718000,
+      "rows": 1000,
+      "input_seconds": 0.0005488750175572932,
+      "query_and_insert_seconds": 1.0651874159811996
+    },
+    {
+      "first": 718001,
+      "last": 719000,
+      "rows": 1000,
+      "input_seconds": 0.0006067909998819232,
+      "query_and_insert_seconds": 0.7952771250274964
+    },
+    {
+      "first": 719001,
+      "last": 720000,
+      "rows": 1000,
+      "input_seconds": 0.0005417079664766788,
+      "query_and_insert_seconds": 0.9251476249773987
+    },
+    {
+      "first": 720001,
+      "last": 721000,
+      "rows": 1000,
+      "input_seconds": 0.0005930829793214798,
+      "query_and_insert_seconds": 0.7946562079596333
+    },
+    {
+      "first": 721001,
+      "last": 722000,
+      "rows": 1000,
+      "input_seconds": 0.0005670000100508332,
+      "query_and_insert_seconds": 0.8615474999533035
+    },
+    {
+      "first": 722001,
+      "last": 723000,
+      "rows": 1000,
+      "input_seconds": 0.0006007500342093408,
+      "query_and_insert_seconds": 0.9454720829962753
+    },
+    {
+      "first": 723001,
+      "last": 724000,
+      "rows": 1000,
+      "input_seconds": 0.0005252920091152191,
+      "query_and_insert_seconds": 0.7051842920482159
+    },
+    {
+      "first": 724001,
+      "last": 725000,
+      "rows": 1000,
+      "input_seconds": 0.0005890410393476486,
+      "query_and_insert_seconds": 0.5623548330040649
+    },
+    {
+      "first": 725001,
+      "last": 726000,
+      "rows": 1000,
+      "input_seconds": 0.0005605409969575703,
+      "query_and_insert_seconds": 0.5884596250252798
+    },
+    {
+      "first": 726001,
+      "last": 727000,
+      "rows": 1000,
+      "input_seconds": 0.0005475829821079969,
+      "query_and_insert_seconds": 0.6925970839802176
+    },
+    {
+      "first": 727001,
+      "last": 728000,
+      "rows": 1000,
+      "input_seconds": 0.0006009580101817846,
+      "query_and_insert_seconds": 1.2843439579592086
+    },
+    {
+      "first": 728001,
+      "last": 729000,
+      "rows": 1000,
+      "input_seconds": 0.0005312910070642829,
+      "query_and_insert_seconds": 1.460182667011395
+    },
+    {
+      "first": 729001,
+      "last": 730000,
+      "rows": 1000,
+      "input_seconds": 0.0006078750011511147,
+      "query_and_insert_seconds": 2.3915314999758266
+    },
+    {
+      "first": 730001,
+      "last": 731000,
+      "rows": 1000,
+      "input_seconds": 0.0005567079642787576,
+      "query_and_insert_seconds": 2.1069521250319667
+    },
+    {
+      "first": 731001,
+      "last": 732000,
+      "rows": 1000,
+      "input_seconds": 0.0006345000001601875,
+      "query_and_insert_seconds": 0.822763083036989
+    },
+    {
+      "first": 732001,
+      "last": 733000,
+      "rows": 1000,
+      "input_seconds": 0.0005196669953875244,
+      "query_and_insert_seconds": 0.9547405000193976
+    },
+    {
+      "first": 733001,
+      "last": 734000,
+      "rows": 1000,
+      "input_seconds": 0.0005817089695483446,
+      "query_and_insert_seconds": 0.8284391659544781
+    },
+    {
+      "first": 734001,
+      "last": 735000,
+      "rows": 1000,
+      "input_seconds": 0.0005024159909226,
+      "query_and_insert_seconds": 0.7794763750280254
+    },
+    {
+      "first": 735001,
+      "last": 736000,
+      "rows": 1000,
+      "input_seconds": 0.0005551249487325549,
+      "query_and_insert_seconds": 0.8667068750364706
+    },
+    {
+      "first": 736001,
+      "last": 737000,
+      "rows": 1000,
+      "input_seconds": 0.0005099999834783375,
+      "query_and_insert_seconds": 0.9925370420096442
+    },
+    {
+      "first": 737001,
+      "last": 738000,
+      "rows": 1000,
+      "input_seconds": 0.0007129170116968453,
+      "query_and_insert_seconds": 0.6325005840044469
+    },
+    {
+      "first": 738001,
+      "last": 739000,
+      "rows": 1000,
+      "input_seconds": 0.0005401250091381371,
+      "query_and_insert_seconds": 0.7825512909912504
+    },
+    {
+      "first": 739001,
+      "last": 740000,
+      "rows": 1000,
+      "input_seconds": 0.0005633750115521252,
+      "query_and_insert_seconds": 0.8575433330261149
+    },
+    {
+      "first": 740001,
+      "last": 741000,
+      "rows": 1000,
+      "input_seconds": 0.0005444170092232525,
+      "query_and_insert_seconds": 0.7805635410477407
+    },
+    {
+      "first": 741001,
+      "last": 742000,
+      "rows": 1000,
+      "input_seconds": 0.0005630830419249833,
+      "query_and_insert_seconds": 0.6746524159680121
+    },
+    {
+      "first": 742001,
+      "last": 743000,
+      "rows": 1000,
+      "input_seconds": 0.0005050829495303333,
+      "query_and_insert_seconds": 0.9362437499803491
+    },
+    {
+      "first": 743001,
+      "last": 744000,
+      "rows": 1000,
+      "input_seconds": 0.0005401250091381371,
+      "query_and_insert_seconds": 0.9414460830157623
+    },
+    {
+      "first": 744001,
+      "last": 745000,
+      "rows": 1000,
+      "input_seconds": 0.0005264999927021563,
+      "query_and_insert_seconds": 0.9175033749779686
+    },
+    {
+      "first": 745001,
+      "last": 746000,
+      "rows": 1000,
+      "input_seconds": 0.0005992089863866568,
+      "query_and_insert_seconds": 0.8194826249964535
+    },
+    {
+      "first": 746001,
+      "last": 747000,
+      "rows": 1000,
+      "input_seconds": 0.000517916982062161,
+      "query_and_insert_seconds": 0.7142499170149677
+    },
+    {
+      "first": 747001,
+      "last": 748000,
+      "rows": 1000,
+      "input_seconds": 0.0005704580107703805,
+      "query_and_insert_seconds": 0.6018974169855937
+    },
+    {
+      "first": 748001,
+      "last": 749000,
+      "rows": 1000,
+      "input_seconds": 0.0005213749827817082,
+      "query_and_insert_seconds": 0.8220671659801155
+    },
+    {
+      "first": 749001,
+      "last": 750000,
+      "rows": 1000,
+      "input_seconds": 0.0005864580161869526,
+      "query_and_insert_seconds": 0.7510659580002539
+    },
+    {
+      "first": 750001,
+      "last": 751000,
+      "rows": 1000,
+      "input_seconds": 0.0005482920096255839,
+      "query_and_insert_seconds": 0.7959528339561075
+    },
+    {
+      "first": 751001,
+      "last": 752000,
+      "rows": 1000,
+      "input_seconds": 0.000612374977208674,
+      "query_and_insert_seconds": 0.9029179589706473
+    },
+    {
+      "first": 752001,
+      "last": 753000,
+      "rows": 1000,
+      "input_seconds": 0.0005676249857060611,
+      "query_and_insert_seconds": 0.6890140830073506
+    },
+    {
+      "first": 753001,
+      "last": 754000,
+      "rows": 1000,
+      "input_seconds": 0.0006175420130603015,
+      "query_and_insert_seconds": 0.977742874994874
+    },
+    {
+      "first": 754001,
+      "last": 755000,
+      "rows": 1000,
+      "input_seconds": 0.0005287909880280495,
+      "query_and_insert_seconds": 1.0219443329842761
+    },
+    {
+      "first": 755001,
+      "last": 756000,
+      "rows": 1000,
+      "input_seconds": 0.0005985000170767307,
+      "query_and_insert_seconds": 0.7817932079778984
+    },
+    {
+      "first": 756001,
+      "last": 757000,
+      "rows": 1000,
+      "input_seconds": 0.0005432090256363153,
+      "query_and_insert_seconds": 0.9701954589691013
+    },
+    {
+      "first": 757001,
+      "last": 758000,
+      "rows": 1000,
+      "input_seconds": 0.000594375014770776,
+      "query_and_insert_seconds": 0.7861432079807855
+    },
+    {
+      "first": 758001,
+      "last": 759000,
+      "rows": 1000,
+      "input_seconds": 0.0005062920390628278,
+      "query_and_insert_seconds": 0.7260553750093095
+    },
+    {
+      "first": 759001,
+      "last": 760000,
+      "rows": 1000,
+      "input_seconds": 0.0005373330204747617,
+      "query_and_insert_seconds": 0.6039659170201048
+    },
+    {
+      "first": 760001,
+      "last": 761000,
+      "rows": 1000,
+      "input_seconds": 0.0005529170157387853,
+      "query_and_insert_seconds": 0.8048427079920657
+    },
+    {
+      "first": 761001,
+      "last": 762000,
+      "rows": 1000,
+      "input_seconds": 0.0005510000046342611,
+      "query_and_insert_seconds": 0.8243316669831984
+    },
+    {
+      "first": 762001,
+      "last": 763000,
+      "rows": 1000,
+      "input_seconds": 0.0005355000030249357,
+      "query_and_insert_seconds": 0.8092920000199229
+    },
+    {
+      "first": 763001,
+      "last": 764000,
+      "rows": 1000,
+      "input_seconds": 0.0005799999926239252,
+      "query_and_insert_seconds": 0.7903151250211522
+    },
+    {
+      "first": 764001,
+      "last": 765000,
+      "rows": 1000,
+      "input_seconds": 0.000550874974578619,
+      "query_and_insert_seconds": 0.8609037919668481
+    },
+    {
+      "first": 765001,
+      "last": 766000,
+      "rows": 1000,
+      "input_seconds": 0.0005907499580644071,
+      "query_and_insert_seconds": 0.7731120840180665
+    },
+    {
+      "first": 766001,
+      "last": 767000,
+      "rows": 1000,
+      "input_seconds": 0.0005549999768845737,
+      "query_and_insert_seconds": 0.7884365000063553
+    },
+    {
+      "first": 767001,
+      "last": 768000,
+      "rows": 1000,
+      "input_seconds": 0.0005391669692471623,
+      "query_and_insert_seconds": 0.9724810000043362
+    },
+    {
+      "first": 768001,
+      "last": 769000,
+      "rows": 1000,
+      "input_seconds": 0.0005662090261466801,
+      "query_and_insert_seconds": 0.8626911669853143
+    },
+    {
+      "first": 769001,
+      "last": 770000,
+      "rows": 1000,
+      "input_seconds": 0.0005108340410515666,
+      "query_and_insert_seconds": 0.7356920840102248
+    },
+    {
+      "first": 770001,
+      "last": 771000,
+      "rows": 1000,
+      "input_seconds": 0.000566834001801908,
+      "query_and_insert_seconds": 0.7344269580207765
+    },
+    {
+      "first": 771001,
+      "last": 772000,
+      "rows": 1000,
+      "input_seconds": 0.0005350409774109721,
+      "query_and_insert_seconds": 0.789416124986019
+    },
+    {
+      "first": 772001,
+      "last": 773000,
+      "rows": 1000,
+      "input_seconds": 0.0005640829913318157,
+      "query_and_insert_seconds": 0.7179857910377905
+    },
+    {
+      "first": 773001,
+      "last": 774000,
+      "rows": 1000,
+      "input_seconds": 0.0005455840146169066,
+      "query_and_insert_seconds": 0.5874662920250557
+    },
+    {
+      "first": 774001,
+      "last": 775000,
+      "rows": 1000,
+      "input_seconds": 0.0005687079974450171,
+      "query_and_insert_seconds": 0.6585195410298184
+    },
+    {
+      "first": 775001,
+      "last": 776000,
+      "rows": 1000,
+      "input_seconds": 0.0005623750039376318,
+      "query_and_insert_seconds": 0.7531745000160299
+    },
+    {
+      "first": 776001,
+      "last": 777000,
+      "rows": 1000,
+      "input_seconds": 0.0005769580020569265,
+      "query_and_insert_seconds": 0.9285145000321791
+    },
+    {
+      "first": 777001,
+      "last": 778000,
+      "rows": 1000,
+      "input_seconds": 0.0005504159489646554,
+      "query_and_insert_seconds": 0.6856427919701673
+    },
+    {
+      "first": 778001,
+      "last": 779000,
+      "rows": 1000,
+      "input_seconds": 0.0006135000148788095,
+      "query_and_insert_seconds": 0.8388065000181086
+    },
+    {
+      "first": 779001,
+      "last": 780000,
+      "rows": 1000,
+      "input_seconds": 0.0005484999855980277,
+      "query_and_insert_seconds": 0.8368114579934627
+    },
+    {
+      "first": 780001,
+      "last": 781000,
+      "rows": 1000,
+      "input_seconds": 0.0005729160038754344,
+      "query_and_insert_seconds": 0.6372130829840899
+    },
+    {
+      "first": 781001,
+      "last": 782000,
+      "rows": 1000,
+      "input_seconds": 0.0005337920156307518,
+      "query_and_insert_seconds": 1.0207817500340752
+    },
+    {
+      "first": 782001,
+      "last": 783000,
+      "rows": 1000,
+      "input_seconds": 0.0005899170064367354,
+      "query_and_insert_seconds": 0.8278864169842564
+    },
+    {
+      "first": 783001,
+      "last": 784000,
+      "rows": 1000,
+      "input_seconds": 0.000539999979082495,
+      "query_and_insert_seconds": 0.8702013340080157
+    },
+    {
+      "first": 784001,
+      "last": 785000,
+      "rows": 1000,
+      "input_seconds": 0.0005868329899385571,
+      "query_and_insert_seconds": 0.7071857909904793
+    },
+    {
+      "first": 785001,
+      "last": 786000,
+      "rows": 1000,
+      "input_seconds": 0.0005483750137500465,
+      "query_and_insert_seconds": 0.7970675830147229
+    },
+    {
+      "first": 786001,
+      "last": 787000,
+      "rows": 1000,
+      "input_seconds": 0.0005793329910375178,
+      "query_and_insert_seconds": 0.6561836669570766
+    },
+    {
+      "first": 787001,
+      "last": 788000,
+      "rows": 1000,
+      "input_seconds": 0.0005361660150811076,
+      "query_and_insert_seconds": 0.5660651660291478
+    },
+    {
+      "first": 788001,
+      "last": 789000,
+      "rows": 1000,
+      "input_seconds": 0.000572957971598953,
+      "query_and_insert_seconds": 0.8084627499920316
+    },
+    {
+      "first": 789001,
+      "last": 790000,
+      "rows": 1000,
+      "input_seconds": 0.0005374169559217989,
+      "query_and_insert_seconds": 0.7765414160094224
+    },
+    {
+      "first": 790001,
+      "last": 791000,
+      "rows": 1000,
+      "input_seconds": 0.00058637501206249,
+      "query_and_insert_seconds": 0.6738327910425141
+    },
+    {
+      "first": 791001,
+      "last": 792000,
+      "rows": 1000,
+      "input_seconds": 0.0005291670095175505,
+      "query_and_insert_seconds": 0.6845538330380805
+    },
+    {
+      "first": 792001,
+      "last": 793000,
+      "rows": 1000,
+      "input_seconds": 0.0005753340083174407,
+      "query_and_insert_seconds": 0.9391177499783225
+    },
+    {
+      "first": 793001,
+      "last": 794000,
+      "rows": 1000,
+      "input_seconds": 0.0005700839683413506,
+      "query_and_insert_seconds": 0.797378999995999
+    },
+    {
+      "first": 794001,
+      "last": 795000,
+      "rows": 1000,
+      "input_seconds": 0.0006088329828344285,
+      "query_and_insert_seconds": 0.804548124957364
+    },
+    {
+      "first": 795001,
+      "last": 796000,
+      "rows": 1000,
+      "input_seconds": 0.0005259159952402115,
+      "query_and_insert_seconds": 0.5616022080066614
+    },
+    {
+      "first": 796001,
+      "last": 797000,
+      "rows": 1000,
+      "input_seconds": 0.0005717499880120158,
+      "query_and_insert_seconds": 0.9393410419579595
+    },
+    {
+      "first": 797001,
+      "last": 798000,
+      "rows": 1000,
+      "input_seconds": 0.0005292920395731926,
+      "query_and_insert_seconds": 1.1491114999516867
+    },
+    {
+      "first": 798001,
+      "last": 799000,
+      "rows": 1000,
+      "input_seconds": 0.0005522919818758965,
+      "query_and_insert_seconds": 0.9683245419873856
+    },
+    {
+      "first": 799001,
+      "last": 800000,
+      "rows": 1000,
+      "input_seconds": 0.0005823749816045165,
+      "query_and_insert_seconds": 0.7405668750288896
+    },
+    {
+      "first": 800001,
+      "last": 801000,
+      "rows": 1000,
+      "input_seconds": 0.0005445409915409982,
+      "query_and_insert_seconds": 0.8295327920350246
+    },
+    {
+      "first": 801001,
+      "last": 802000,
+      "rows": 1000,
+      "input_seconds": 0.0005268749664537609,
+      "query_and_insert_seconds": 0.7233819160028361
+    },
+    {
+      "first": 802001,
+      "last": 803000,
+      "rows": 1000,
+      "input_seconds": 0.0005725830560550094,
+      "query_and_insert_seconds": 0.6712587910005823
+    },
+    {
+      "first": 803001,
+      "last": 804000,
+      "rows": 1000,
+      "input_seconds": 0.0005346249672584236,
+      "query_and_insert_seconds": 0.9212994580157101
+    },
+    {
+      "first": 804001,
+      "last": 805000,
+      "rows": 1000,
+      "input_seconds": 0.0005429589655250311,
+      "query_and_insert_seconds": 1.0346284169936553
+    },
+    {
+      "first": 805001,
+      "last": 806000,
+      "rows": 1000,
+      "input_seconds": 0.0005311669665388763,
+      "query_and_insert_seconds": 0.6303281669970602
+    },
+    {
+      "first": 806001,
+      "last": 807000,
+      "rows": 1000,
+      "input_seconds": 0.0005427090218290687,
+      "query_and_insert_seconds": 0.8601348749944009
+    },
+    {
+      "first": 807001,
+      "last": 808000,
+      "rows": 1000,
+      "input_seconds": 0.0005335409659892321,
+      "query_and_insert_seconds": 0.9150302500347607
+    },
+    {
+      "first": 808001,
+      "last": 809000,
+      "rows": 1000,
+      "input_seconds": 0.0005684999632649124,
+      "query_and_insert_seconds": 0.8154531660256907
+    },
+    {
+      "first": 809001,
+      "last": 810000,
+      "rows": 1000,
+      "input_seconds": 0.0005310419946908951,
+      "query_and_insert_seconds": 0.9062275830074213
+    },
+    {
+      "first": 810001,
+      "last": 811000,
+      "rows": 1000,
+      "input_seconds": 0.0005163329769857228,
+      "query_and_insert_seconds": 0.7289734579971991
+    },
+    {
+      "first": 811001,
+      "last": 812000,
+      "rows": 1000,
+      "input_seconds": 0.0005743329529650509,
+      "query_and_insert_seconds": 0.8357215420110151
+    },
+    {
+      "first": 812001,
+      "last": 813000,
+      "rows": 1000,
+      "input_seconds": 0.0005145420436747372,
+      "query_and_insert_seconds": 0.8555932500166818
+    },
+    {
+      "first": 813001,
+      "last": 814000,
+      "rows": 1000,
+      "input_seconds": 0.0005934590008109808,
+      "query_and_insert_seconds": 0.7411937919678167
+    },
+    {
+      "first": 814001,
+      "last": 815000,
+      "rows": 1000,
+      "input_seconds": 0.0005332910222932696,
+      "query_and_insert_seconds": 0.6894266669987701
+    },
+    {
+      "first": 815001,
+      "last": 816000,
+      "rows": 1000,
+      "input_seconds": 0.0005521250423043966,
+      "query_and_insert_seconds": 0.7711798749514855
+    },
+    {
+      "first": 816001,
+      "last": 817000,
+      "rows": 1000,
+      "input_seconds": 0.000504207971971482,
+      "query_and_insert_seconds": 0.6904721669852734
+    },
+    {
+      "first": 817001,
+      "last": 818000,
+      "rows": 1000,
+      "input_seconds": 0.0005414169863797724,
+      "query_and_insert_seconds": 0.6333748750039376
+    },
+    {
+      "first": 818001,
+      "last": 819000,
+      "rows": 1000,
+      "input_seconds": 0.00055929203517735,
+      "query_and_insert_seconds": 0.8812279999838211
+    },
+    {
+      "first": 819001,
+      "last": 820000,
+      "rows": 1000,
+      "input_seconds": 0.0005574999959208071,
+      "query_and_insert_seconds": 0.9169765000115149
+    },
+    {
+      "first": 820001,
+      "last": 821000,
+      "rows": 1000,
+      "input_seconds": 0.00047895900206640363,
+      "query_and_insert_seconds": 0.9118601250229403
+    },
+    {
+      "first": 821001,
+      "last": 822000,
+      "rows": 1000,
+      "input_seconds": 0.0005742499488405883,
+      "query_and_insert_seconds": 0.6917952499934472
+    },
+    {
+      "first": 822001,
+      "last": 823000,
+      "rows": 1000,
+      "input_seconds": 0.0005065830191597342,
+      "query_and_insert_seconds": 0.731913750001695
+    },
+    {
+      "first": 823001,
+      "last": 824000,
+      "rows": 1000,
+      "input_seconds": 0.0005364589742384851,
+      "query_and_insert_seconds": 1.0071353330276906
+    },
+    {
+      "first": 824001,
+      "last": 825000,
+      "rows": 1000,
+      "input_seconds": 0.0005300419870764017,
+      "query_and_insert_seconds": 0.8873373339883983
+    },
+    {
+      "first": 825001,
+      "last": 826000,
+      "rows": 1000,
+      "input_seconds": 0.0005720419576391578,
+      "query_and_insert_seconds": 0.8816723749623634
+    },
+    {
+      "first": 826001,
+      "last": 827000,
+      "rows": 1000,
+      "input_seconds": 0.0004959580255672336,
+      "query_and_insert_seconds": 0.7886904579936527
+    },
+    {
+      "first": 827001,
+      "last": 828000,
+      "rows": 1000,
+      "input_seconds": 0.0005737500032410026,
+      "query_and_insert_seconds": 0.9145833340007812
+    },
+    {
+      "first": 828001,
+      "last": 829000,
+      "rows": 1000,
+      "input_seconds": 0.0005343329976312816,
+      "query_and_insert_seconds": 0.9163135000271723
+    },
+    {
+      "first": 829001,
+      "last": 830000,
+      "rows": 1000,
+      "input_seconds": 0.0005632920074276626,
+      "query_and_insert_seconds": 0.9524071249761619
+    },
+    {
+      "first": 830001,
+      "last": 831000,
+      "rows": 1000,
+      "input_seconds": 0.0005280409823171794,
+      "query_and_insert_seconds": 0.8615390830091201
+    },
+    {
+      "first": 831001,
+      "last": 832000,
+      "rows": 1000,
+      "input_seconds": 0.0005649999948218465,
+      "query_and_insert_seconds": 0.9906133749755099
+    },
+    {
+      "first": 832001,
+      "last": 833000,
+      "rows": 1000,
+      "input_seconds": 0.0004924579989165068,
+      "query_and_insert_seconds": 1.1587575419689529
+    },
+    {
+      "first": 833001,
+      "last": 834000,
+      "rows": 1000,
+      "input_seconds": 0.0005684170173481107,
+      "query_and_insert_seconds": 1.1327876669820398
+    },
+    {
+      "first": 834001,
+      "last": 835000,
+      "rows": 1000,
+      "input_seconds": 0.0005108339828439057,
+      "query_and_insert_seconds": 0.8701970829861239
+    },
+    {
+      "first": 835001,
+      "last": 836000,
+      "rows": 1000,
+      "input_seconds": 0.0005716659943573177,
+      "query_and_insert_seconds": 0.727739957976155
+    },
+    {
+      "first": 836001,
+      "last": 837000,
+      "rows": 1000,
+      "input_seconds": 0.0005094579537399113,
+      "query_and_insert_seconds": 0.7456447909935378
+    },
+    {
+      "first": 837001,
+      "last": 838000,
+      "rows": 1000,
+      "input_seconds": 0.0005466670263558626,
+      "query_and_insert_seconds": 0.856858209008351
+    },
+    {
+      "first": 838001,
+      "last": 839000,
+      "rows": 1000,
+      "input_seconds": 0.0005289170076139271,
+      "query_and_insert_seconds": 0.8667019170243293
+    },
+    {
+      "first": 839001,
+      "last": 840000,
+      "rows": 1000,
+      "input_seconds": 0.0006003340240567923,
+      "query_and_insert_seconds": 0.7073201249586418
+    },
+    {
+      "first": 840001,
+      "last": 841000,
+      "rows": 1000,
+      "input_seconds": 0.000506750016938895,
+      "query_and_insert_seconds": 0.5167752089910209
+    },
+    {
+      "first": 841001,
+      "last": 842000,
+      "rows": 1000,
+      "input_seconds": 0.0005375000182539225,
+      "query_and_insert_seconds": 0.5974280000082217
+    },
+    {
+      "first": 842001,
+      "last": 843000,
+      "rows": 1000,
+      "input_seconds": 0.000503125018440187,
+      "query_and_insert_seconds": 0.71924066595966
+    },
+    {
+      "first": 843001,
+      "last": 844000,
+      "rows": 1000,
+      "input_seconds": 0.0005457499646581709,
+      "query_and_insert_seconds": 0.7406103750108741
+    },
+    {
+      "first": 844001,
+      "last": 845000,
+      "rows": 1000,
+      "input_seconds": 0.0005300840130075812,
+      "query_and_insert_seconds": 0.6847222079522908
+    },
+    {
+      "first": 845001,
+      "last": 846000,
+      "rows": 1000,
+      "input_seconds": 0.000574790989048779,
+      "query_and_insert_seconds": 0.6585015000309795
+    },
+    {
+      "first": 846001,
+      "last": 847000,
+      "rows": 1000,
+      "input_seconds": 0.0005142079899087548,
+      "query_and_insert_seconds": 0.629956333024893
+    },
+    {
+      "first": 847001,
+      "last": 848000,
+      "rows": 1000,
+      "input_seconds": 0.0005445409915409982,
+      "query_and_insert_seconds": 0.5900623330380768
+    },
+    {
+      "first": 848001,
+      "last": 849000,
+      "rows": 1000,
+      "input_seconds": 0.0005171659868210554,
+      "query_and_insert_seconds": 0.6501540830358863
+    },
+    {
+      "first": 849001,
+      "last": 850000,
+      "rows": 1000,
+      "input_seconds": 0.0005621249438263476,
+      "query_and_insert_seconds": 0.5167247499921359
+    },
+    {
+      "first": 850001,
+      "last": 851000,
+      "rows": 1000,
+      "input_seconds": 0.0005277920281514525,
+      "query_and_insert_seconds": 0.7050062500056811
+    },
+    {
+      "first": 851001,
+      "last": 852000,
+      "rows": 1000,
+      "input_seconds": 0.0005865420098416507,
+      "query_and_insert_seconds": 0.5123478329624049
+    },
+    {
+      "first": 852001,
+      "last": 853000,
+      "rows": 1000,
+      "input_seconds": 0.0005367079866118729,
+      "query_and_insert_seconds": 0.4967557920026593
+    },
+    {
+      "first": 853001,
+      "last": 854000,
+      "rows": 1000,
+      "input_seconds": 0.0005082080024294555,
+      "query_and_insert_seconds": 0.6528513749944977
+    },
+    {
+      "first": 854001,
+      "last": 855000,
+      "rows": 1000,
+      "input_seconds": 0.0005934590008109808,
+      "query_and_insert_seconds": 0.9009975829976611
+    },
+    {
+      "first": 855001,
+      "last": 856000,
+      "rows": 1000,
+      "input_seconds": 0.0005046669975854456,
+      "query_and_insert_seconds": 0.7237384159816429
+    },
+    {
+      "first": 856001,
+      "last": 856687,
+      "rows": 687,
+      "input_seconds": 0.00048970797797665,
+      "query_and_insert_seconds": 0.5397667499491945
+    }
+  ],
+  "input_rows": 856687,
+  "blank_address_rows": 527,
+  "source_versions": [
+    "26v2m2",
+    "26v2m2"
+  ],
+  "reference_rows": 856160,
+  "index_phrases": 605359,
+  "duplicate_normalized_address_groups": 5464,
+  "database_bytes_before_matching": 101986304,
+  "peak_process_rss_mib": 923.9375,
+  "matching_query_and_insert_seconds": 1005.6871328254347,
+  "matching_rows_per_second": 851.0349725381458,
+  "retrieval": {
+    "matched": 852545,
+    "unmatched": 4142,
+    "same_bbl": 830363,
+    "same_normalized_address": 847630,
+    "score_one": 852545,
+    "blank_input_matched": 0
+  },
+  "status": "ok",
+  "total_seconds_excluding_hashes_and_connection": 1016.3064345830353
+}

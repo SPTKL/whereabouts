@@ -121,4 +121,60 @@ SELECT i.address_id, i.input_address, s.reference_id, s.matched_address,
        s.latitude, s.longitude, s.similarity, s.match_rank
 FROM _wa_inputs i LEFT JOIN _wa_selected s USING (address_id);
 
+-- The recursive working table contains only the preceding batch's matches.
+-- Each iteration runs the unchanged scorer over at most batch_size input rows;
+-- assigning batch numbers without recursion would not bound candidate expansion.
+-- The input snapshot and global ID validation still scale with input size and
+-- use DuckDB-managed storage. Downstream ORDER BY/aggregation may also buffer.
+CREATE OR REPLACE MACRO wa_geocode_batched(
+    input_table, reference_table, index_table,
+    batch_size := 1000, top_n := 1, min_similarity := 0.0, max_phrase_frequency := 1000
+) AS TABLE
+WITH RECURSIVE _wa_batch_config AS MATERIALIZED (
+    SELECT CASE WHEN batch_size IS NULL OR NOT isfinite(batch_size)
+                     OR batch_size < 1 OR batch_size > 2147483647 OR batch_size != trunc(batch_size)
+                THEN error('batch_size must be an integer between 1 and 2147483647')
+                ELSE CAST(batch_size AS BIGINT) END AS batch_rows
+), _wa_batch_source AS MATERIALIZED (
+    SELECT row_number() OVER () AS seq, address_id, address
+    FROM (
+        SELECT CAST(address_id AS VARCHAR) AS address_id, CAST(address AS VARCHAR) AS address
+        FROM query_table(input_table)
+    )
+), _wa_batch_validation AS MATERIALIZED (
+    -- Check the entire snapshot, including duplicates that cross batch boundaries.
+    SELECT CASE WHEN count(*) FILTER (WHERE address_id IS NULL OR address_id = '') > 0
+                     THEN error('Input address_id must be nonempty and non-NULL')
+                WHEN count(*) != count(DISTINCT address_id)
+                     THEN error('Input address_id must be unique after conversion to VARCHAR')
+                ELSE count(*) END AS total_rows
+    FROM _wa_batch_source
+), _wa_batches AS (
+    SELECT 0::BIGINT AS batch_end, cfg.batch_rows, v.total_rows,
+           NULL::VARCHAR AS address_id, NULL::VARCHAR AS input_address,
+           NULL::VARCHAR AS reference_id, NULL::VARCHAR AS matched_address,
+           NULL::DOUBLE AS latitude, NULL::DOUBLE AS longitude,
+           NULL::DOUBLE AS similarity, NULL::BIGINT AS match_rank
+    FROM _wa_batch_config cfg CROSS JOIN _wa_batch_validation v
+    UNION ALL
+    (
+        WITH _wa_batch_bounds AS MATERIALIZED (
+            SELECT max(batch_end) AS lo, max(batch_rows) AS batch_rows, max(total_rows) AS total_rows,
+                   CAST(least(max(batch_end)::HUGEINT + max(batch_rows), max(total_rows)) AS BIGINT) AS hi
+            FROM _wa_batches
+        ), _wa_batch_inputs AS MATERIALIZED (
+            SELECT s.address_id, s.address FROM _wa_batch_source s CROSS JOIN _wa_batch_bounds b
+            WHERE s.seq > b.lo AND s.seq <= b.hi
+        )
+        SELECT b.hi, b.batch_rows, b.total_rows, m.*
+        FROM wa_geocode('_wa_batch_inputs', reference_table, index_table,
+                        top_n := top_n, min_similarity := min_similarity,
+                        max_phrase_frequency := max_phrase_frequency) m
+        CROSS JOIN _wa_batch_bounds b
+    )
+)
+SELECT address_id, input_address, reference_id, matched_address,
+       latitude, longitude, similarity, match_rank
+FROM _wa_batches WHERE batch_end > 0;
+
 CREATE OR REPLACE MACRO wa_version() AS '0.1.0';

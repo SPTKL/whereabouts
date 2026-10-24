@@ -133,6 +133,45 @@ All table arguments use DuckDB's `query_table`; they are names, not interpolated
 SQL statements. Internal CTE names use the reserved `_wa_` prefix. Schema-qualify
 source names if they collide with those internal names.
 
+## Bounded batches
+
+For large input tables, use `wa_geocode_batched`. It accepts the same three table
+names and matching options, plus `batch_size` (default **1,000 input rows**, a
+positive integer up to 2,147,483,647):
+
+```sql
+SET memory_limit = '1GB';
+SET temp_directory = '/path/to/duckdb-spill';
+
+CREATE TABLE geocoded AS
+SELECT * FROM wa_geocode_batched(
+    'incoming', 'address_reference', 'address_index',
+    batch_size := 1000, top_n := 1
+);
+```
+
+The extension runs the unchanged scorer once per batch using a recursive SQL
+working table. Candidate expansion, scoring, and ranking happen for one batch at
+a time, and every input remains present, including unmatched rows. The input is
+snapshotted once, and IDs are validated across the entire input before matching;
+duplicates across batches are errors. Results and tie-breaking match `wa_geocode`.
+Output order is unspecified. This works in both the native extension and SQL-only
+distribution, including temporary tables, views, attachments, and uncommitted data
+in the caller's transaction. No Python loop or separate connection is needed.
+
+Batch size bounds the number of input rows sent to the scorer, **not total RAM**.
+The full input snapshot, global ID validation, reference/index, recursive output,
+and downstream operations also need storage; DuckDB can spill supported operations.
+Candidate counts vary with address ambiguity, phrase frequency, and reference size.
+`top_n` can produce multiple result rows per input. A very large batch can still run
+out of memory, even with disk spill enabled. Raising `max_phrase_frequency` can
+increase candidate expansion substantially.
+
+Start with 1,000 rows and adjust using representative data and your actual memory
+limit. There is no universal optimal size; smaller batches reduce working memory
+but repeat query operators and reference scans. See the
+[benchmark guide](benchmarks/README.md) for measured MapPLUTO results.
+
 ## Relationship to the Python implementation
 
 The port follows the standard pipeline: normalize, extract tokens, generate adjacent
@@ -166,7 +205,7 @@ For reproducible speed, memory, and accuracy comparisons with the Python standar
 matcher, see the [benchmark harness](benchmarks/README.md).
 
 ```sh
-make test                       # 16 CLI tests; Python stdlib only for test driver
+make test                       # CLI tests; Python stdlib only for test driver
 make test-sql                   # Same tests against the SQL-only distribution
 make package                    # Binary, SQL, examples, docs, and licenses
 ```

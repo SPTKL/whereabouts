@@ -230,6 +230,96 @@ class ExtensionTests(unittest.TestCase):
         """)
         self.assertEqual(rows, [{"n": 1000, "score": 1.0}])
 
+    def test_bounded_batch_parity(self):
+        for size in [1, 3, 10, 1000]:
+            for options in [
+                "",
+                ",top_n:=2",
+                ",min_similarity:=0.9",
+                ",max_phrase_frequency:=1",
+            ]:
+                with self.subTest(size=size, options=options):
+                    rows = self.run_sql(f"""
+                        CREATE TABLE expected AS FROM wa_geocode('inputs','reference','phrase_index'{options});
+                        CREATE TABLE actual AS FROM wa_geocode_batched(
+                            'inputs','reference','phrase_index',batch_size:={size}{options});
+                        SELECT count(*) AS differences FROM (
+                            (FROM actual EXCEPT ALL FROM expected)
+                            UNION ALL (FROM expected EXCEPT ALL FROM actual)
+                        );
+                    """)
+                    self.assertEqual(rows, [{"differences": 0}])
+
+    def test_bounded_batch_global_id_validation(self):
+        for mutation, expected in [
+            ("INSERT INTO inputs VALUES ('1','another')", "must be unique"),
+            ("INSERT INTO inputs VALUES (NULL,'another')", "must be nonempty"),
+            ("INSERT INTO inputs VALUES ('','another')", "must be nonempty"),
+        ]:
+            self.run_sql(
+                mutation
+                + "; FROM wa_geocode_batched('inputs','reference','phrase_index',batch_size:=1);",
+                error=expected,
+            )
+
+    def test_bounded_batch_invalid_size(self):
+        for size in [
+            "0",
+            "-1",
+            "1.5",
+            "NULL",
+            "'NaN'::DOUBLE",
+            "'Infinity'::DOUBLE",
+            "2147483648",
+        ]:
+            for empty in [False, True]:
+                with self.subTest(size=size, empty=empty):
+                    self.run_sql(
+                        ("DELETE FROM inputs;" if empty else "")
+                        + f"FROM wa_geocode_batched('inputs','reference','phrase_index',batch_size:={size});",
+                        error="batch_size",
+                    )
+
+    def test_bounded_batch_empty_and_default(self):
+        self.assertEqual(
+            self.run_sql(
+                "DELETE FROM inputs; FROM wa_geocode_batched('inputs','reference','phrase_index');"
+            ),
+            [],
+        )
+        rows = self.run_sql("""
+            CREATE TABLE many_inputs AS SELECT i::VARCHAR address_id, '125 WORTH STREET NEW YORK NY 10013' address
+                FROM range(2001) t(i);
+            SELECT count(*) AS n, count(DISTINCT address_id) AS ids, min(similarity) AS score
+                FROM wa_geocode_batched('many_inputs','reference','phrase_index');
+        """)
+        self.assertEqual(rows, [{"n": 2001, "ids": 2001, "score": 1.0}])
+
+    def test_bounded_batch_temp_tables_and_transaction(self):
+        rows = self.run_sql("""
+            BEGIN;
+            CREATE TEMP TABLE staged AS SELECT * FROM inputs;
+            INSERT INTO staged VALUES ('uncommitted','200 BROADWAY NEW YORK NY 10007');
+            CREATE TEMP TABLE local_reference AS SELECT * FROM reference;
+            CREATE TEMP TABLE local_index AS SELECT * FROM phrase_index;
+            CREATE TEMP TABLE matched AS FROM wa_geocode_batched('staged','local_reference','local_index',batch_size:=3);
+            SELECT count(*) AS n, count(*) FILTER (WHERE address_id='uncommitted' AND reference_id='c') AS added
+                FROM matched;
+            ROLLBACK;
+        """)
+        self.assertEqual(rows, [{"n": 11, "added": 1}])
+
+    def test_bounded_batch_views_and_two_invocations(self):
+        rows = self.run_sql("""
+            CREATE SCHEMA staging;
+            CREATE VIEW staging.incoming AS SELECT * FROM inputs;
+            SELECT count(*) AS n FROM
+                wa_geocode_batched('staging.incoming','reference','phrase_index',batch_size:=3) a
+                JOIN wa_geocode_batched('staging.incoming','reference','phrase_index',batch_size:=2) b
+                ON a.address_id=b.address_id;
+        """)
+        self.assertEqual(rows, [{"n": 10}])
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

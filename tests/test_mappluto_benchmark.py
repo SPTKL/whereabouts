@@ -115,3 +115,32 @@ def test_complete_pass_preserves_blanks_and_duplicate_labels(
     path.unlink()
     monitor.sample()
     assert monitor.peak_bytes == 100
+
+    # The extension should perform that loop itself, with the same output, and
+    # the tuning sample must select the requested number of spread-out rows.
+    monkeypatch.syspath_prepend(str(SCRIPT.parent))
+    spec = importlib.util.spec_from_file_location(
+        "batching_benchmark", SCRIPT.with_name("batching.py")
+    )
+    batching = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(batching)
+    for sample_rows, expected_rows in [(0, 5), (3, 3)]:
+        batch_out = tmp_path / f"internal-batch-{sample_rows}"
+        assert (
+            batching.worker(
+                SimpleNamespace(
+                    out=batch_out,
+                    database=out / "run.duckdb",
+                    extension=BINARY,
+                    batch_size=2,
+                    threads=1,
+                    memory_limit="1GB",
+                    sample_rows=sample_rows,
+                )
+            )
+            == 0
+        )
+        measured = json.loads((batch_out / "summary.json").read_text())
+        assert measured["input_rows"] == expected_rows
+        assert measured["result_rows"] == expected_rows
+        assert measured["rows_different_from_baseline"] == 0

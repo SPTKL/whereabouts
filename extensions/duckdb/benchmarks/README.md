@@ -226,6 +226,34 @@ query/result insertion, profile reads, and progress logging. Validation/checkpoi
 time is recorded separately. The earlier uninstrumented run is contextual, not a
 strictly identical timing comparison.
 
+## Tune the built-in batch size
+
+`batching.py` calls `wa_geocode_batched` once per run; the extension performs all
+batches inside SQL. Each size runs in a fresh process. By default it selects 20,000
+inputs spread deterministically over the complete BBL-ordered MapPLUTO corpus,
+while keeping the **full reference and phrase index**. It compares all result
+columns, including unmatched rows, against the completed external-loop baseline.
+
+```sh
+uv run python extensions/duckdb/benchmarks/batching.py \
+  --database extensions/duckdb/build/mappluto-26v2m2-1gb/run.duckdb \
+  --extension extensions/duckdb/build/whereabouts.duckdb_extension \
+  --out extensions/duckdb/build/batch-tuning-1gb \
+  --sizes 250 500 1000 2000 5000 --memory-limit 1GB --threads 1
+```
+
+Use `--sample-rows 0 --sizes 1000` and a fresh output directory to validate a
+complete pass. The timed SQL statement includes the input snapshot, global ID
+validation, recursive matching, and result-table creation. Source sampling,
+reference/index build, result comparison, and checkpoint are outside that timing.
+This differs from `spill.py`, which times an external Python batching loop.
+
+Batch size controls inputs per matching iteration, not a byte budget. Tune on the
+actual corpus and input distribution; changing phrase thresholds, thread count, or
+memory limit can change the best choice. A single sample pass identifies promising
+sizes, not a universal or statistically established optimum. Validate the selected
+size on the complete workload and retain memory headroom.
+
 ## Remaining evaluation
 
 Before upstream release: use a much larger reference corpus with representative,

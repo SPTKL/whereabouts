@@ -186,6 +186,46 @@ all different-BBL/unmatched cases, and `run.duckdb` retains the prepared referen
 index, source, and results. These large outputs remain ignored under `build/`.
 The output directory must be new; partial runs are recorded but not resumable.
 
+## Batch sizes and spill space
+
+After a complete `mappluto.py` run, reuse its `run.duckdb` to compare larger batches:
+
+```sh
+uv run python extensions/duckdb/benchmarks/spill.py \
+  --database extensions/duckdb/build/mappluto-26v2m2-1gb/run.duckdb \
+  --extension extensions/duckdb/build/whereabouts.duckdb_extension \
+  --out extensions/duckdb/build/mappluto-spill/run-1 \
+  --sizes 10000 50000 1000 --memory-limit 1GB --max-spill 20GB --threads 1
+```
+
+Each batch size runs in a fresh process, sequentially in the supplied order, with
+the same complete input and reference. Reference construction is excluded. Each
+successful pass is compared field-for-field with the prior complete output,
+including NULLs, coordinates, scores, and tie choices. Failed runs retain their
+completed-row count, active batch, error, and telemetry; the controller continues
+the remaining sizes and exits 2 if any fails. Outputs stay in new, ignored build
+directories; partial runs are not resumed.
+
+The DuckDB JSON profiler records `system_peak_buffer_memory` and
+`system_peak_temp_dir_size` after each successful matching query. These are process
+connection high-water measurements, not additive per-batch sizes. A background
+thread additionally samples logical spill-file sizes every 250 ms, including
+failed queries for which no complete profile may be produced. Sampled peaks are
+lower bounds and are not cumulative bytes written or physical allocated blocks.
+The report preserves profiler and filesystem peaks separately. Whole-process peak
+RSS is also recorded, with matching-stage RSS captured before result validation.
+
+Every run uses an explicit dedicated `temp_directory` and `max_temp_directory_size`.
+Spilling is already supported by default; this experiment measures usage and the
+effect of batch size rather than claiming to enable a previously disabled feature.
+The RAM setting covers DuckDB-managed memory, not all Python/native allocations.
+One pass per size, no warmup, uncontrolled OS caches, fixed order, profiling and
+250 ms monitoring overhead mean results are exploratory rather than statistical
+performance guarantees. Matching wall time includes input-table creation,
+query/result insertion, profile reads, and progress logging. Validation/checkpoint
+time is recorded separately. The earlier uninstrumented run is contextual, not a
+strictly identical timing comparison.
+
 ## Remaining evaluation
 
 Before upstream release: use a much larger reference corpus with representative,

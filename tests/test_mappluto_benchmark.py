@@ -4,6 +4,7 @@ import importlib.util
 import json
 from pathlib import Path
 import sys
+from types import SimpleNamespace
 
 import duckdb
 import pytest
@@ -75,3 +76,42 @@ def test_complete_pass_preserves_blanks_and_duplicate_labels(
             .fetchone()[0]
             == 3
         )
+
+    # Reuse the prepared reference and verify exact results at another batch size.
+    spill_script = SCRIPT.with_name("spill.py")
+    spec = importlib.util.spec_from_file_location("spill_benchmark", spill_script)
+    spill = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(spill)
+    spill_out = tmp_path / "spill-run"
+    assert (
+        spill.worker(
+            SimpleNamespace(
+                out=spill_out,
+                database=out / "run.duckdb",
+                extension=BINARY,
+                batch_size=3,
+                threads=1,
+                memory_limit="1GB",
+                max_spill="1GB",
+            )
+        )
+        == 0
+    )
+    measured = json.loads((spill_out / "summary.json").read_text())
+    assert measured["status"] == "ok"
+    assert measured["rows_completed"] == 5
+    assert measured["rows_different_from_baseline"] == 0
+    assert [b["rows"] for b in measured["batches"]] == [3, 2]
+    assert measured["profile_peak_buffer_bytes"] > 0
+    assert measured["profile_peak_spill_bytes"] == 0
+    assert measured["spill_samples"] >= 1
+
+    directory = tmp_path / "sampled-spill"
+    directory.mkdir()
+    monitor = spill.SpillMonitor(directory)
+    path = directory / "duckdb_temp_storage.test"
+    path.write_bytes(b"x" * 100)
+    monitor.sample()
+    path.unlink()
+    monitor.sample()
+    assert monitor.peak_bytes == 100

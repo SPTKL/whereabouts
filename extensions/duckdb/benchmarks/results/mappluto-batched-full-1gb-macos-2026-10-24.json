@@ -1,0 +1,41 @@
+{
+  "started_at_utc": "2026-10-24T15:16:58.239754+00:00",
+  "git_commit": "f134db82446db4f756ee01d32730fef190cea367",
+  "git_dirty": false,
+  "runner_sha256": "f0594cc50e7e487eb3a279cb1724b0b884971bf93af71eefccd9115b2209f8f6",
+  "extension_sha256": "739cfd3ace724b90809666d1224884f9dd1fca1476564135e9d93b77b4fc934a",
+  "database_sha256": "fb1f68e1dac02a631b5e9ad58fabdc0e45ccc4d1df63eef91846b7aefae68f73",
+  "duckdb": "1.4.2",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "memory_limit": "1GB",
+  "threads": 1,
+  "sample_rows_requested": 0,
+  "order": [
+    1000
+  ],
+  "measurement": "One fresh process per size; one SQL call; includes input snapshot, validation and result creation; excludes reference/index build; no warmup",
+  "runs": [
+    {
+      "status": "ok",
+      "batch_size": 1000,
+      "memory_limit": "1GB",
+      "threads": 1,
+      "sample_rows_requested": 0,
+      "input_rows": 856687,
+      "reference_rows": 856160,
+      "setup_seconds": 0.3110492500127293,
+      "peak_process_rss_mib": 942.671875,
+      "sampled_peak_spill_bytes": 0,
+      "matching_seconds": 1009.8044031670433,
+      "rows_per_second": 848.3692458788829,
+      "matching_peak_process_rss_mib": 789.203125,
+      "profile_peak_buffer_bytes": 620187648,
+      "profile_peak_spill_bytes": 0,
+      "rows_different_from_baseline": 0,
+      "result_rows": 856687,
+      "validation_and_checkpoint_seconds": 1.7094475419726223,
+      "total_seconds": 1011.8280885000131,
+      "returncode": 0
+    }
+  ]
+}

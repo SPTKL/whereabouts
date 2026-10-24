@@ -141,6 +141,7 @@ positive integer up to 2,147,483,647):
 
 ```sql
 SET memory_limit = '1GB';
+SET threads = 1;
 SET temp_directory = '/path/to/duckdb-spill';
 
 CREATE TABLE geocoded AS
@@ -170,7 +171,8 @@ increase candidate expansion substantially.
 Start with 1,000 rows and adjust using representative data and your actual memory
 limit. There is no universal optimal size; smaller batches reduce working memory
 but repeat query operators and reference scans. See the
-[benchmark guide](benchmarks/README.md) for measured MapPLUTO results.
+[benchmark guide](benchmarks/README.md) for measured MapPLUTO results. Those runs
+use one thread; raising concurrency can also raise peak working memory.
 
 ## Relationship to the Python implementation
 

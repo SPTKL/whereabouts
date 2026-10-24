@@ -254,6 +254,11 @@ memory limit can change the best choice. A single sample pass identifies promisi
 sizes, not a universal or statistically established optimum. Validate the selected
 size on the complete workload and retain memory headroom.
 
+Measured results:
+
+- [Built-in SQL batch-size sweep](results/mappluto-batching-macos-2026-10-24.md)
+- [Memory-limit and spill experiment](results/mappluto-spill-macos-2026-10-24.md)
+
 ## Remaining evaluation
 
 Before upstream release: use a much larger reference corpus with representative,
